@@ -461,3 +461,286 @@ INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 
 Checksum: PlaceDB: 622bc87c ConstDB: 0 ShapeSum: 966e9bf3 RouteDB: 0
 
 Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 17372d93b
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:31 . Memory (MB): peak = 1657.371 ; gain = 0.000
+Post Restoration Checksum: NetGraph: e4f62cfc NumContArr: 8e7cac3f Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 17372d93b
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:31 . Memory (MB): peak = 1672.137 ; gain = 14.766
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 17372d93b
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:31 . Memory (MB): peak = 1679.527 ; gain = 22.156
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 17372d93b
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:31 . Memory (MB): peak = 1679.527 ; gain = 22.156
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: a4ea5b7d
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 1688.410 ; gain = 31.039
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.614 | TNS=-789.742| WHS=-0.621 | THS=-83.120|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: fe8004cc
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 1688.410 ; gain = 31.039
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.614 | TNS=-789.408| WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 1459ddf37
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1703.637 ; gain = 46.266
+Phase 2 Router Initialization | Checksum: a19a43bd
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1703.637 ; gain = 46.266
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 872
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 872
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1b056c7c3
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:37 . Memory (MB): peak = 1714.676 ; gain = 57.305
+INFO: [Route 35-580] Design has 195 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+| clk_out1_design_1_clk_wiz_0_0 |clk_out2_design_1_clk_wiz_0_0 |design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN|
+| clk_out1_design_1_clk_wiz_0_0 |clk_out2_design_1_clk_wiz_0_0 |design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/DIADI[5]|
+| clk_out1_design_1_clk_wiz_0_0 |clk_out2_design_1_clk_wiz_0_0 |design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/DIPADIP[0]|
+| clk_out1_design_1_clk_wiz_0_0 |clk_out2_design_1_clk_wiz_0_0 |design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/DIPADIP[0]|
+| clk_out1_design_1_clk_wiz_0_0 |clk_out2_design_1_clk_wiz_0_0 |design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/DIADI[0]|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 43
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.212 | TNS=-1029.877| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 19a896160
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:41 . Memory (MB): peak = 1714.676 ; gain = 57.305
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.452 | TNS=-1035.104| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 19b6b2803
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:48 . Memory (MB): peak = 1714.676 ; gain = 57.305
+Phase 4 Rip-up And Reroute | Checksum: 19b6b2803
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:48 . Memory (MB): peak = 1714.676 ; gain = 57.305
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 198e59694
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 1714.676 ; gain = 57.305
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.212 | TNS=-1029.877| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: c7fa791a
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 1714.676 ; gain = 57.305
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: c7fa791a
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 1714.676 ; gain = 57.305
+Phase 5 Delay and Skew Optimization | Checksum: c7fa791a
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 1714.676 ; gain = 57.305
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 188fb2a60
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 1714.676 ; gain = 57.305
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.212 | TNS=-1029.793| WHS=0.090  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1bce12d87
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 1714.676 ; gain = 57.305
+Phase 6 Post Hold Fix | Checksum: 1bce12d87
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 1714.676 ; gain = 57.305
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.323392 %
+  Global Horizontal Routing Utilization  = 0.427992 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 37.8378%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 29.7297%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 50%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 47.0588%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 133566ba0
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 1714.676 ; gain = 57.305
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 133566ba0
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 1714.676 ; gain = 57.305
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1d6d63c4d
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 1714.676 ; gain = 57.305
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-4.212 | TNS=-1029.793| WHS=0.090  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1d6d63c4d
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 1714.676 ; gain = 57.305
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 1714.676 ; gain = 57.305
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+121 Infos, 5 Warnings, 4 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:59 ; elapsed = 00:00:50 . Memory (MB): peak = 1714.676 ; gain = 57.305
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1714.676 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.294 . Memory (MB): peak = 1714.676 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/impl_1/top_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/impl_1/top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+Command: report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/impl_1/top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+Command: report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+133 Infos, 5 Warnings, 4 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file top_route_status.rpt -pb top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RTSTAT-10] No routable loads: 7 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0], and design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[2:0].
+WARNING: [DRC ZPS7-1] PS7 block required: The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+152 Infos, 8 Warnings, 5 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2150.734 ; gain = 424.352
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  3 15:08:46 2023...
