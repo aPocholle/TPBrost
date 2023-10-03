@@ -14,5 +14,5 @@ create_clock -period 10 -name default
 #source "./mire/mire/directives.tcl"
 csim_design
 csynth_design
-cosim_design
-export_design -format ip_catalog
+cosim_design -rtl vhdl
+export_design -flow impl -rtl vhdl -format ip_catalog

@@ -1,0 +1,116 @@
+TRACE::2023-10-03.14:46:04::SCWPlatform::Trying to open the hw design at C:/Users/ap576391/Documents/Brost/test_mire/hw/mire_VGA.xsa
+TRACE::2023-10-03.14:46:04::SCWPlatform::DSA given C:/Users/ap576391/Documents/Brost/test_mire/hw/mire_VGA.xsa
+TRACE::2023-10-03.14:46:04::SCWPlatform::DSA absoulate path C:/Users/ap576391/Documents/Brost/test_mire/hw/mire_VGA.xsa
+TRACE::2023-10-03.14:46:07::SCWPlatform::DSA directory C:/Users/ap576391/Documents/Brost/test_mire/hw
+TRACE::2023-10-03.14:46:07::SCWPlatform:: Platform Path C:/Users/ap576391/Documents/Brost/test_mire/hw/mire_VGA.xsa
+TRACE::2023-10-03.14:46:07::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2023-10-03.14:46:07::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-10-03.14:46:08::SCWPlatform::Opened new HwDB with name top_0
+TRACE::2023-10-03.14:46:08::SCWWriter::formatted JSON is {
+	"platformName":	"test_mire",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"test_mire",
+	"platHandOff":	"C:/Users/ap576391/Documents/Brost/tp1/mire_VGA.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mire_VGA.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2023-10-03.14:46:08::SCWWriter::formatted JSON is {
+	"platformName":	"test_mire",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"test_mire",
+	"platHandOff":	"C:/Users/ap576391/Documents/Brost/tp1/mire_VGA.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mire_VGA.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"test_mire",
+	"systems":	[{
+			"systemName":	"test_mire",
+			"systemDesc":	"test_mire",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"test_mire"
+		}]
+}
+TRACE::2023-10-03.14:46:08::SCWPlatform::Boot application domains not present, creating them
+TRACE::2023-10-03.14:46:08::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2023-10-03.14:46:08::SCWWriter::formatted JSON is {
+	"platformName":	"test_mire",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"test_mire",
+	"platHandOff":	"C:/Users/ap576391/Documents/Brost/tp1/mire_VGA.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mire_VGA.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"test_mire",
+	"systems":	[{
+			"systemName":	"test_mire",
+			"systemDesc":	"test_mire",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"test_mire"
+		}]
+}
+TRACE::2023-10-03.14:46:08::SCWWriter::formatted JSON is {
+	"platformName":	"test_mire",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"test_mire",
+	"platHandOff":	"C:/Users/ap576391/Documents/Brost/tp1/mire_VGA.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mire_VGA.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"test_mire",
+	"systems":	[{
+			"systemName":	"test_mire",
+			"systemDesc":	"test_mire",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"test_mire"
+		}]
+}
+TRACE::2023-10-03.14:46:08::SCWPlatform::Clearing the existing platform
+TRACE::2023-10-03.14:46:08::SCWSystem::Clearing the existing sysconfig
+TRACE::2023-10-03.14:46:08::SCWSystem::Clearing the domains completed.
+TRACE::2023-10-03.14:46:08::SCWPlatform::Clearing the opened hw db.
+TRACE::2023-10-03.14:46:08::SCWPlatform::DSA given C:/Users/ap576391/Documents/Brost/test_mire/hw/mire_VGA.xsa
+TRACE::2023-10-03.14:46:08::SCWPlatform::DSA absoulate path C:/Users/ap576391/Documents/Brost/test_mire/hw/mire_VGA.xsa
+TRACE::2023-10-03.14:46:08::SCWPlatform:: Platform location is C:/Users/ap576391/Documents/Brost/test_mire/hw
+TRACE::2023-10-03.14:46:08::SCWPlatform:: Platform Path C:/Users/ap576391/Documents/Brost/test_mire/hw/mire_VGA.xsa
+TRACE::2023-10-03.14:46:08::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2023-10-03.14:46:08::SCWPlatform::Removing the HwDB with name C:/Users/ap576391/Documents/Brost/test_mire/hw/mire_VGA.xsa
+TRACE::2023-10-03.14:46:08::SCWPlatform::Trying to open the hw design at C:/Users/ap576391/Documents/Brost/test_mire/hw/mire_VGA.xsa
+TRACE::2023-10-03.14:46:08::SCWPlatform::DSA given C:/Users/ap576391/Documents/Brost/test_mire/hw/mire_VGA.xsa
+TRACE::2023-10-03.14:46:08::SCWPlatform::DSA absoulate path C:/Users/ap576391/Documents/Brost/test_mire/hw/mire_VGA.xsa
+TRACE::2023-10-03.14:46:08::SCWPlatform::DSA directory C:/Users/ap576391/Documents/Brost/test_mire/hw
+TRACE::2023-10-03.14:46:08::SCWPlatform:: Platform Path C:/Users/ap576391/Documents/Brost/test_mire/hw/mire_VGA.xsa
+TRACE::2023-10-03.14:46:08::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2023-10-03.14:46:08::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-10-03.14:46:08::SCWPlatform::Opened new HwDB with name top_1
+TRACE::2023-10-03.14:46:08::SCWReader::Active system found as  test_mire
+TRACE::2023-10-03.14:46:08::SCWReader::Handling sysconfig test_mire
+TRACE::2023-10-03.14:46:08::SCWReader::No domains present  

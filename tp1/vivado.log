@@ -1,0 +1,393 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Oct  3 14:21:16 2023
+# Process ID: 4048
+# Current directory: C:/Users/ap576391/Documents/Brost/tp1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7212 C:\Users\ap576391\Documents\Brost\tp1\tp1.xpr
+# Log file: C:/Users/ap576391/Documents/Brost/tp1/vivado.log
+# Journal file: C:/Users/ap576391/Documents/Brost/tp1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ap576391/Documents/Brost/tp1/tp1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/projets/esirem/soc/tp1' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/ap576391/Documents/Brost/tp2/design_1_wrapper_behav.wcfg', nor could it be found using path 'C:/projets/esirem/soc/tp2/design_1_wrapper_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 766.602 ; gain = 130.652
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_1
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:fifo_generator:13.2 - fifo_generator_1
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /video_controller/fifo_generator_1Executing the post_config_ip from bd
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_2
+Adding component instance block -- xilinx.com:module_ref:mux_rgb:1.0 - mux_rgb_0
+Successfully read diagram <design_1> from BD file <C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 990.313 ; gain = 118.801
+set_property  ip_repo_paths  C:/Users/ap576391/Documents/Brost/mire [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ap576391/Documents/Brost/mire'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:mire:1.0 mire_0
+endgroup
+set_property location {1 253 122} [get_bd_cells mire_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins mire_0/ap_clk]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets processing_system7_0_DDR] [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_intf_nets processing_system7_0_FIXED_IO] [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_intf_ports DDR]
+delete_bd_objs [get_bd_intf_ports FIXED_IO]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_0/clk_out1 (25 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins mire_0/ap_clk]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_pins rst_ps7_0_100M/ext_reset_in]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset_rtl
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl /rst_ps7_0_100M/ext_reset_in
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset_rtl
+WARNING: [board_rule 100-100] Board automation did not generate location constraint for /rst_ps7_0_100M/ext_reset_in. Users may need to specify the location constraint manually.
+INFO: [BD 5-455] Automation on '/rst_ps7_0_100M/slowest_sync_clk' will not be run, since it is obsolete due to previously run automations
+endgroup
+set_property location {1 233 363} [get_bd_cells mire_0]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins mire_0/p_red] [get_bd_pins video_controller/red]
+connect_bd_net [get_bd_pins mire_0/p_green] [get_bd_pins video_controller/green]
+connect_bd_net [get_bd_pins mire_0/p_blue] [get_bd_pins video_controller/blue]
+connect_bd_net [get_bd_pins mire_0/p_red_ap_vld] [get_bd_pins video_controller/data_vld]
+connect_bd_net [get_bd_pins mire_0/p_red_ap_ack] [get_bd_pins video_controller/data_ack]
+connect_bd_net [get_bd_pins mire_0/p_green_ap_ack] [get_bd_pins video_controller/data_ack]
+connect_bd_net [get_bd_pins mire_0/p_blue_ap_ack] [get_bd_pins video_controller/data_ack]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins mire_0/ap_start]
+WARNING: [BD 41-1306] The connection to interface pin /mire_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:\Users\ap576391\Documents\Brost\tp1\tp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [BD 41-927] Following properties on pin /mire_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : <C:\Users\ap576391\Documents\Brost\tp1\tp1.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/util_vector_logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/fifo_generator_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlslice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/mux_rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mire_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+Exporting to file C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Tue Oct  3 14:31:21 2023] Launched synth_1...
+Run output will be captured here: C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/synth_1/runme.log
+[Tue Oct  3 14:31:21 2023] Launched impl_1...
+Run output will be captured here: C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/impl_1/runme.log
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+delete_bd_objs [get_bd_cells xlconcat_0]
+generate_target all [get_files  C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-927] Following properties on pin /mire_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : <C:\Users\ap576391\Documents\Brost\tp1\tp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/util_vector_logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/fifo_generator_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlslice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/mux_rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mire_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+Exporting to file C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/ap576391/Documents/Brost/tp1/tp1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/ap576391/Documents/Brost/tp1/tp1.ip_user_files -ipstatic_source_dir C:/Users/ap576391/Documents/Brost/tp1/tp1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/ap576391/Documents/Brost/tp1/tp1.cache/compile_simlib/modelsim} {questa=C:/Users/ap576391/Documents/Brost/tp1/tp1.cache/compile_simlib/questa} {riviera=C:/Users/ap576391/Documents/Brost/tp1/tp1.cache/compile_simlib/riviera} {activehdl=C:/Users/ap576391/Documents/Brost/tp1/tp1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -force  -include_bit -file C:/Users/ap576391/Documents/Brost/tp1/mire_VGA.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/ap576391/Documents/Brost/tp1/mire_VGA.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2019.2/data\embeddedsw) loading 1 seconds
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/ap576391/Documents/Brost/tp1/mire_VGA.xsa
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-06:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1208.008 ; gain = 3.805
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248A39C44
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2444.457 ; gain = 1236.449
+set_property PROGRAM.FILE {C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+close_hw_manager
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets reset_rtl_1]
+delete_bd_objs [get_bd_ports reset_rtl]
+delete_bd_objs [get_bd_ports ap_idle_0]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_pins rst_ps7_0_100M/ext_reset_in]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset_rtl
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl /rst_ps7_0_100M/ext_reset_in
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset_rtl
+WARNING: [board_rule 100-100] Board automation did not generate location constraint for /rst_ps7_0_100M/ext_reset_in. Users may need to specify the location constraint manually.
+set_property location {1 249 496} [get_bd_cells rst_ps7_0_100M]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+delete_bd_objs [get_bd_nets mire_0_p_red_ap_vld]
+set_property -dict [list CONFIG.NUM_PORTS {3}] [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins video_controller/data_vld] [get_bd_pins xlconcat_0/dout]
+connect_bd_net [get_bd_pins xlconcat_0/In0] [get_bd_pins mire_0/p_red_ap_vld]
+connect_bd_net [get_bd_pins xlconcat_0/In1] [get_bd_pins mire_0/p_green_ap_vld]
+connect_bd_net [get_bd_pins xlconcat_0/In2] [get_bd_pins mire_0/p_blue_ap_vld]
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets reset_rtl_1]
+delete_bd_objs [get_bd_ports reset_rtl]
+connect_bd_net [get_bd_ports rst] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
+delete_bd_objs [get_bd_nets Net]
+set_property location {-37 475} [get_bd_ports rst]
+connect_bd_net [get_bd_ports rst] [get_bd_pins clk_wiz_0/reset]
+connect_bd_net [get_bd_ports rst] [get_bd_pins video_controller/rst]
+delete_bd_objs [get_bd_nets rst_ps7_0_100M_peripheral_reset] [get_bd_cells rst_ps7_0_100M]
+connect_bd_net [get_bd_ports rst] [get_bd_pins mire_0/ap_rst]
+save_bd_design
+Wrote  : <C:\Users\ap576391\Documents\Brost\tp1\tp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [BD 41-927] Following properties on pin /mire_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : <C:\Users\ap576391\Documents\Brost\tp1\tp1.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/util_vector_logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/fifo_generator_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlslice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/mux_rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mire_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+Exporting to file C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Tue Oct  3 14:53:21 2023] Launched synth_1...
+Run output will be captured here: C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/synth_1/runme.log
+[Tue Oct  3 14:53:21 2023] Launched impl_1...
+Run output will be captured here: C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/impl_1/runme.log
+set_property location {3 856 283} [get_bd_cells xlconcat_0]
+set_property location {3 853 307} [get_bd_cells xlconcat_0]
+set_property location {3 850 293} [get_bd_cells xlconcat_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {3 850 293} [get_bd_cells xlconcat_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3 853 307} [get_bd_cells xlconcat_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3 856 283} [get_bd_cells xlconcat_0]'
+copy_bd_objs /  [get_bd_ports {clk_pixel}]
+delete_bd_objs [get_bd_ports clk_pixel1]
+copy_bd_objs /  [get_bd_ports {clk_pixel}]
+set_property name ap_idl_0 [get_bd_ports clk_pixel1]
+save_bd_design
+Wrote  : <C:\Users\ap576391\Documents\Brost\tp1\tp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+set_property name ap_idle_0 [get_bd_ports ap_idl_0]
+save_bd_design
+Wrote  : <C:\Users\ap576391\Documents\Brost\tp1\tp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [BD 41-927] Following properties on pin /mire_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : <C:\Users\ap576391\Documents\Brost\tp1\tp1.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/util_vector_logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/fifo_generator_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlslice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/mux_rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mire_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+Exporting to file C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Tue Oct  3 14:55:28 2023] Launched synth_1...
+Run output will be captured here: C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/synth_1/runme.log
+[Tue Oct  3 14:55:28 2023] Launched impl_1...
+Run output will be captured here: C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/impl_1/runme.log
+set_property location {1328 298} [get_bd_ports ap_idle_0]
+set_property location {3 854 288} [get_bd_cells xlconcat_0]
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-06:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2501.543 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248A39C44
+set_property PROGRAM.FILE {C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+delete_bd_objs [get_bd_nets mire_0_p_red_ap_vld] [get_bd_nets mire_0_p_green_ap_vld] [get_bd_nets mire_0_p_blue_ap_vld] [get_bd_nets data_vld_1] [get_bd_cells xlconcat_0]
+regenerate_bd_layout
+regenerate_bd_layout
+connect_bd_net [get_bd_pins video_controller/data_vld] [get_bd_pins mire_0/p_red_ap_vld]
+delete_bd_objs [get_bd_nets xlconstant_0_dout]
+connect_bd_net [get_bd_pins mire_0/ap_start] [get_bd_pins video_controller/fsync_out]
+WARNING: [BD 41-1306] The connection to interface pin /mire_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+delete_bd_objs [get_bd_cells xlconstant_0]
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /mire_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+save_bd_design
+Wrote  : <C:\Users\ap576391\Documents\Brost\tp1\tp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/util_vector_logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/fifo_generator_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/xlslice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_controller/mux_rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mire_0 .
+Exporting to file C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ap576391/Documents/Brost/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Tue Oct  3 15:03:59 2023] Launched synth_1...
+Run output will be captured here: C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/synth_1/runme.log
+[Tue Oct  3 15:03:59 2023] Launched impl_1...
+Run output will be captured here: C:/Users/ap576391/Documents/Brost/tp1/tp1.runs/impl_1/runme.log

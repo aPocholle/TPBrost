@@ -160,8 +160,8 @@ void mire(l_struct_OC_pixel *);
 
 
 /* Global Variable Definitions and Initialization */
-static  char aesl_internal__OC_str[9] = "test.ppm";
 static  char aesl_internal__OC_str1[2] = "w";
+static  char aesl_internal__OC_str[9] = "test.ppm";
 static  char aesl_internal__OC_str2[4] = "P3\n";
 static  char aesl_internal__OC_str3[9] = "640 480\n";
 static  char aesl_internal__OC_str4[5] = "255\n";

@@ -1,0 +1,272 @@
+!SESSION 2023-10-03 14:43:43.723 -----------------------------------------------
+eclipse.buildId=2019.2
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-10-03 14:44:00.804
+!MESSAGE Both 'com.autoesl.autopilot.ui.models' and 'com.autoesl.autopilot.ui.models' register a package for 'com.autoesl.autopilot.solution'
+
+!ENTRY org.eclipse.ui 4 4 2023-10-03 14:44:04.225
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.TaskList.
+
+!ENTRY org.eclipse.ui 4 4 2023-10-03 14:44:06.415
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.ui 4 4 2023-10-03 14:44:06.418
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:44:12.825
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:44:12.826
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:44:12.831
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:44:12.834
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:44:13.400
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:44:13.400
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:44:13.401
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:44:13.402
+!MESSAGE XSCT Command: [setws C:/Users/ap576391/Documents/Brost], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:44:13.407
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2019.2/data]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:44:13.419
+!MESSAGE XSCT command with result: [setws C:/Users/ap576391/Documents/Brost], Result: [null, ]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-10-03 14:45:55.923
+!MESSAGE Opening file dialog using preferences. Current path: C:\Xilinx\Vitis\2019.2\data\embeddedsw\lib\fixed_hwplatforms, Local preference: scw_hwspec, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:45:58.992
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/ap576391/Documents/Brost/tp1/mire_VGA.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:45:59.108
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/ap576391/Documents/Brost/tp1/mire_VGA.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:45:59.126
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/ap576391/Documents/Brost/tp1/mire_VGA.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:45:59.133
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/ap576391/Documents/Brost/tp1/mire_VGA.xsa], Result: [null, {"clk_wiz_0": {"hier_name": "clk_wiz_0",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mire_0": {"hier_name": "mire_0",
+"type": "mire",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"rst_ps7_0_100M": {"hier_name": "rst_ps7_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"video_controller_fifo_generator_1": {"hier_name": "video_controller_fifo_generator_1",
+"type": "fifo_generator",
+"version": "13.2",
+"ip_type": "PERIPHERAL",
+},
+"video_controller_mux_rgb_0": {"hier_name": "video_controller_mux_rgb_0",
+"type": "mux_rgb",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"video_controller_util_vector_logic_0": {"hier_name": "video_controller_util_vector_logic_0",
+"type": "util_vector_logic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"video_controller_util_vector_logic_1": {"hier_name": "video_controller_util_vector_logic_1",
+"type": "util_vector_logic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"video_controller_v_tc_0": {"hier_name": "video_controller_v_tc_0",
+"type": "v_tc",
+"version": "6.2",
+"ip_type": "PERIPHERAL",
+},
+"video_controller_xlconcat_0": {"hier_name": "video_controller_xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"video_controller_xlconstant_0": {"hier_name": "video_controller_xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"video_controller_xlslice_0": {"hier_name": "video_controller_xlslice_0",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"video_controller_xlslice_1": {"hier_name": "video_controller_xlslice_1",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"video_controller_xlslice_2": {"hier_name": "video_controller_xlslice_2",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_0": {"hier_name": "xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY org.eclipse.ui 4 0 2023-10-03 14:45:59.139
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index 0 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
+	at java.base/java.util.Objects.checkIndex(Unknown Source)
+	at java.base/java.util.ArrayList.get(Unknown Source)
+	at com.xilinx.sdx.scw.wizard.SDXPlatformProjectFromDSAPage.initializeProcessorCombo(SDXPlatformProjectFromDSAPage.java:354)
+	at com.xilinx.sdx.scw.wizard.SDXPlatformProjectFromDSAPage.dsaFilePathUpdated(SDXPlatformProjectFromDSAPage.java:332)
+	at com.xilinx.sdx.scw.wizard.SDXPlatformProjectFromDSAPage.access$3(SDXPlatformProjectFromDSAPage.java:330)
+	at com.xilinx.sdx.scw.wizard.SDXPlatformProjectFromDSAPage$1.modifyText(SDXPlatformProjectFromDSAPage.java:153)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:180)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Text.wmCommandChild(Text.java:2882)
+	at org.eclipse.swt.widgets.Control.WM_COMMAND(Control.java:4913)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4768)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(OS.java:2197)
+	at org.eclipse.swt.widgets.Text.callWindowProc(Text.java:258)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
+	at org.eclipse.swt.widgets.Text.windowProc(Text.java:2526)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.SetWindowTextW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.SetWindowText(OS.java:3114)
+	at org.eclipse.swt.widgets.Text.setText(Text.java:2196)
+	at com.xilinx.sdx.scw.wizard.SDXPlatformProjectFromDSAPage$2.widgetSelected(SDXPlatformProjectFromDSAPage.java:168)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:133)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:78)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:46:04.799
+!MESSAGE XSCT Command: [platform create -name {test_mire} -hw {C:\Users\ap576391\Documents\Brost\tp1\mire_VGA.xsa} -out {C:/Users/ap576391/Documents/Brost};platform write], Thread: ModalContext
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-03 14:46:04.930
+!MESSAGE Indexed 'test_mire' (0 sources, 0 headers) in 0,003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:46:08.017
+!MESSAGE XSCT command with result: [platform create -name {test_mire} -hw {C:\Users\ap576391\Documents\Brost\tp1\mire_VGA.xsa} -out {C:/Users/ap576391/Documents/Brost};platform write], Result: [null, Successfully saved  the platform at "C:/Users/ap576391/Documents/Brost/test_mire/platform.spr"]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:46:08.136
+!MESSAGE XSCT Command: [platform read {C:\Users\ap576391\Documents\Brost\test_mire\platform.spr}], Thread: Worker-1: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:46:08.144
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/ap576391/Documents/Brost/test_mire/hw/mire_VGA.xsa], Thread: Worker-3: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:46:08.257
+!MESSAGE XSCT command with result: [platform read {C:\Users\ap576391\Documents\Brost\test_mire\platform.spr}], Result: [null, ]. Thread: Worker-1: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:46:08.258
+!MESSAGE XSCT Command: [platform active {test_mire}], Thread: Worker-1: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:46:08.258
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/ap576391/Documents/Brost/test_mire/hw/mire_VGA.xsa], Result: [null, ]. Thread: Worker-3: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:46:08.259
+!MESSAGE XSCT command with result: [platform active {test_mire}], Result: [null, ]. Thread: Worker-1: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-10-03 14:48:22.093
+!MESSAGE Opening file dialog using preferences. Current path: C:\Xilinx\Vitis\2019.2\data\embeddedsw\lib\fixed_hwplatforms, Local preference: scw_hwspec, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:48:35.628
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/ap576391/Documents/Brost/tp1/mire_VGA.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:48:35.632
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/ap576391/Documents/Brost/tp1/mire_VGA.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Tue Oct  3 14:39:50 2023",
+"vivado_version": "2019.2",
+"part": "xc7z020clg484-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:48:42.567
+!MESSAGE XSCT Command: [platform create -name {mire_VGA} -hw {C:\Users\ap576391\Documents\Brost\tp1\mire_VGA.xsa} -out {C:/Users/ap576391/Documents/Brost};platform write], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:48:42.672
+!MESSAGE XSCT command with result: [platform create -name {mire_VGA} -hw {C:\Users\ap576391\Documents\Brost\tp1\mire_VGA.xsa} -out {C:/Users/ap576391/Documents/Brost};platform write], Result: [null, Successfully saved  the platform at "C:/Users/ap576391/Documents/Brost/mire_VGA/platform.spr"]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:48:42.694
+!MESSAGE XSCT Command: [domain create -name {linux_domain} -display-name {linux on null} -os {linux} -proc {null} -runtime {cpp} -arch {32-bit}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:48:42.701
+!MESSAGE XSCT command with result: [domain create -name {linux_domain} -display-name {linux on null} -os {linux} -proc {null} -runtime {cpp} -arch {32-bit}], Result: [{Format=
+ERROR: The given processor instance "null" does not exist in the hardware design.
+valid processor instances are "", Time=1696337322700, Code=1}, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:48:42.724
+!MESSAGE XSCT Command: [catch {platform -remove mire_VGA}], Thread: Worker-1: Deleting platform 'mire_VGA'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:48:42.740
+!MESSAGE XSCT command with result: [catch {platform -remove mire_VGA}], Result: [null, 0]. Thread: Worker-1: Deleting platform 'mire_VGA'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:48:47.953
+!MESSAGE XSCT Command: [::hsi::utils::closehw C:/Users/ap576391/Documents/Brost/tp1/mire_VGA.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-10-03 14:48:47.956
+!MESSAGE XSCT command with result: [::hsi::utils::closehw C:/Users/ap576391/Documents/Brost/tp1/mire_VGA.xsa], Result: [null, ]. Thread: main
