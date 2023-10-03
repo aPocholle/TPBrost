@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="mire.c" path="C:\Users\ap576391\Documents\Brost\mire\mire.c"/>
+    <originFiles name="480.pgm" path="C:\Users\ap576391\Documents\Brost\mire\480.pgm"/>
+  </source>
+  <testbench>
+    <originFiles name="mire_tb.c" path="C:\Users\ap576391\Documents\Brost\mire\mire_tb.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
