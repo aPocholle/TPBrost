@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x2C148BE8B0B4DE4E",
+      "boundary_crc": "0x4FB03F9C214F256A",
       "device": "xc7z020clg484-1",
       "name": "design_1",
       "synth_flow_mode": "None",
@@ -22,11 +22,12 @@
           "xlconstant_5": ""
         }
       },
-      "mire_0": "",
       "util_vector_logic_0": "",
       "xlconstant_1": "",
       "xlconstant_2": "",
-      "xlconstant_3": ""
+      "xlconstant_3": "",
+      "mire_0": "",
+      "xlconcat_0": ""
     },
     "ports": {
       "clk100_zed": {
@@ -72,9 +73,6 @@
       "vga_vsync": {
         "direction": "O"
       },
-      "btnl": {
-        "direction": "I"
-      },
       "vid_data": {
         "direction": "O",
         "left": "15",
@@ -119,6 +117,12 @@
         "direction": "O"
       },
       "btn": {
+        "direction": "I"
+      },
+      "mod0": {
+        "direction": "I"
+      },
+      "mod1": {
         "direction": "I"
       }
     },
@@ -434,16 +438,16 @@
           }
         },
         "interface_nets": {
-          "v_tc_0_vtiming_out": {
-            "interface_ports": [
-              "v_tc_0/vtiming_out",
-              "v_axi4s_vid_out_0/vtiming_in"
-            ]
-          },
           "Conn1": {
             "interface_ports": [
               "video_in_stream",
               "v_axi4s_vid_out_0/video_in"
+            ]
+          },
+          "v_tc_0_vtiming_out": {
+            "interface_ports": [
+              "v_tc_0/vtiming_out",
+              "v_axi4s_vid_out_0/vtiming_in"
             ]
           }
         },
@@ -537,10 +541,6 @@
           }
         }
       },
-      "mire_0": {
-        "vlnv": "xilinx.com:hls:mire:1.1",
-        "xci_name": "design_1_mire_0_0"
-      },
       "util_vector_logic_0": {
         "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
         "xci_name": "design_1_util_vector_logic_0_0",
@@ -580,6 +580,14 @@
       "xlconstant_3": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "xci_name": "design_1_xlconstant_3_0"
+      },
+      "mire_0": {
+        "vlnv": "xilinx.com:hls:mire:1.1",
+        "xci_name": "design_1_mire_0_1"
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "design_1_xlconcat_0_1"
       }
     },
     "interface_nets": {
@@ -676,18 +684,6 @@
           "vid_clk"
         ]
       },
-      "util_vector_logic_0_Res": {
-        "ports": [
-          "util_vector_logic_0/Res",
-          "mire_0/ap_rst_n"
-        ]
-      },
-      "btnl_1": {
-        "ports": [
-          "btnl",
-          "mire_0/mode_V"
-        ]
-      },
       "xlconstant_1_dout": {
         "ports": [
           "xlconstant_1/dout",
@@ -704,6 +700,30 @@
         "ports": [
           "xlconstant_3/dout",
           "mire_0/ap_start"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
+          "mire_0/ap_rst_n"
+        ]
+      },
+      "mod0_1": {
+        "ports": [
+          "mod0",
+          "xlconcat_0/In0"
+        ]
+      },
+      "mod1_1": {
+        "ports": [
+          "mod1",
+          "xlconcat_0/In1"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "mire_0/mode_V"
         ]
       }
     }

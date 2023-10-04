@@ -10,28 +10,28 @@
 
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/projets/esirem/mire'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ap576391/Documents/Brost/tp1_p2/mire'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
 INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
 WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/projets/esirem/mire'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ap576391/Documents/Brost/tp1_p2/mire'.
 Command: synth_design -top design_1_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9392 
+INFO: Helper process launched with PID 4356 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 993.652 ; gain = 234.688
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 878.184 ; gain = 235.355
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:34]
-INFO: [Synth 8-3491] module 'design_1' declared at 'C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:282' bound to instance 'design_1_i' of component 'design_1' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:55]
-INFO: [Synth 8-638] synthesizing module 'design_1' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:306]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:72' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:415]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:72]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:70]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:35]
+INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:282' bound to instance 'design_1_i' of component 'design_1' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:307]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:72' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:426]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:72]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:70]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -91,76 +91,76 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.2/s
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39940]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (4#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:70]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (5#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:72]
-INFO: [Synth 8-3491] module 'design_1_mire_0_0' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_mire_0_0/synth/design_1_mire_0_0.vhd:56' bound to instance 'mire_0' of component 'design_1_mire_0_0' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:424]
-INFO: [Synth 8-638] synthesizing module 'design_1_mire_0_0' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_mire_0_0/synth/design_1_mire_0_0.vhd:79]
-INFO: [Synth 8-3491] module 'mire' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/mire.vhd:12' bound to instance 'U0' of component 'mire' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_mire_0_0/synth/design_1_mire_0_0.vhd:139]
-INFO: [Synth 8-638] synthesizing module 'mire' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/mire.vhd:35]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/mire.vhd:58]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/mire.vhd:61]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/mire.vhd:64]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/mire.vhd:110]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (4#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (5#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:72]
+INFO: [Synth 8-3491] module 'design_1_mire_0_1' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_mire_0_1/synth/design_1_mire_0_1.vhd:56' bound to instance 'mire_0' of component 'design_1_mire_0_1' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:435]
+INFO: [Synth 8-638] synthesizing module 'design_1_mire_0_1' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_mire_0_1/synth/design_1_mire_0_1.vhd:79]
+INFO: [Synth 8-3491] module 'mire' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:12' bound to instance 'U0' of component 'mire' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_mire_0_1/synth/design_1_mire_0_1.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'mire' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:35]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:65]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:68]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:91]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:147]
 	Parameter DataWidth bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_data_V_U' of component 'regslice_both' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/mire.vhd:158]
-INFO: [Synth 8-638] synthesizing module 'regslice_both' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:22]
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_data_V_U' of component 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:22]
 	Parameter DataWidth bound to: 8 - type: integer 
 	Parameter W bound to: 9 - type: integer 
-INFO: [Synth 8-3491] module 'ibuf' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:575' bound to instance 'ibuf_inst' of component 'ibuf' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:65]
-INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_ibuf' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:587]
+INFO: [Synth 8-3491] module 'ibuf' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:575' bound to instance 'ibuf_inst' of component 'ibuf' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_ibuf' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:587]
 	Parameter W bound to: 9 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_ibuf' (6#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:587]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_ibuf' (6#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:587]
 	Parameter W bound to: 9 - type: integer 
-INFO: [Synth 8-3491] module 'obuf' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:620' bound to instance 'obuf_inst' of component 'obuf' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:76]
-INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_obuf' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:632]
+INFO: [Synth 8-3491] module 'obuf' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:620' bound to instance 'obuf_inst' of component 'obuf' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_obuf' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:632]
 	Parameter W bound to: 9 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_obuf' (7#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:632]
-INFO: [Synth 8-256] done synthesizing module 'regslice_both' (8#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_obuf' (7#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:632]
+INFO: [Synth 8-256] done synthesizing module 'regslice_both' (8#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:22]
 	Parameter DataWidth bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_keep_V_U' of component 'regslice_both' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/mire.vhd:172]
-INFO: [Synth 8-638] synthesizing module 'regslice_both__parameterized1' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:22]
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_keep_V_U' of component 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'regslice_both__parameterized1' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:22]
 	Parameter DataWidth bound to: 1 - type: integer 
 	Parameter W bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'ibuf' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:575' bound to instance 'ibuf_inst' of component 'ibuf' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:65]
-INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_ibuf__parameterized0' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:587]
+INFO: [Synth 8-3491] module 'ibuf' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:575' bound to instance 'ibuf_inst' of component 'ibuf' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_ibuf__parameterized0' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:587]
 	Parameter W bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_ibuf__parameterized0' (8#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:587]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_ibuf__parameterized0' (8#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:587]
 	Parameter W bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'obuf' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:620' bound to instance 'obuf_inst' of component 'obuf' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:76]
-INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_obuf__parameterized0' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:632]
+INFO: [Synth 8-3491] module 'obuf' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:620' bound to instance 'obuf_inst' of component 'obuf' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_obuf__parameterized0' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:632]
 	Parameter W bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_obuf__parameterized0' (8#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:632]
-INFO: [Synth 8-256] done synthesizing module 'regslice_both__parameterized1' (8#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_obuf__parameterized0' (8#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:632]
+INFO: [Synth 8-256] done synthesizing module 'regslice_both__parameterized1' (8#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:22]
 	Parameter DataWidth bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_strb_V_U' of component 'regslice_both' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/mire.vhd:186]
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_strb_V_U' of component 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:228]
 	Parameter DataWidth bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_user_V_U' of component 'regslice_both' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/mire.vhd:200]
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_user_V_U' of component 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:242]
 	Parameter DataWidth bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_last_V_U' of component 'regslice_both' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/mire.vhd:214]
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_last_V_U' of component 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:256]
 	Parameter DataWidth bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_id_V_U' of component 'regslice_both' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/mire.vhd:228]
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_id_V_U' of component 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:270]
 	Parameter DataWidth bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_dest_V_U' of component 'regslice_both' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/mire.vhd:242]
-INFO: [Synth 8-256] done synthesizing module 'mire' (9#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/mire.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'design_1_mire_0_0' (10#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_mire_0_0/synth/design_1_mire_0_0.vhd:79]
-INFO: [Synth 8-3491] module 'design_1_util_vector_logic_0_0' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.v:57' bound to instance 'util_vector_logic_0' of component 'design_1_util_vector_logic_0_0' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:445]
-INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_0' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'util_vector_logic_v2_0_1_util_vector_logic' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_dest_V_U' of component 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:284]
+INFO: [Synth 8-256] done synthesizing module 'mire' (9#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mire_0_1' (10#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_mire_0_1/synth/design_1_mire_0_1.vhd:79]
+INFO: [Synth 8-3491] module 'design_1_util_vector_logic_0_0' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.v:57' bound to instance 'util_vector_logic_0' of component 'design_1_util_vector_logic_0_0' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:456]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_0' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'util_vector_logic_v2_0_1_util_vector_logic' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
 	Parameter C_OPERATION bound to: not - type: string 
 	Parameter C_SIZE bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'util_vector_logic_v2_0_1_util_vector_logic' (11#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_0' (12#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'video_ctrl_imp_JPOEXX' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:102]
-INFO: [Synth 8-638] synthesizing module 'adv_7511_imp_1KAVXTE' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:25]
-INFO: [Synth 8-3491] module 'design_1_i2c_sender_adv7511_0_0' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_i2c_sender_adv7511_0_0/synth/design_1_i2c_sender_adv7511_0_0.vhd:56' bound to instance 'i2c_sender_adv7511_0' of component 'design_1_i2c_sender_adv7511_0_0' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:59]
-INFO: [Synth 8-638] synthesizing module 'design_1_i2c_sender_adv7511_0_0' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_i2c_sender_adv7511_0_0/synth/design_1_i2c_sender_adv7511_0_0.vhd:65]
-INFO: [Synth 8-3491] module 'i2c_sender_adv7511' declared at 'C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/new/i2c_sender_adv7511.vhd:5' bound to instance 'U0' of component 'i2c_sender_adv7511' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_i2c_sender_adv7511_0_0/synth/design_1_i2c_sender_adv7511_0_0.vhd:89]
-INFO: [Synth 8-638] synthesizing module 'i2c_sender_adv7511' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/new/i2c_sender_adv7511.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'i2c_sender_adv7511' (13#1) [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/new/i2c_sender_adv7511.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'design_1_i2c_sender_adv7511_0_0' (14#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_i2c_sender_adv7511_0_0/synth/design_1_i2c_sender_adv7511_0_0.vhd:65]
-INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:66]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'util_vector_logic_v2_0_1_util_vector_logic' (11#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_0' (12#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'video_ctrl_imp_JPOEXX' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'adv_7511_imp_1KAVXTE' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:25]
+INFO: [Synth 8-3491] module 'design_1_i2c_sender_adv7511_0_0' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_i2c_sender_adv7511_0_0/synth/design_1_i2c_sender_adv7511_0_0.vhd:56' bound to instance 'i2c_sender_adv7511_0' of component 'design_1_i2c_sender_adv7511_0_0' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'design_1_i2c_sender_adv7511_0_0' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_i2c_sender_adv7511_0_0/synth/design_1_i2c_sender_adv7511_0_0.vhd:65]
+INFO: [Synth 8-3491] module 'i2c_sender_adv7511' declared at 'C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/new/i2c_sender_adv7511.vhd:5' bound to instance 'U0' of component 'i2c_sender_adv7511' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_i2c_sender_adv7511_0_0/synth/design_1_i2c_sender_adv7511_0_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'i2c_sender_adv7511' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/new/i2c_sender_adv7511.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'i2c_sender_adv7511' (13#1) [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/new/i2c_sender_adv7511.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'design_1_i2c_sender_adv7511_0_0' (14#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_i2c_sender_adv7511_0_0/synth/design_1_i2c_sender_adv7511_0_0.vhd:65]
+INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:66]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 8 - type: integer 
 	Parameter IN1_WIDTH bound to: 8 - type: integer 
 	Parameter IN2_WIDTH bound to: 1 - type: integer 
@@ -195,19 +195,19 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/projets/
 	Parameter IN31_WIDTH bound to: 1 - type: integer 
 	Parameter dout_width bound to: 16 - type: integer 
 	Parameter NUM_PORTS bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (15#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (16#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_5_0' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/synth/design_1_xlconstant_5_0.v:57' bound to instance 'xlconstant_5' of component 'design_1_xlconstant_5_0' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:72]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_5_0' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/synth/design_1_xlconstant_5_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (15#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (16#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_5_0' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/synth/design_1_xlconstant_5_0.v:57' bound to instance 'xlconstant_5' of component 'design_1_xlconstant_5_0' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:72]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_5_0' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/synth/design_1_xlconstant_5_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 127 - type: integer 
 	Parameter CONST_WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (17#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_5_0' (18#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/synth/design_1_xlconstant_5_0.v:57]
-INFO: [Synth 8-256] done synthesizing module 'adv_7511_imp_1KAVXTE' (19#1) [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:25]
-INFO: [Synth 8-3491] module 'design_1_v_axi4s_vid_out_0_0' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/synth/design_1_v_axi4s_vid_out_0_0.v:58' bound to instance 'v_axi4s_vid_out_0' of component 'design_1_v_axi4s_vid_out_0_0' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:221]
-INFO: [Synth 8-6157] synthesizing module 'design_1_v_axi4s_vid_out_0_0' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/synth/design_1_v_axi4s_vid_out_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'v_axi4s_vid_out_v4_0_10' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:2107]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (17#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_5_0' (18#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/synth/design_1_xlconstant_5_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'adv_7511_imp_1KAVXTE' (19#1) [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:25]
+INFO: [Synth 8-3491] module 'design_1_v_axi4s_vid_out_0_0' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/synth/design_1_v_axi4s_vid_out_0_0.v:58' bound to instance 'v_axi4s_vid_out_0' of component 'design_1_v_axi4s_vid_out_0_0' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:221]
+INFO: [Synth 8-6157] synthesizing module 'design_1_v_axi4s_vid_out_0_0' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/synth/design_1_v_axi4s_vid_out_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'v_axi4s_vid_out_v4_0_10' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:2107]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_PIXELS_PER_CLOCK bound to: 1 - type: integer 
 	Parameter C_COMPONENTS_PER_PIXEL bound to: 1 - type: integer 
@@ -223,7 +223,7 @@ INFO: [Synth 8-6157] synthesizing module 'v_axi4s_vid_out_v4_0_10' [c:/projets/f
 	Parameter C_INCLUDE_PIXEL_REPEAT bound to: 0 - type: integer 
 	Parameter C_INCLUDE_PIXEL_REMAP_420 bound to: 0 - type: integer 
 	Parameter C_ADDR_WIDTH_PIXEL_REMAP_420 bound to: 10 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'v_axi4s_vid_out_v4_0_10_cdc_single' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:207]
+INFO: [Synth 8-6157] synthesizing module 'v_axi4s_vid_out_v4_0_10_cdc_single' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:207]
 	Parameter C_SYNC_FF bound to: 4 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
 	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
@@ -233,8 +233,8 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2019
 	Parameter VERSION bound to: 0 - type: integer 
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:205]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (20#1) [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
-INFO: [Synth 8-6155] done synthesizing module 'v_axi4s_vid_out_v4_0_10_cdc_single' (21#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:207]
-INFO: [Synth 8-6157] synthesizing module 'v_axi4s_vid_out_v4_0_10_coupler' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:294]
+INFO: [Synth 8-6155] done synthesizing module 'v_axi4s_vid_out_v4_0_10_cdc_single' (21#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:207]
+INFO: [Synth 8-6157] synthesizing module 'v_axi4s_vid_out_v4_0_10_coupler' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:294]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_HAS_ASYNC_CLK bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
@@ -249,7 +249,7 @@ INFO: [Synth 8-6157] synthesizing module 'v_axi4s_vid_out_v4_0_10_coupler' [c:/p
 	Parameter C_DO_PAD bound to: 1'b0 
 	Parameter C_DATA_WIDTH bound to: 11 - type: integer 
 	Parameter C_DIFF_COMPONENT_WIDTH bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'v_axi4s_vid_out_v4_0_10_fifo_async' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'v_axi4s_vid_out_v4_0_10_fifo_async' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:59]
 	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 11 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async' [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2029]
@@ -492,14 +492,14 @@ INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (29#1) [C:/Xilinx/
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (30#1) [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2029]
-WARNING: [Synth 8-7023] instance 'XPM_FIFO_ASYNC_INST' of module 'xpm_fifo_async' has 26 connections declared, but only 22 given [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:108]
+WARNING: [Synth 8-7023] instance 'XPM_FIFO_ASYNC_INST' of module 'xpm_fifo_async' has 26 connections declared, but only 22 given [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:108]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'v_axi4s_vid_out_v4_0_10_fifo_async' (31#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'v_axi4s_vid_out_v4_0_10_fifo_async' (31#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:59]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'v_axi4s_vid_out_v4_0_10_coupler' (32#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:294]
-INFO: [Synth 8-6157] synthesizing module 'v_axi4s_vid_out_v4_0_10_sync' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:506]
+INFO: [Synth 8-6155] done synthesizing module 'v_axi4s_vid_out_v4_0_10_coupler' (32#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:294]
+INFO: [Synth 8-6157] synthesizing module 'v_axi4s_vid_out_v4_0_10_sync' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:506]
 	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
 	Parameter C_VTG_MASTER_SLAVE bound to: 0 - type: integer 
 	Parameter C_HYSTERESIS_LEVEL bound to: 12 - type: integer 
@@ -518,25 +518,25 @@ INFO: [Synth 8-6157] synthesizing module 'v_axi4s_vid_out_v4_0_10_sync' [c:/proj
 	Parameter C_SYNC_LALN_EOL_LAGGING bound to: 4'b1010 
 	Parameter C_SYNC_LALN_SOF_LEADING bound to: 4'b1011 
 	Parameter C_SYNC_LALN_SOF_LAGGING bound to: 4'b1100 
-INFO: [Synth 8-155] case statement is not full and has no default [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:820]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:648]
-WARNING: [Synth 8-6014] Unused sequential element fifo_fid_dly_reg was removed.  [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:675]
-WARNING: [Synth 8-6014] Unused sequential element vtg_fid_dly_reg was removed.  [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:702]
-INFO: [Synth 8-6155] done synthesizing module 'v_axi4s_vid_out_v4_0_10_sync' (33#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:506]
-INFO: [Synth 8-6157] synthesizing module 'v_axi4s_vid_out_v4_0_10_formatter' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:1142]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:820]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:648]
+WARNING: [Synth 8-6014] Unused sequential element fifo_fid_dly_reg was removed.  [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:675]
+WARNING: [Synth 8-6014] Unused sequential element vtg_fid_dly_reg was removed.  [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:702]
+INFO: [Synth 8-6155] done synthesizing module 'v_axi4s_vid_out_v4_0_10_sync' (33#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:506]
+INFO: [Synth 8-6157] synthesizing module 'v_axi4s_vid_out_v4_0_10_formatter' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:1142]
 	Parameter C_NATIVE_DATA_WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'v_axi4s_vid_out_v4_0_10_formatter' (34#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:1142]
-WARNING: [Synth 8-6014] Unused sequential element locked_from_sync_dly_reg was removed.  [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:2325]
-WARNING: [Synth 8-6014] Unused sequential element aclk_reset_pulse_reg was removed.  [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:2240]
+INFO: [Synth 8-6155] done synthesizing module 'v_axi4s_vid_out_v4_0_10_formatter' (34#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:1142]
+WARNING: [Synth 8-6014] Unused sequential element locked_from_sync_dly_reg was removed.  [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:2325]
+WARNING: [Synth 8-6014] Unused sequential element aclk_reset_pulse_reg was removed.  [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:2240]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-WARNING: [Synth 8-3848] Net fifo_underflow_from_remap in module/entity v_axi4s_vid_out_v4_0_10 does not have driver. [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:2227]
-INFO: [Synth 8-6155] done synthesizing module 'v_axi4s_vid_out_v4_0_10' (35#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:2107]
+WARNING: [Synth 8-3848] Net fifo_underflow_from_remap in module/entity v_axi4s_vid_out_v4_0_10 does not have driver. [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:2227]
+INFO: [Synth 8-6155] done synthesizing module 'v_axi4s_vid_out_v4_0_10' (35#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/a87e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:2107]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'design_1_v_axi4s_vid_out_0_0' (36#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/synth/design_1_v_axi4s_vid_out_0_0.v:58]
-INFO: [Synth 8-3491] module 'design_1_v_tc_0_0' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/synth/design_1_v_tc_0_0.vhd:59' bound to instance 'v_tc_0' of component 'design_1_v_tc_0_0' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:255]
-INFO: [Synth 8-638] synthesizing module 'design_1_v_tc_0_0' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/synth/design_1_v_tc_0_0.vhd:74]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_v_axi4s_vid_out_0_0' (36#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/synth/design_1_v_axi4s_vid_out_0_0.v:58]
+INFO: [Synth 8-3491] module 'design_1_v_tc_0_0' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/synth/design_1_v_tc_0_0.vhd:59' bound to instance 'v_tc_0' of component 'design_1_v_tc_0_0' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:255]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_tc_0_0' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/synth/design_1_v_tc_0_0.vhd:74]
 	Parameter C_HAS_AXI4_LITE bound to: 0 - type: integer 
 	Parameter C_HAS_INTC_IF bound to: 0 - type: integer 
 	Parameter C_GEN_INTERLACED bound to: 0 - type: integer 
@@ -622,56 +622,125 @@ INFO: [Synth 8-638] synthesizing module 'design_1_v_tc_0_0' [c:/projets/formatio
 	Parameter C_GEN_ACHROMA_EN bound to: 0 - type: integer 
 	Parameter C_GEN_FIELDID_EN bound to: 0 - type: integer 
 	Parameter C_DET_FIELDID_EN bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'v_tc' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/111e/hdl/v_tc_v6_2_vh_rfs.vhd:7218' bound to instance 'U0' of component 'v_tc' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/synth/design_1_v_tc_0_0.vhd:234]
-INFO: [Synth 8-256] done synthesizing module 'design_1_v_tc_0_0' (41#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/synth/design_1_v_tc_0_0.vhd:74]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_1_0' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_0' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:268]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_0' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized0' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-3491] module 'v_tc' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/111e/hdl/v_tc_v6_2_vh_rfs.vhd:7218' bound to instance 'U0' of component 'v_tc' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/synth/design_1_v_tc_0_0.vhd:234]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_tc_0_0' (41#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/synth/design_1_v_tc_0_0.vhd:74]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_1_0' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_0' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:268]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_0' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized0' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 1 - type: integer 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized0' (41#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_0' (42#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlslice_0_0' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57' bound to instance 'xlslice_1' of component 'design_1_xlslice_0_0' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:272]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized0' (41#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_0' (42#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_0' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57' bound to instance 'xlslice_1' of component 'design_1_xlslice_0_0' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:272]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 8 - type: integer 
 	Parameter DIN_FROM bound to: 7 - type: integer 
 	Parameter DIN_TO bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (43#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (44#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (43#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (44#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-256] done synthesizing module 'video_ctrl_imp_JPOEXX' (45#1) [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:102]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_0' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:469]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized1' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-256] done synthesizing module 'video_ctrl_imp_JPOEXX' (45#1) [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:102]
+INFO: [Synth 8-3491] module 'design_1_xlconcat_0_1' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_1/synth/design_1_xlconcat_0_1.v:58' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_1' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:480]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_1' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_1/synth/design_1_xlconcat_0_1.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterized0' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 2 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterized0' (45#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_1' (46#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_1/synth/design_1_xlconcat_0_1.v:58]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_0' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:486]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized1' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 0 - type: integer 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized1' (45#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (46#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_1_1' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_1/synth/design_1_xlconstant_1_1.v:57' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_1' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:473]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_1' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_1/synth/design_1_xlconstant_1_1.v:57]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized2' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized1' (46#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (47#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_1_1' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_1/synth/design_1_xlconstant_1_1.v:57' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_1' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:490]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_1' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_1/synth/design_1_xlconstant_1_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized2' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 640 - type: integer 
 	Parameter CONST_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized2' (46#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_1' (47#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_1/synth/design_1_xlconstant_1_1.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_1_2' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_2/synth/design_1_xlconstant_1_2.v:57' bound to instance 'xlconstant_2' of component 'design_1_xlconstant_1_2' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:477]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_2' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_2/synth/design_1_xlconstant_1_2.v:57]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized3' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized2' (47#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_1' (48#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_1/synth/design_1_xlconstant_1_1.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_1_2' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_2/synth/design_1_xlconstant_1_2.v:57' bound to instance 'xlconstant_2' of component 'design_1_xlconstant_1_2' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:494]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_2' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_2/synth/design_1_xlconstant_1_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized3' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 480 - type: integer 
 	Parameter CONST_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized3' (47#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_2' (48#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_2/synth/design_1_xlconstant_1_2.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_3_0' declared at 'c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/synth/design_1_xlconstant_3_0.v:57' bound to instance 'xlconstant_3' of component 'design_1_xlconstant_3_0' [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:481]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_3_0' [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/synth/design_1_xlconstant_3_0.v:57]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_3_0' (49#1) [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/synth/design_1_xlconstant_3_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized3' (48#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_2' (49#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_2/synth/design_1_xlconstant_1_2.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_3_0' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/synth/design_1_xlconstant_3_0.v:57' bound to instance 'xlconstant_3' of component 'design_1_xlconstant_3_0' [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:498]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_3_0' [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/synth/design_1_xlconstant_3_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_3_0' (50#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/synth/design_1_xlconstant_3_0.v:57]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-256] done synthesizing module 'design_1' (50#1) [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:306]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (51#1) [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/synth/design_1.vhd:307]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (51#1) [C:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (52#1) [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:35]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In2[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat__parameterized0 has unconnected port In31[0]
 WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[3]
 WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[2]
 WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[1]
@@ -742,39 +811,9 @@ WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1active_st
 WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1active_start[8]
 WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1active_start[7]
 WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1active_start[6]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1active_start[5]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1active_start[4]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1active_start[3]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1active_start[2]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1active_start[1]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1active_start[0]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1chroma_start[11]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1chroma_start[10]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1chroma_start[9]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1chroma_start[8]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1chroma_start[7]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1chroma_start[6]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1chroma_start[5]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1chroma_start[4]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1chroma_start[3]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1chroma_start[2]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1chroma_start[1]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1chroma_start[0]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1fp_start_hori[11]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1fp_start_hori[10]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1fp_start_hori[9]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1fp_start_hori[8]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1fp_start_hori[7]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1fp_start_hori[6]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1fp_start_hori[5]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1fp_start_hori[4]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1fp_start_hori[3]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1fp_start_hori[2]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1fp_start_hori[1]
-WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1fp_start_hori[0]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1080.230 ; gain = 321.266
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 963.805 ; gain = 320.977
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -787,130 +826,125 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1080.230 ; gain = 321.266
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 967.203 ; gain = 324.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1080.230 ; gain = 321.266
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 967.203 ; gain = 324.375
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1080.230 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 979.129 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-Finished Parsing XDC File [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-Parsing XDC File [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-Finished Parsing XDC File [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Parsing XDC File [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-Parsing XDC File [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc]
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:17]
+Parsing XDC File [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_PWDN'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:22]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_RESET'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:23]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[*]'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:19]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_D[0]'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:24]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_PWDN'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_D[1]'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:25]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_RESET'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_D[2]'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:26]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_D[0]'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_D[3]'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:27]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_D[1]'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_D[4]'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:28]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_D[2]'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_D[5]'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:29]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_D[3]'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_D[6]'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:31]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_D[4]'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_D[7]'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:32]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_D[5]'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:28]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_XCLK'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:33]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_D[6]'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:30]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_PCLK'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:34]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_D[7]'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:31]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_HREF'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:35]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_XCLK'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:32]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_VSYNC'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:36]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_PCLK'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:33]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_SIOD'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:37]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_HREF'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:34]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_SIOC'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:38]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_VSYNC'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:35]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:51]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_SIOD'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:36]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:56]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_SIOC'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:37]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'btnl'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:57]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_PCLK'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:61]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:55]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_SIOC'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:62]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_PCLK'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:60]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_VSYNC'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:63]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_SIOC'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:61]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_RESET'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:64]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_VSYNC'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:62]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_PWDN'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:65]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_RESET'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:63]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_HREF'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:66]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_PWDN'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:64]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_XCLK'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:67]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_HREF'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:65]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_SIOD'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:68]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_XCLK'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:66]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_D[*]'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:69]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_SIOD'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:67]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'OV7670_PCLK_IBUF'. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc:78]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'OV7670_D[*]'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:68]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:68]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'OV7670_PCLK_IBUF'. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:77]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc:77]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/projets/formation_hls/video_vga_7511_zed/zed_board.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/constrs_1/imports/tp1_p2/zed_board.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/projets/formation_hls/tp1_p2/tp1_p2.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/projets/formation_hls/tp1_p2/tp1_p2.runs/synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/projets/formation_hls/tp1_p2/tp1_p2.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Parsing XDC File [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc] for cell 'design_1_i/video_ctrl/v_tc_0/U0'
-Finished Parsing XDC File [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc] for cell 'design_1_i/video_ctrl/v_tc_0/U0'
-Parsing XDC File [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'design_1_i/video_ctrl/v_axi4s_vid_out_0/inst'
-Finished Parsing XDC File [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'design_1_i/video_ctrl/v_axi4s_vid_out_0/inst'
+Parsing XDC File [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc] for cell 'design_1_i/video_ctrl/v_tc_0/U0'
+Finished Parsing XDC File [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc] for cell 'design_1_i/video_ctrl/v_tc_0/U0'
+Parsing XDC File [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'design_1_i/video_ctrl/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'design_1_i/video_ctrl/v_axi4s_vid_out_0/inst'
 Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/video_ctrl/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/video_ctrl/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
 Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/video_ctrl/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
@@ -937,27 +971,27 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1212.480 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1100.930 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1212.480 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1100.930 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1212.480 ; gain = 453.516
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1100.930 ; gain = 458.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1212.480 ; gain = 453.516
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1100.930 ; gain = 458.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0/inst. (constraint file  C:/projets/formation_hls/tp1_p2/tp1_p2.runs/synth_1/dont_touch.xdc, line 52).
-Applied set_property DONT_TOUCH = true for design_1_i/video_ctrl/v_tc_0/U0. (constraint file  C:/projets/formation_hls/tp1_p2/tp1_p2.runs/synth_1/dont_touch.xdc, line 60).
-Applied set_property DONT_TOUCH = true for design_1_i/video_ctrl/v_axi4s_vid_out_0/inst. (constraint file  C:/projets/formation_hls/tp1_p2/tp1_p2.runs/synth_1/dont_touch.xdc, line 63).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0/inst. (constraint file  C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.runs/synth_1/dont_touch.xdc, line 55).
+Applied set_property DONT_TOUCH = true for design_1_i/video_ctrl/v_tc_0/U0. (constraint file  C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.runs/synth_1/dont_touch.xdc, line 63).
+Applied set_property DONT_TOUCH = true for design_1_i/video_ctrl/v_axi4s_vid_out_0/inst. (constraint file  C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.runs/synth_1/dont_touch.xdc, line 66).
 Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_0. (constraint file  auto generated constraint, line ).
@@ -968,11 +1002,12 @@ Applied set_property DONT_TOUCH = true for design_1_i/video_ctrl/v_axi4s_vid_out
 Applied set_property DONT_TOUCH = true for design_1_i/video_ctrl/adv_7511/i2c_sender_adv7511_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/video_ctrl/adv_7511/xlconcat_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/video_ctrl/adv_7511/xlconstant_5. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/mire_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/util_vector_logic_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mire_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/video_ctrl/v_axi4s_vid_out_0/inst/COUPLER_INST/\generate_async_fifo.FIFO_INST /XPM_FIFO_ASYNC_INST/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/video_ctrl/v_axi4s_vid_out_0/inst/COUPLER_INST/\generate_async_fifo.FIFO_INST /XPM_FIFO_ASYNC_INST/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/video_ctrl/v_axi4s_vid_out_0/inst/COUPLER_INST/\generate_async_fifo.FIFO_INST /XPM_FIFO_ASYNC_INST/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint, line ).
@@ -983,9 +1018,12 @@ Applied set_property DONT_TOUCH = true for design_1_i/video_ctrl/v_axi4s_vid_out
 Applied set_property DONT_TOUCH = true for design_1_i/video_ctrl/v_axi4s_vid_out_0/inst/COUPLER_INST/\generate_async_fifo.FIFO_INST /XPM_FIFO_ASYNC_INST/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/video_ctrl/v_axi4s_vid_out_0/inst/COUPLER_INST/\generate_async_fifo.FIFO_INST /XPM_FIFO_ASYNC_INST. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1212.480 ; gain = 453.516
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1100.930 ; gain = 458.102
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln35_reg_450_reg' and it is trimmed from '63' to '36' bits. [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:473]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln29_reg_455_reg' and it is trimmed from '63' to '36' bits. [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:465]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:700]
 INFO: [Synth 8-5546] ROM "reg_value_pairs" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
 INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
@@ -1044,7 +1082,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_r
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'v_axi4s_vid_out_v4_0_10_sync'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1212.480 ; gain = 453.516
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1100.930 ; gain = 458.102
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'design_1_i/mire_0/U0/regslice_both_m_axis_video_V_keep_V_U' (regslice_both__parameterized1) to 'design_1_i/mire_0/U0/regslice_both_m_axis_video_V_strb_V_U'
 INFO: [Synth 8-223] decloning instance 'design_1_i/mire_0/U0/regslice_both_m_axis_video_V_keep_V_U' (regslice_both__parameterized1) to 'design_1_i/mire_0/U0/regslice_both_m_axis_video_V_id_V_U'
@@ -1060,8 +1098,9 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     36 Bit       Adders := 1     
 	   2 Input     32 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 1     
 	   2 Input     23 Bit       Adders := 1     
 	   2 Input     12 Bit       Adders := 3     
 	   4 Input     11 Bit       Adders := 3     
@@ -1075,34 +1114,37 @@ Detailed RTL Component Info :
 +---XORs : 
 	   2 Input     11 Bit         XORs := 2     
 	   2 Input     10 Bit         XORs := 2     
-	   2 Input      1 Bit         XORs := 44    
+	   2 Input      1 Bit         XORs := 45    
 +---Registers : 
 	               64 Bit    Registers := 1     
+	               36 Bit    Registers := 3     
 	               32 Bit    Registers := 3     
-	               31 Bit    Registers := 2     
+	               31 Bit    Registers := 3     
 	               29 Bit    Registers := 5     
 	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 2     
 	               17 Bit    Registers := 1     
 	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
 	               13 Bit    Registers := 2     
 	               12 Bit    Registers := 17    
 	               11 Bit    Registers := 21    
 	               10 Bit    Registers := 16    
 	                9 Bit    Registers := 2     
-	                8 Bit    Registers := 6     
+	                8 Bit    Registers := 7     
 	                7 Bit    Registers := 1     
 	                4 Bit    Registers := 7     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 13    
-	                1 Bit    Registers := 76    
+	                1 Bit    Registers := 82    
 +---Multipliers : 
 	                32x32  Multipliers := 1     
+	                31x32  Multipliers := 1     
 +---RAMs : 
 	              11K Bit         RAMs := 1     
 +---Muxes : 
 	  13 Input     32 Bit        Muxes := 1     
 	   2 Input     32 Bit        Muxes := 8     
-	   2 Input     31 Bit        Muxes := 1     
 	   2 Input     29 Bit        Muxes := 19    
 	   4 Input     29 Bit        Muxes := 1     
 	   6 Input     29 Bit        Muxes := 1     
@@ -1114,7 +1156,7 @@ Detailed RTL Component Info :
 	   2 Input     12 Bit        Muxes := 16    
 	   3 Input     12 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 9     
+	   2 Input      8 Bit        Muxes := 14    
 	   6 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 8     
 	  13 Input      4 Bit        Muxes := 1     
@@ -1124,7 +1166,7 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 42    
 	   4 Input      2 Bit        Muxes := 11    
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 99    
+	   2 Input      1 Bit        Muxes := 102   
 	   3 Input      1 Bit        Muxes := 2     
 	   6 Input      1 Bit        Muxes := 2     
 	   5 Input      1 Bit        Muxes := 4     
@@ -1181,23 +1223,30 @@ Detailed RTL Component Info :
 Module mire 
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     36 Bit       Adders := 1     
 	   2 Input     32 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
 	               64 Bit    Registers := 1     
+	               36 Bit    Registers := 3     
 	               32 Bit    Registers := 1     
-	               31 Bit    Registers := 2     
-	                8 Bit    Registers := 1     
+	               31 Bit    Registers := 3     
+	               18 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 7     
+	                1 Bit    Registers := 13    
 +---Multipliers : 
 	                32x32  Multipliers := 1     
+	                31x32  Multipliers := 1     
 +---Muxes : 
-	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
 	   5 Input      3 Bit        Muxes := 1     
 	   3 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
 Module i2c_sender_adv7511 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -1393,87 +1442,172 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/projets/formation_hls/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/4e39/hdl/vhdl/mire.vhd:524]
-DSP Report: Generating DSP U0/bound_fu_152_p2, operation Mode is: A*B.
-DSP Report: operator U0/bound_fu_152_p2 is absorbed into DSP U0/bound_fu_152_p2.
-DSP Report: operator U0/bound_fu_152_p2 is absorbed into DSP U0/bound_fu_152_p2.
-DSP Report: Generating DSP U0/bound_reg_257_reg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: register U0/bound_reg_257_reg is absorbed into DSP U0/bound_reg_257_reg.
-DSP Report: operator U0/bound_fu_152_p2 is absorbed into DSP U0/bound_reg_257_reg.
-DSP Report: operator U0/bound_fu_152_p2 is absorbed into DSP U0/bound_reg_257_reg.
-DSP Report: Generating DSP U0/bound_fu_152_p2, operation Mode is: A*B.
-DSP Report: operator U0/bound_fu_152_p2 is absorbed into DSP U0/bound_fu_152_p2.
-DSP Report: operator U0/bound_fu_152_p2 is absorbed into DSP U0/bound_fu_152_p2.
-DSP Report: Generating DSP U0/bound_reg_257_reg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: register U0/bound_reg_257_reg is absorbed into DSP U0/bound_reg_257_reg.
-DSP Report: operator U0/bound_fu_152_p2 is absorbed into DSP U0/bound_reg_257_reg.
-DSP Report: operator U0/bound_fu_152_p2 is absorbed into DSP U0/bound_reg_257_reg.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:667]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:697]
+WARNING: [Synth 8-6014] Unused sequential element U0/tmp_reg_434_reg was removed.  [c:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.srcs/sources_1/bd/design_1/ipshared/e52e/hdl/vhdl/mire.vhd:498]
+DSP Report: Generating DSP U0/bound_fu_202_p2, operation Mode is: A*B.
+DSP Report: operator U0/bound_fu_202_p2 is absorbed into DSP U0/bound_fu_202_p2.
+DSP Report: operator U0/bound_fu_202_p2 is absorbed into DSP U0/bound_fu_202_p2.
+DSP Report: Generating DSP U0/bound_reg_394_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register U0/bound_reg_394_reg is absorbed into DSP U0/bound_reg_394_reg.
+DSP Report: operator U0/bound_fu_202_p2 is absorbed into DSP U0/bound_reg_394_reg.
+DSP Report: operator U0/bound_fu_202_p2 is absorbed into DSP U0/bound_reg_394_reg.
+DSP Report: Generating DSP U0/bound_fu_202_p2, operation Mode is: A*B.
+DSP Report: operator U0/bound_fu_202_p2 is absorbed into DSP U0/bound_fu_202_p2.
+DSP Report: operator U0/bound_fu_202_p2 is absorbed into DSP U0/bound_fu_202_p2.
+DSP Report: Generating DSP U0/bound_reg_394_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register U0/bound_reg_394_reg is absorbed into DSP U0/bound_reg_394_reg.
+DSP Report: operator U0/bound_fu_202_p2 is absorbed into DSP U0/bound_reg_394_reg.
+DSP Report: operator U0/bound_fu_202_p2 is absorbed into DSP U0/bound_reg_394_reg.
+DSP Report: Generating DSP U0/mul_ln29_fu_317_p2, operation Mode is: A2*(B:0x6666).
+DSP Report: register U0/mul_ln29_fu_317_p2 is absorbed into DSP U0/mul_ln29_fu_317_p2.
+DSP Report: operator U0/mul_ln29_fu_317_p2 is absorbed into DSP U0/mul_ln29_fu_317_p2.
+DSP Report: operator U0/mul_ln29_fu_317_p2 is absorbed into DSP U0/mul_ln29_fu_317_p2.
+DSP Report: Generating DSP U0/mul_ln29_fu_317_p2, operation Mode is: A2*(B:0xcccd).
+DSP Report: register U0/mul_ln29_fu_317_p2 is absorbed into DSP U0/mul_ln29_fu_317_p2.
+DSP Report: operator U0/mul_ln29_fu_317_p2 is absorbed into DSP U0/mul_ln29_fu_317_p2.
+DSP Report: operator U0/mul_ln29_fu_317_p2 is absorbed into DSP U0/mul_ln29_fu_317_p2.
+DSP Report: Generating DSP U0/mul_ln29_fu_317_p2, operation Mode is: (PCIN>>17)+(A:0xcccd)*B2.
+DSP Report: register U0/mul_ln29_fu_317_p2 is absorbed into DSP U0/mul_ln29_fu_317_p2.
+DSP Report: operator U0/mul_ln29_fu_317_p2 is absorbed into DSP U0/mul_ln29_fu_317_p2.
+DSP Report: operator U0/mul_ln29_fu_317_p2 is absorbed into DSP U0/mul_ln29_fu_317_p2.
+DSP Report: Generating DSP U0/mul_ln12_fu_268_p2, operation Mode is: (A:0xcccd)*B2.
+DSP Report: register U0/select_ln12_1_reg_416_reg is absorbed into DSP U0/mul_ln12_fu_268_p2.
+DSP Report: operator U0/mul_ln12_fu_268_p2 is absorbed into DSP U0/mul_ln12_fu_268_p2.
+DSP Report: operator U0/mul_ln12_fu_268_p2 is absorbed into DSP U0/mul_ln12_fu_268_p2.
+DSP Report: Generating DSP U0/tmp_reg_434_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register U0/select_ln12_1_reg_416_reg is absorbed into DSP U0/tmp_reg_434_reg.
+DSP Report: register U0/tmp_reg_434_reg is absorbed into DSP U0/tmp_reg_434_reg.
+DSP Report: operator U0/mul_ln12_fu_268_p2 is absorbed into DSP U0/tmp_reg_434_reg.
+DSP Report: operator U0/mul_ln12_fu_268_p2 is absorbed into DSP U0/tmp_reg_434_reg.
+DSP Report: Generating DSP U0/mul_ln12_fu_268_p2, operation Mode is: A2*(B:0xcccd).
+DSP Report: register U0/mul_ln12_fu_268_p2 is absorbed into DSP U0/mul_ln12_fu_268_p2.
+DSP Report: operator U0/mul_ln12_fu_268_p2 is absorbed into DSP U0/mul_ln12_fu_268_p2.
+DSP Report: operator U0/mul_ln12_fu_268_p2 is absorbed into DSP U0/mul_ln12_fu_268_p2.
+DSP Report: Generating DSP U0/tmp_reg_434_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register U0/tmp_reg_434_reg is absorbed into DSP U0/tmp_reg_434_reg.
+DSP Report: register U0/tmp_reg_434_reg is absorbed into DSP U0/tmp_reg_434_reg.
+DSP Report: operator U0/mul_ln12_fu_268_p2 is absorbed into DSP U0/tmp_reg_434_reg.
+DSP Report: operator U0/mul_ln12_fu_268_p2 is absorbed into DSP U0/tmp_reg_434_reg.
 INFO: [Synth 8-5784] Optimized 1 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 11 bits, new ram width 10 bits.
 INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/\video_ctrl/v_axi4s_vid_out_0 /inst/\COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst /i_2/\gen_rd_b.gen_doutb_pipe.doutb_pipe_reg[0][10] )
+INFO: [Synth 8-3886] merging instance 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[17]' (FDE) to 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[-1111111111]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[-1111111110]' (FDE) to 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[18]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[-1111111109]' (FDE) to 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[19]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[-1111111108]' (FDE) to 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[20]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[-1111111107]' (FDE) to 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[21]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[-1111111106]' (FDE) to 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[22]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[-1111111105]' (FDE) to 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[23]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[-1111111104]' (FDE) to 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[24]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[-1111111103]' (FDE) to 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[25]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[-1111111102]' (FDE) to 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[26]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[-1111111101]' (FDE) to 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[27]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[-1111111100]' (FDE) to 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[28]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[-1111111099]' (FDE) to 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[29]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[-1111111098]' (FDE) to 'design_1_i/mire_0/U0/select_ln12_reg_408_reg[30]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/mire_0/\U0/regslice_both_m_axis_video_V_keep_V_U/ibuf_inst/ireg_reg[0] )
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[47]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[46]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[45]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[44]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[43]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[42]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[41]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[40]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[39]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[38]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[37]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[36]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[35]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[34]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[33]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[32]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[31]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[30]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[29]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[28]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[27]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[26]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[25]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[24]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[23]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[22]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[21]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[20]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[19]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[18]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[17]) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[47]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[46]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[45]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[44]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[43]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[42]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[41]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[40]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[39]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[38]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[37]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[36]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[35]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[34]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[33]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[32]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[31]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[30]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[29]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[28]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[27]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[26]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[25]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[24]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[23]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[22]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[21]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[20]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[19]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[18]__0) is unused and will be removed from module design_1_mire_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/bound_reg_257_reg[17]__0) is unused and will be removed from module design_1_mire_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[47]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[46]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[45]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[44]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[43]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[42]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[41]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[40]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[39]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[38]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[37]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[36]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[35]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[34]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[33]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[32]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[31]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[30]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[29]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[28]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[27]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[26]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[25]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[24]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[23]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[22]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[21]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[20]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[19]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[18]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[17]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[47]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[46]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[45]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[44]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[43]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[42]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[41]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[40]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[39]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[38]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[37]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[36]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[35]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[34]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[33]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[32]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[31]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[30]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[29]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[28]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[27]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[26]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[25]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[24]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[23]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[22]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[21]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[20]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[19]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[18]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/bound_reg_394_reg[17]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[47]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[46]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[45]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[44]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[43]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[42]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[41]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[40]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[39]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[38]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[37]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[36]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[35]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[34]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[33]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[32]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[31]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[30]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[29]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[28]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[27]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[26]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[25]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[24]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[23]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[22]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[21]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[20]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[19]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[18]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[17]) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[47]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[46]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[45]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[44]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[43]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[42]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/tmp_reg_434_reg[41]__0) is unused and will be removed from module design_1_mire_0_1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/\video_ctrl/adv_7511/i2c_sender_adv7511_0 /\U0/tristate_sr_reg[0] )
 INFO: [Synth 8-3886] merging instance 'design_1_i/video_ctrl/v_axi4s_vid_out_0/inst/SYNC_INST/status_reg_reg[15]' (FDRE) to 'design_1_i/video_ctrl/v_axi4s_vid_out_0/inst/SYNC_INST/status_reg_reg[31]'
 INFO: [Synth 8-3886] merging instance 'design_1_i/video_ctrl/v_axi4s_vid_out_0/inst/SYNC_INST/status_reg_reg[26]' (FDRE) to 'design_1_i/video_ctrl/v_axi4s_vid_out_0/inst/SYNC_INST/status_reg_reg[31]'
@@ -1579,11 +1713,9 @@ INFO: [Synth 8-3886] merging instance 'design_1_i/video_ctrl/adv_7511/i2c_sender
 INFO: [Synth 8-3886] merging instance 'design_1_i/video_ctrl/adv_7511/i2c_sender_adv7511_0/U0/clk_first_quarter_reg[22]' (FDE) to 'design_1_i/video_ctrl/adv_7511/i2c_sender_adv7511_0/U0/clk_last_quarter_reg[23]'
 INFO: [Synth 8-3886] merging instance 'design_1_i/video_ctrl/adv_7511/i2c_sender_adv7511_0/U0/clk_first_quarter_reg[23]' (FDE) to 'design_1_i/video_ctrl/adv_7511/i2c_sender_adv7511_0/U0/clk_last_quarter_reg[24]'
 INFO: [Synth 8-3886] merging instance 'design_1_i/video_ctrl/adv_7511/i2c_sender_adv7511_0/U0/clk_first_quarter_reg[24]' (FDE) to 'design_1_i/video_ctrl/adv_7511/i2c_sender_adv7511_0/U0/clk_last_quarter_reg[25]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/video_ctrl/adv_7511/i2c_sender_adv7511_0/U0/clk_first_quarter_reg[25]' (FDE) to 'design_1_i/video_ctrl/adv_7511/i2c_sender_adv7511_0/U0/clk_last_quarter_reg[26]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/video_ctrl/adv_7511/i2c_sender_adv7511_0/U0/clk_first_quarter_reg[26]' (FDE) to 'design_1_i/video_ctrl/adv_7511/i2c_sender_adv7511_0/U0/clk_last_quarter_reg[27]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/video_ctrl/adv_7511/i2c_sender_adv7511_0/U0/clk_first_quarter_reg[27]' (FDE) to 'design_1_i/video_ctrl/adv_7511/i2c_sender_adv7511_0/U0/clk_last_quarter_reg[28]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1212.480 ; gain = 453.516
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1100.930 ; gain = 458.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1599,14 +1731,21 @@ Block RAM: Preliminary Mapping	Report (see note below)
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
 
 DSP: Preliminary Mapping	Report (see note below)
-+------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name       | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|design_1_mire_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mire_0_0 | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
-|design_1_mire_0_0 | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mire_0_0 | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
-+------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping              | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|design_1_mire_0_1 | A*B                      | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_mire_0_1 | (PCIN>>17)+A*B           | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|design_1_mire_0_1 | A*B                      | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_mire_0_1 | (PCIN>>17)+A*B           | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|design_1_mire_0_1 | A2*(B:0x6666)            | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_mire_0_1 | A2*(B:0xcccd)            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_mire_0_1 | (PCIN>>17)+(A:0xcccd)*B2 | 17     | 15     | -      | -      | 19     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|design_1_mire_0_1 | (A:0xcccd)*B2            | 15     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_mire_0_1 | (PCIN>>17)+A*B2          | 16     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|design_1_mire_0_1 | A2*(B:0xcccd)            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_mire_0_1 | (PCIN>>17)+A2*B          | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
++------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -1622,13 +1761,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1212.480 ; gain = 453.516
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1113.617 ; gain = 470.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1239.883 ; gain = 480.918
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1144.855 ; gain = 502.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1654,7 +1793,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1242.957 ; gain = 483.992
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1150.770 ; gain = 507.941
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1680,13 +1819,13 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3295] tying undriven pin CDC_SINGLE_REMAP_UNDERFLOW_INST/xpm_cdc_single_inst:src_in to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1248.750 ; gain = 489.785
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1155.570 ; gain = 512.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1248.750 ; gain = 489.785
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1155.570 ; gain = 512.742
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1705,25 +1844,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1248.750 ; gain = 489.785
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1155.570 ; gain = 512.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1248.750 ; gain = 489.785
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1155.570 ; gain = 512.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1248.750 ; gain = 489.785
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1155.570 ; gain = 512.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1248.750 ; gain = 489.785
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1155.570 ; gain = 512.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1757,38 +1896,42 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     4|
-|2     |CARRY4     |   157|
+|2     |CARRY4     |   165|
 |3     |DSP48E1    |     2|
 |4     |DSP48E1_1  |     2|
-|5     |LUT1       |    98|
-|6     |LUT2       |   297|
-|7     |LUT3       |    94|
-|8     |LUT4       |   114|
-|9     |LUT5       |   145|
-|10    |LUT6       |   263|
-|11    |MMCME2_ADV |     1|
-|12    |RAMB18E1_1 |     1|
-|13    |SRL16E     |     5|
-|14    |FDRE       |  1120|
-|15    |FDSE       |    93|
-|16    |IBUF       |     3|
-|17    |OBUF       |    35|
-|18    |OBUFT      |     1|
+|5     |DSP48E1_2  |     4|
+|6     |DSP48E1_3  |     1|
+|7     |DSP48E1_4  |     1|
+|8     |DSP48E1_5  |     1|
+|9     |LUT1       |    97|
+|10    |LUT2       |   360|
+|11    |LUT3       |    83|
+|12    |LUT4       |   133|
+|13    |LUT5       |   164|
+|14    |LUT6       |   251|
+|15    |MMCME2_ADV |     1|
+|16    |RAMB18E1_1 |     1|
+|17    |SRL16E     |     5|
+|18    |FDRE       |  1177|
+|19    |FDSE       |    93|
+|20    |IBUF       |     4|
+|21    |OBUF       |    35|
+|22    |OBUFT      |     1|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+-------------------------------------------------------+----------------------------------------------+------+
 |      |Instance                                               |Module                                        |Cells |
 +------+-------------------------------------------------------+----------------------------------------------+------+
-|1     |top                                                    |                                              |  2435|
-|2     |  design_1_i                                           |design_1                                      |  2396|
+|1     |top                                                    |                                              |  2585|
+|2     |  design_1_i                                           |design_1                                      |  2545|
 |3     |    clk_wiz_0                                          |design_1_clk_wiz_0_0                          |     6|
 |4     |      inst                                             |design_1_clk_wiz_0_0_clk_wiz                  |     6|
-|5     |    mire_0                                             |design_1_mire_0_0                             |   685|
-|6     |      U0                                               |mire                                          |   685|
-|7     |        regslice_both_m_axis_video_V_data_V_U          |regslice_both                                 |    58|
-|8     |          ibuf_inst                                    |xil_defaultlib_ibuf                           |    40|
-|9     |          obuf_inst                                    |xil_defaultlib_obuf                           |    12|
+|5     |    mire_0                                             |design_1_mire_0_1                             |   834|
+|6     |      U0                                               |mire                                          |   834|
+|7     |        regslice_both_m_axis_video_V_data_V_U          |regslice_both                                 |    75|
+|8     |          ibuf_inst                                    |xil_defaultlib_ibuf                           |    52|
+|9     |          obuf_inst                                    |xil_defaultlib_obuf                           |    19|
 |10    |        regslice_both_m_axis_video_V_last_V_U          |regslice_both__parameterized1                 |     9|
 |11    |          ibuf_inst                                    |xil_defaultlib_ibuf__parameterized0_5         |     4|
 |12    |          obuf_inst                                    |xil_defaultlib_obuf__parameterized0_6         |     5|
@@ -1796,78 +1939,79 @@ Report Instance Areas:
 |14    |          ibuf_inst                                    |xil_defaultlib_ibuf__parameterized0           |     4|
 |15    |          obuf_inst                                    |xil_defaultlib_obuf__parameterized0           |     5|
 |16    |    util_vector_logic_0                                |design_1_util_vector_logic_0_0                |     1|
-|17    |    xlconstant_0                                       |design_1_xlconstant_0_0                       |     0|
-|18    |    xlconstant_1                                       |design_1_xlconstant_1_1                       |     0|
-|19    |    xlconstant_2                                       |design_1_xlconstant_1_2                       |     0|
-|20    |    xlconstant_3                                       |design_1_xlconstant_3_0                       |     0|
-|21    |    video_ctrl                                         |video_ctrl_imp_JPOEXX                         |  1704|
-|22    |      v_axi4s_vid_out_0                                |design_1_v_axi4s_vid_out_0_0                  |  1001|
-|23    |        inst                                           |v_axi4s_vid_out_v4_0_10                       |  1001|
-|24    |          CDC_SINGLE_LOCKED_INST                       |v_axi4s_vid_out_v4_0_10_cdc_single            |     4|
-|25    |            xpm_cdc_single_inst                        |xpm_cdc_single                                |     4|
-|26    |          CDC_SINGLE_REMAP_UNDERFLOW_INST              |v_axi4s_vid_out_v4_0_10_cdc_single__xdcDup__1 |     4|
-|27    |            xpm_cdc_single_inst                        |xpm_cdc_single__2                             |     4|
-|28    |          COUPLER_INST                                 |v_axi4s_vid_out_v4_0_10_coupler               |   665|
-|29    |            \generate_async_fifo.FIFO_INST             |v_axi4s_vid_out_v4_0_10_fifo_async            |   663|
-|30    |              XPM_FIFO_ASYNC_INST                      |xpm_fifo_async                                |   657|
-|31    |                \gnuram_async_fifo.xpm_fifo_base_inst  |xpm_fifo_base                                 |   657|
-|32    |                  \gen_sdpram.xpm_memory_base_inst     |xpm_memory_base                               |     1|
-|33    |                  \gen_cdc_pntr.wr_pntr_cdc_inst       |xpm_cdc_gray__2                               |    68|
-|34    |                  \gen_cdc_pntr.wr_pntr_cdc_dc_inst    |xpm_cdc_gray__parameterized0                  |    97|
-|35    |                  \gen_cdc_pntr.rd_pntr_cdc_inst       |xpm_cdc_gray                                  |    68|
-|36    |                  \gen_cdc_pntr.rd_pntr_cdc_dc_inst    |xpm_cdc_gray__parameterized1                  |    75|
-|37    |                  \gen_cdc_pntr.rpw_gray_reg           |xpm_fifo_reg_vec                              |    19|
-|38    |                  \gen_cdc_pntr.rpw_gray_reg_dc        |xpm_fifo_reg_vec__parameterized0              |    11|
-|39    |                  \gen_cdc_pntr.wpr_gray_reg           |xpm_fifo_reg_vec_0                            |    22|
-|40    |                  \gen_cdc_pntr.wpr_gray_reg_dc        |xpm_fifo_reg_vec__parameterized0_1            |    22|
-|41    |                  \gen_fwft.rdpp1_inst                 |xpm_counter_updn                              |     8|
-|42    |                  rdp_inst                             |xpm_counter_updn__parameterized0              |    49|
-|43    |                  rdpp1_inst                           |xpm_counter_updn__parameterized1              |    24|
-|44    |                  rst_d1_inst                          |xpm_fifo_reg_bit                              |     4|
-|45    |                  wrp_inst                             |xpm_counter_updn__parameterized0_2            |    28|
-|46    |                  wrpp1_inst                           |xpm_counter_updn__parameterized1_3            |    36|
-|47    |                  wrpp2_inst                           |xpm_counter_updn__parameterized2              |    23|
-|48    |                  xpm_fifo_rst_inst                    |xpm_fifo_rst                                  |    44|
-|49    |                    \gen_rst_ic.wrst_rd_inst           |xpm_cdc_sync_rst__2                           |     4|
-|50    |                    \gen_rst_ic.rrst_wr_inst           |xpm_cdc_sync_rst                              |     4|
-|51    |          FORMATTER_INST                               |v_axi4s_vid_out_v4_0_10_formatter             |    22|
-|52    |          SYNC_INST                                    |v_axi4s_vid_out_v4_0_10_sync                  |   306|
-|53    |      v_tc_0                                           |design_1_v_tc_0_0                             |   386|
-|54    |        U0                                             |v_tc                                          |   386|
-|55    |          U_VIDEO_CTRL                                 |video_ctrl                                    |     0|
-|56    |          U_TC_TOP                                     |tc_top                                        |   384|
-|57    |            \GEN_GENERATOR.U_TC_GEN                    |tc_generator                                  |   357|
-|58    |      xlconstant_1                                     |design_1_xlconstant_1_0                       |     0|
-|59    |      xlslice_1                                        |design_1_xlslice_0_0                          |     0|
-|60    |      adv_7511                                         |adv_7511_imp_1KAVXTE                          |   317|
-|61    |        i2c_sender_adv7511_0                           |design_1_i2c_sender_adv7511_0_0               |   316|
-|62    |          U0                                           |i2c_sender_adv7511                            |   316|
-|63    |        xlconcat_0                                     |design_1_xlconcat_0_0                         |     0|
-|64    |        xlconstant_5                                   |design_1_xlconstant_5_0                       |     0|
+|17    |    xlconcat_0                                         |design_1_xlconcat_0_1                         |     0|
+|18    |    xlconstant_0                                       |design_1_xlconstant_0_0                       |     0|
+|19    |    xlconstant_1                                       |design_1_xlconstant_1_1                       |     0|
+|20    |    xlconstant_2                                       |design_1_xlconstant_1_2                       |     0|
+|21    |    xlconstant_3                                       |design_1_xlconstant_3_0                       |     0|
+|22    |    video_ctrl                                         |video_ctrl_imp_JPOEXX                         |  1704|
+|23    |      v_axi4s_vid_out_0                                |design_1_v_axi4s_vid_out_0_0                  |  1001|
+|24    |        inst                                           |v_axi4s_vid_out_v4_0_10                       |  1001|
+|25    |          CDC_SINGLE_LOCKED_INST                       |v_axi4s_vid_out_v4_0_10_cdc_single            |     4|
+|26    |            xpm_cdc_single_inst                        |xpm_cdc_single                                |     4|
+|27    |          CDC_SINGLE_REMAP_UNDERFLOW_INST              |v_axi4s_vid_out_v4_0_10_cdc_single__xdcDup__1 |     4|
+|28    |            xpm_cdc_single_inst                        |xpm_cdc_single__2                             |     4|
+|29    |          COUPLER_INST                                 |v_axi4s_vid_out_v4_0_10_coupler               |   665|
+|30    |            \generate_async_fifo.FIFO_INST             |v_axi4s_vid_out_v4_0_10_fifo_async            |   663|
+|31    |              XPM_FIFO_ASYNC_INST                      |xpm_fifo_async                                |   657|
+|32    |                \gnuram_async_fifo.xpm_fifo_base_inst  |xpm_fifo_base                                 |   657|
+|33    |                  \gen_sdpram.xpm_memory_base_inst     |xpm_memory_base                               |     1|
+|34    |                  \gen_cdc_pntr.wr_pntr_cdc_inst       |xpm_cdc_gray__2                               |    68|
+|35    |                  \gen_cdc_pntr.wr_pntr_cdc_dc_inst    |xpm_cdc_gray__parameterized0                  |    97|
+|36    |                  \gen_cdc_pntr.rd_pntr_cdc_inst       |xpm_cdc_gray                                  |    68|
+|37    |                  \gen_cdc_pntr.rd_pntr_cdc_dc_inst    |xpm_cdc_gray__parameterized1                  |    75|
+|38    |                  \gen_cdc_pntr.rpw_gray_reg           |xpm_fifo_reg_vec                              |    19|
+|39    |                  \gen_cdc_pntr.rpw_gray_reg_dc        |xpm_fifo_reg_vec__parameterized0              |    11|
+|40    |                  \gen_cdc_pntr.wpr_gray_reg           |xpm_fifo_reg_vec_0                            |    22|
+|41    |                  \gen_cdc_pntr.wpr_gray_reg_dc        |xpm_fifo_reg_vec__parameterized0_1            |    22|
+|42    |                  \gen_fwft.rdpp1_inst                 |xpm_counter_updn                              |     8|
+|43    |                  rdp_inst                             |xpm_counter_updn__parameterized0              |    49|
+|44    |                  rdpp1_inst                           |xpm_counter_updn__parameterized1              |    24|
+|45    |                  rst_d1_inst                          |xpm_fifo_reg_bit                              |     4|
+|46    |                  wrp_inst                             |xpm_counter_updn__parameterized0_2            |    28|
+|47    |                  wrpp1_inst                           |xpm_counter_updn__parameterized1_3            |    36|
+|48    |                  wrpp2_inst                           |xpm_counter_updn__parameterized2              |    23|
+|49    |                  xpm_fifo_rst_inst                    |xpm_fifo_rst                                  |    44|
+|50    |                    \gen_rst_ic.wrst_rd_inst           |xpm_cdc_sync_rst__2                           |     4|
+|51    |                    \gen_rst_ic.rrst_wr_inst           |xpm_cdc_sync_rst                              |     4|
+|52    |          FORMATTER_INST                               |v_axi4s_vid_out_v4_0_10_formatter             |    22|
+|53    |          SYNC_INST                                    |v_axi4s_vid_out_v4_0_10_sync                  |   306|
+|54    |      v_tc_0                                           |design_1_v_tc_0_0                             |   386|
+|55    |        U0                                             |v_tc                                          |   386|
+|56    |          U_VIDEO_CTRL                                 |video_ctrl                                    |     0|
+|57    |          U_TC_TOP                                     |tc_top                                        |   384|
+|58    |            \GEN_GENERATOR.U_TC_GEN                    |tc_generator                                  |   357|
+|59    |      xlconstant_1                                     |design_1_xlconstant_1_0                       |     0|
+|60    |      xlslice_1                                        |design_1_xlslice_0_0                          |     0|
+|61    |      adv_7511                                         |adv_7511_imp_1KAVXTE                          |   317|
+|62    |        i2c_sender_adv7511_0                           |design_1_i2c_sender_adv7511_0_0               |   316|
+|63    |          U0                                           |i2c_sender_adv7511                            |   316|
+|64    |        xlconcat_0                                     |design_1_xlconcat_0_0                         |     0|
+|65    |        xlconstant_5                                   |design_1_xlconstant_5_0                       |     0|
 +------+-------------------------------------------------------+----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1248.750 ; gain = 489.785
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1155.570 ; gain = 512.742
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1798 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:46 . Memory (MB): peak = 1248.750 ; gain = 357.535
-Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1248.750 ; gain = 489.785
+Synthesis finished with 0 errors, 0 critical warnings and 1801 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:52 . Memory (MB): peak = 1155.570 ; gain = 379.016
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1155.570 ; gain = 512.742
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1248.750 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 163 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1155.570 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 178 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1256.828 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1164.637 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-405 Infos, 145 Warnings, 31 Critical Warnings and 0 Errors encountered.
+463 Infos, 147 Warnings, 29 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 1256.828 ; gain = 799.727
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1256.828 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1164.637 ; gain = 830.324
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1164.637 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/projets/formation_hls/tp1_p2/tp1_p2.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Oct  3 15:48:53 2023...
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  4 14:39:48 2023...

@@ -34437,7 +34437,7 @@ _ssdm_op_SpecDataflowPipeline(-1, 0, "");
 
 typedef hls::stream<ap_axiu<8,1,1,1> > AXI_STREAM;
 
-void mire(ap_uint<1> mode,AXI_STREAM& m_axis_video, int hsize_in, int vsize_in)
+void mire(ap_uint<2> mode,AXI_STREAM& m_axis_video, int hsize_in, int vsize_in)
 {
 _ssdm_op_SpecInterface(&m_axis_video, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 
@@ -34448,21 +34448,35 @@ for(int i = 0; i < vsize_in ; i ++)
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
  for(int j = 0; j < hsize_in ; j ++)
   {
-  if((i==0)&&(j==0))
-   video.user=1;
-  else
-   video.user=0;
 
-  if(j==(hsize_in-1))
-   video.last = 1;
-  else
-   video.last = 0;
+   if((i==0)&&(j==0))
+    video.user=1;
+   else
+    video.user=0;
 
-  if (mode==0)
-   video.data =j;
-  else
-   video.data =i;
-  m_axis_video << video;
+   if(j==(hsize_in-1))
+    video.last = 1;
+   else
+    video.last = 0;
+
+   if (mode==0){
+    if ((((j/10)%2)==0) && (((i/10)%2)==0))
+     video.data =255;
+    else
+     video.data =0;
+   }
+   else if (mode==1){
+    if ((((j/10)%2)==0) && (((i/10)%2)==0))
+     video.data =0;
+    else
+     video.data =255;
+   }
+   else if (mode==2)
+    video.data =j;
+   else
+    video.data =i;
+
+   m_axis_video << video;
   }
  }
 

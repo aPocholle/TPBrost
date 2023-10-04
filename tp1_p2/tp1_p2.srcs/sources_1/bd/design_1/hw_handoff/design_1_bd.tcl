@@ -368,8 +368,9 @@ proc create_root_design { parentCell } {
 
   # Create ports
   set btn [ create_bd_port -dir I btn ]
-  set btnl [ create_bd_port -dir I btnl ]
   set clk100_zed [ create_bd_port -dir I -type clk clk100_zed ]
+  set mod0 [ create_bd_port -dir I mod0 ]
+  set mod1 [ create_bd_port -dir I mod1 ]
   set sioc [ create_bd_port -dir O sioc ]
   set siod [ create_bd_port -dir IO siod ]
   set vga_blue [ create_bd_port -dir O -from 3 -to 0 vga_blue ]
@@ -419,6 +420,9 @@ proc create_root_design { parentCell } {
   # Create instance: video_ctrl
   create_hier_cell_video_ctrl [current_bd_instance .] video_ctrl
 
+  # Create instance: xlconcat_0, and set properties
+  set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
+
   # Create instance: xlconstant_0, and set properties
   set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
   set_property -dict [ list \
@@ -447,18 +451,20 @@ proc create_root_design { parentCell } {
 
   # Create port connections
   connect_bd_net -net Net1 [get_bd_ports siod] [get_bd_pins video_ctrl/siod]
-  connect_bd_net -net btnl_1 [get_bd_ports btnl] [get_bd_pins mire_0/mode_V]
   connect_bd_net -net clk_in1_0_1 [get_bd_ports clk100_zed] [get_bd_pins clk_wiz_0/clk_in1]
   connect_bd_net -net clk_wiz_0_clk_25 [get_bd_ports vid_clk] [get_bd_pins clk_wiz_0/clk_25] [get_bd_pins video_ctrl/video_clk_25]
   connect_bd_net -net clk_wiz_0_clk_50 [get_bd_pins clk_wiz_0/clk_50] [get_bd_pins video_ctrl/sys_clk_50]
   connect_bd_net -net clk_wiz_0_clk_100 [get_bd_pins clk_wiz_0/clk_100] [get_bd_pins mire_0/ap_clk] [get_bd_pins video_ctrl/sys_clk_100]
   connect_bd_net -net i_0_1 [get_bd_ports btn] [get_bd_pins video_ctrl/btn_send]
+  connect_bd_net -net mod0_1 [get_bd_ports mod0] [get_bd_pins xlconcat_0/In0]
+  connect_bd_net -net mod1_1 [get_bd_ports mod1] [get_bd_pins xlconcat_0/In1]
   connect_bd_net -net util_vector_logic_0_Res [get_bd_pins mire_0/ap_rst_n] [get_bd_pins util_vector_logic_0/Res]
   connect_bd_net -net v_tc_0_hsync_out [get_bd_ports vga_hsync] [get_bd_ports vid_hsync] [get_bd_pins video_ctrl/vga_hsync]
   connect_bd_net -net v_tc_0_vsync_out [get_bd_ports vga_vsync] [get_bd_ports vid_vsync] [get_bd_pins video_ctrl/vga_vsync]
   connect_bd_net -net video_ctrl_sioc [get_bd_ports sioc] [get_bd_pins video_ctrl/sioc]
   connect_bd_net -net video_ctrl_vid_active_video [get_bd_ports vid_active_video] [get_bd_pins video_ctrl/vid_active_video]
   connect_bd_net -net video_ctrl_vid_data [get_bd_ports vid_data] [get_bd_pins video_ctrl/vid_data]
+  connect_bd_net -net xlconcat_0_dout [get_bd_pins mire_0/mode_V] [get_bd_pins xlconcat_0/dout]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins clk_wiz_0/reset] [get_bd_pins util_vector_logic_0/Op1] [get_bd_pins xlconstant_0/dout]
   connect_bd_net -net xlconstant_1_dout [get_bd_pins mire_0/hsize_in] [get_bd_pins xlconstant_1/dout]
   connect_bd_net -net xlconstant_2_dout [get_bd_pins mire_0/vsize_in] [get_bd_pins xlconstant_2/dout]

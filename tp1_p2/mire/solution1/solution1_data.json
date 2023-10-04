@@ -22,7 +22,7 @@
       "index": "0",
       "type": {
         "dataType": "ap_uint",
-        "dataWidth": "1",
+        "dataWidth": "2",
         "interfaceRef": "mode_V"
       }
     },
@@ -116,9 +116,9 @@
       "impl\/verilog\/mire.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "C:\/projets\/esirem\/mire\/solution1\/.autopilot\/db\/mire.design.xml",
-    "DebugDir": "C:\/projets\/esirem\/mire\/solution1\/.debug",
-    "ProtoInst": ["C:\/projets\/esirem\/mire\/solution1\/.debug\/mire.protoinst"]
+    "DesignXml": "C:\/Users\/ap576391\/Documents\/Brost\/tp1_p2\/mire\/solution1\/.autopilot\/db\/mire.design.xml",
+    "DebugDir": "C:\/Users\/ap576391\/Documents\/Brost\/tp1_p2\/mire\/solution1\/.debug",
+    "ProtoInst": ["C:\/Users\/ap576391\/Documents\/Brost\/tp1_p2\/mire\/solution1\/.debug\/mire.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -212,10 +212,10 @@
     "mode_V": {
       "type": "data",
       "dir": "in",
-      "width": "1",
+      "width": "2",
       "ctype": {"DATA": {
           "Type": "integer unsigned",
-          "Width": "1"
+          "Width": "2"
         }},
       "bundle_name": "mode_V",
       "bundle_role": "default"
@@ -259,8 +259,7 @@
     },
     "mode_V": {
       "dir": "in",
-      "width": "1",
-      "isVector": "true"
+      "width": "2"
     },
     "m_axis_video_TDATA": {
       "dir": "out",
@@ -341,13 +340,13 @@
             "TripCount": "",
             "Latency": "",
             "PipelineII": "1",
-            "PipelineDepth": "3"
+            "PipelineDepth": "4"
           }],
         "Area": {
-          "DSP48E": "4",
-          "FF": "271",
-          "LUT": "484",
           "BRAM_18K": "0",
+          "DSP48E": "16",
+          "FF": "568",
+          "LUT": "671",
           "URAM": "0"
         }
       }}
@@ -362,7 +361,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2023-10-03 15:43:35 +0200",
+    "Time": "2023-10-04 14:11:15 +0200",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

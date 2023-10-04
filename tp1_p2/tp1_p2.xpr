@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/projets/formation_hls/tp1_p2/tp1_p2.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/ap576391/Documents/Brost/tp1_p2/tp1_p2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="899955fb1a1644848b2d336e9af71464"/>
@@ -22,7 +22,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../esirem/mire"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/mire"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -93,8 +93,10 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../video_vga_7511_zed/zed_board.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/tp1_p2/zed_board.xdc">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/zed_board.xdc"/>
+          <Attr Name="ImportTime" Val="1696419938"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>

@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="mire,hls_ip_2019_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7z020-clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.510000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=4,HLS_SYN_FF=271,HLS_SYN_LUT=484,HLS_VERSION=2019_2}" *)
+(* CORE_GENERATION_INFO="mire,hls_ip_2019_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7z020-clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.510000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=16,HLS_SYN_FF=568,HLS_SYN_LUT=671,HLS_VERSION=2019_2}" *)
 
 module mire (
         ap_clk,
@@ -32,7 +32,7 @@ module mire (
 
 parameter    ap_ST_fsm_state1 = 3'd1;
 parameter    ap_ST_fsm_pp0_stage0 = 3'd2;
-parameter    ap_ST_fsm_state5 = 3'd4;
+parameter    ap_ST_fsm_state6 = 3'd4;
 
 input   ap_clk;
 input   ap_rst_n;
@@ -40,7 +40,7 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-input  [0:0] mode_V;
+input  [1:0] mode_V;
 output  [7:0] m_axis_video_TDATA;
 output   m_axis_video_TVALID;
 input   m_axis_video_TREADY;
@@ -61,52 +61,82 @@ reg ap_ready;
 (* fsm_encoding = "none" *) reg   [2:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    m_axis_video_TDATA_blk_n;
-wire    ap_CS_fsm_pp0_stage0;
-reg    ap_enable_reg_pp0_iter1;
-wire    ap_block_pp0_stage0;
-reg   [0:0] icmp_ln12_reg_262;
 reg    ap_enable_reg_pp0_iter2;
-reg   [0:0] icmp_ln12_reg_262_pp0_iter1_reg;
-reg   [63:0] indvar_flatten_reg_105;
-reg   [30:0] val_assign_1_reg_116;
-reg   [30:0] val_assign_reg_127;
-wire   [31:0] add_ln22_fu_138_p2;
-reg   [31:0] add_ln22_reg_252;
-wire   [63:0] bound_fu_152_p2;
-reg   [63:0] bound_reg_257;
-wire   [0:0] icmp_ln12_fu_167_p2;
+wire    ap_block_pp0_stage0;
+reg   [0:0] icmp_ln12_reg_399;
+reg   [0:0] icmp_ln12_reg_399_pp0_iter1_reg;
+reg    ap_enable_reg_pp0_iter3;
+reg   [0:0] icmp_ln12_reg_399_pp0_iter2_reg;
+reg   [63:0] indvar_flatten_reg_123;
+reg   [30:0] val_assign_1_reg_134;
+reg   [30:0] val_assign_reg_145;
+wire   [31:0] add_ln23_fu_170_p2;
+reg   [31:0] add_ln23_reg_376;
+wire   [0:0] icmp_ln879_fu_176_p2;
+reg   [0:0] icmp_ln879_reg_381;
+wire   [0:0] icmp_ln879_1_fu_182_p2;
+reg   [0:0] icmp_ln879_1_reg_385;
+wire   [0:0] icmp_ln879_2_fu_188_p2;
+reg   [0:0] icmp_ln879_2_reg_389;
+wire   [63:0] bound_fu_202_p2;
+reg   [63:0] bound_reg_394;
+wire   [0:0] icmp_ln12_fu_217_p2;
+wire    ap_CS_fsm_pp0_stage0;
 wire    ap_block_state2_pp0_stage0_iter0;
 wire    ap_block_state3_pp0_stage0_iter1;
-reg    ap_block_state3_io;
 wire    ap_block_state4_pp0_stage0_iter2;
 reg    ap_block_state4_io;
+wire    ap_block_state5_pp0_stage0_iter3;
+reg    ap_block_state5_io;
 reg    ap_block_pp0_stage0_11001;
-wire   [63:0] add_ln12_fu_172_p2;
+wire   [63:0] add_ln12_fu_222_p2;
 reg    ap_enable_reg_pp0_iter0;
-wire   [30:0] select_ln12_1_fu_196_p3;
-reg   [30:0] select_ln12_1_reg_271;
-wire   [0:0] tmp_user_V_fu_210_p2;
-reg   [0:0] tmp_user_V_reg_276;
-wire   [0:0] tmp_last_V_fu_216_p2;
-reg   [0:0] tmp_last_V_reg_281;
-wire   [7:0] video_data_V_fu_229_p3;
-reg   [7:0] video_data_V_reg_286;
-wire   [30:0] j_fu_236_p2;
+wire   [30:0] select_ln12_fu_228_p3;
+reg   [30:0] select_ln12_reg_408;
+wire   [30:0] select_ln12_1_fu_242_p3;
+reg   [30:0] select_ln12_1_reg_416;
+wire   [0:0] tmp_last_V_fu_254_p2;
+reg   [0:0] tmp_last_V_reg_424;
+reg   [0:0] tmp_last_V_reg_424_pp0_iter1_reg;
+wire   [30:0] j_fu_259_p2;
+reg   [0:0] tmp_reg_434;
+wire   [0:0] tmp_user_V_fu_286_p2;
+reg   [0:0] tmp_user_V_reg_440;
+wire   [7:0] video_data_V_fu_298_p3;
+wire   [62:0] mul_ln35_fu_308_p2;
+reg   [62:0] mul_ln35_reg_450;
+wire   [62:0] mul_ln29_fu_317_p2;
+reg   [62:0] mul_ln29_reg_455;
 reg    ap_block_pp0_stage0_subdone;
 reg    ap_condition_pp0_exit_iter0_state2;
-reg   [30:0] ap_phi_mux_val_assign_1_phi_fu_120_p4;
+reg    ap_enable_reg_pp0_iter1;
+reg   [30:0] ap_phi_mux_val_assign_1_phi_fu_138_p4;
+reg   [7:0] ap_phi_mux_tmp_data_V_phi_fu_160_p6;
+wire   [7:0] select_ln29_fu_362_p3;
+reg   [7:0] ap_phi_reg_pp0_iter2_tmp_data_V_reg_156;
+wire   [7:0] select_ln35_fu_335_p3;
+wire   [7:0] ap_phi_reg_pp0_iter0_tmp_data_V_reg_156;
+reg   [7:0] ap_phi_reg_pp0_iter1_tmp_data_V_reg_156;
 wire    ap_block_pp0_stage0_01001;
-wire   [31:0] bound_fu_152_p0;
-wire   [31:0] bound_fu_152_p1;
-wire   [31:0] zext_ln301_fu_158_p1;
-wire   [0:0] icmp_ln15_fu_162_p2;
-wire   [30:0] select_ln12_fu_178_p3;
-wire   [30:0] add_ln12_1_fu_190_p2;
-wire   [30:0] or_ln17_fu_204_p2;
-wire   [31:0] zext_ln12_fu_186_p1;
-wire   [7:0] trunc_ln27_fu_221_p1;
-wire   [7:0] trunc_ln27_1_fu_225_p1;
-wire    ap_CS_fsm_state5;
+wire   [31:0] bound_fu_202_p0;
+wire   [31:0] bound_fu_202_p1;
+wire   [31:0] zext_ln301_fu_208_p1;
+wire   [0:0] icmp_ln15_fu_212_p2;
+wire   [30:0] add_ln12_1_fu_236_p2;
+wire   [31:0] zext_ln12_1_fu_250_p1;
+wire   [30:0] mul_ln12_fu_268_p0;
+wire   [62:0] mul_ln12_fu_268_p2;
+wire   [30:0] or_ln18_fu_282_p2;
+wire   [7:0] trunc_ln40_fu_292_p1;
+wire   [7:0] trunc_ln40_1_fu_295_p1;
+wire   [30:0] mul_ln35_fu_308_p1;
+wire   [30:0] mul_ln29_fu_317_p1;
+wire   [0:0] tmp_2_fu_323_p3;
+wire   [0:0] or_ln35_fu_330_p2;
+wire   [0:0] tmp_1_fu_344_p3;
+wire   [0:0] or_ln29_fu_351_p2;
+wire   [0:0] xor_ln29_fu_356_p2;
+wire    ap_CS_fsm_state6;
 wire    regslice_both_m_axis_video_V_data_V_U_apdone_blk;
 reg   [2:0] ap_NS_fsm;
 reg    ap_idle_pp0;
@@ -132,15 +162,21 @@ wire    regslice_both_m_axis_video_V_id_V_U_vld_out;
 wire    regslice_both_m_axis_video_V_dest_V_U_apdone_blk;
 wire    regslice_both_m_axis_video_V_dest_V_U_ack_in_dummy;
 wire    regslice_both_m_axis_video_V_dest_V_U_vld_out;
-wire   [63:0] bound_fu_152_p00;
-wire   [63:0] bound_fu_152_p10;
+wire   [63:0] bound_fu_202_p00;
+wire   [63:0] bound_fu_202_p10;
+wire   [62:0] mul_ln12_fu_268_p00;
+wire   [62:0] mul_ln29_fu_317_p10;
+wire   [62:0] mul_ln35_fu_308_p10;
+reg    ap_condition_137;
+reg    ap_condition_167;
 
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 3'd1;
-#0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_enable_reg_pp0_iter2 = 1'b0;
+#0 ap_enable_reg_pp0_iter3 = 1'b0;
 #0 ap_enable_reg_pp0_iter0 = 1'b0;
+#0 ap_enable_reg_pp0_iter1 = 1'b0;
 end
 
 regslice_both #(
@@ -148,7 +184,7 @@ regslice_both #(
 regslice_both_m_axis_video_V_data_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .data_in(video_data_V_reg_286),
+    .data_in(ap_phi_mux_tmp_data_V_phi_fu_160_p6),
     .vld_in(m_axis_video_TVALID_int),
     .ack_in(m_axis_video_TREADY_int),
     .data_out(m_axis_video_TDATA),
@@ -190,7 +226,7 @@ regslice_both #(
 regslice_both_m_axis_video_V_user_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .data_in(tmp_user_V_reg_276),
+    .data_in(tmp_user_V_reg_440),
     .vld_in(m_axis_video_TVALID_int),
     .ack_in(regslice_both_m_axis_video_V_user_V_U_ack_in_dummy),
     .data_out(m_axis_video_TUSER),
@@ -204,7 +240,7 @@ regslice_both #(
 regslice_both_m_axis_video_V_last_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .data_in(tmp_last_V_reg_281),
+    .data_in(tmp_last_V_reg_424_pp0_iter1_reg),
     .vld_in(m_axis_video_TVALID_int),
     .ack_in(regslice_both_m_axis_video_V_last_V_U_ack_in_dummy),
     .data_out(m_axis_video_TLAST),
@@ -281,66 +317,120 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((1'b0 == ap_block_pp0_stage0_subdone)) begin
             ap_enable_reg_pp0_iter2 <= ap_enable_reg_pp0_iter1;
-        end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-            ap_enable_reg_pp0_iter2 <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln12_fu_167_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        indvar_flatten_reg_105 <= add_ln12_fu_172_p2;
-    end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        indvar_flatten_reg_105 <= 64'd0;
+    if (ap_rst_n_inv == 1'b1) begin
+        ap_enable_reg_pp0_iter3 <= 1'b0;
+    end else begin
+        if ((1'b0 == ap_block_pp0_stage0_subdone)) begin
+            ap_enable_reg_pp0_iter3 <= ap_enable_reg_pp0_iter2;
+        end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
+            ap_enable_reg_pp0_iter3 <= 1'b0;
+        end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln12_reg_262 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        val_assign_1_reg_116 <= select_ln12_1_reg_271;
-    end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        val_assign_1_reg_116 <= 31'd0;
+    if ((1'b1 == ap_condition_167)) begin
+        if ((1'b1 == ap_condition_137)) begin
+            ap_phi_reg_pp0_iter2_tmp_data_V_reg_156 <= video_data_V_fu_298_p3;
+        end else if ((1'b1 == 1'b1)) begin
+            ap_phi_reg_pp0_iter2_tmp_data_V_reg_156 <= ap_phi_reg_pp0_iter1_tmp_data_V_reg_156;
+        end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln12_fu_167_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        val_assign_reg_127 <= j_fu_236_p2;
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln12_fu_217_p2 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+        indvar_flatten_reg_123 <= add_ln12_fu_222_p2;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        val_assign_reg_127 <= 31'd0;
+        indvar_flatten_reg_123 <= 64'd0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln12_reg_399 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
+        val_assign_1_reg_134 <= select_ln12_1_reg_416;
+    end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
+        val_assign_1_reg_134 <= 31'd0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln12_fu_217_p2 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+        val_assign_reg_145 <= j_fu_259_p2;
+    end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
+        val_assign_reg_145 <= 31'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        add_ln22_reg_252 <= add_ln22_fu_138_p2;
-        bound_reg_257 <= bound_fu_152_p2;
+        add_ln23_reg_376 <= add_ln23_fu_170_p2;
+        bound_reg_394 <= bound_fu_202_p2;
+        icmp_ln879_1_reg_385 <= icmp_ln879_1_fu_182_p2;
+        icmp_ln879_2_reg_389 <= icmp_ln879_2_fu_188_p2;
+        icmp_ln879_reg_381 <= icmp_ln879_fu_176_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+        ap_phi_reg_pp0_iter1_tmp_data_V_reg_156 <= ap_phi_reg_pp0_iter0_tmp_data_V_reg_156;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        icmp_ln12_reg_262 <= icmp_ln12_fu_167_p2;
-        icmp_ln12_reg_262_pp0_iter1_reg <= icmp_ln12_reg_262;
+        icmp_ln12_reg_399 <= icmp_ln12_fu_217_p2;
+        icmp_ln12_reg_399_pp0_iter1_reg <= icmp_ln12_reg_399;
+        tmp_last_V_reg_424_pp0_iter1_reg <= tmp_last_V_reg_424;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln12_fu_167_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        select_ln12_1_reg_271 <= select_ln12_1_fu_196_p3;
+    if ((1'b0 == ap_block_pp0_stage0_11001)) begin
+        icmp_ln12_reg_399_pp0_iter2_reg <= icmp_ln12_reg_399_pp0_iter1_reg;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln12_fu_167_p2 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        tmp_last_V_reg_281 <= tmp_last_V_fu_216_p2;
-        tmp_user_V_reg_276 <= tmp_user_V_fu_210_p2;
-        video_data_V_reg_286 <= video_data_V_fu_229_p3;
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln879_reg_381 == 1'd1) & (icmp_ln12_reg_399 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        mul_ln29_reg_455 <= mul_ln29_fu_317_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln879_1_reg_385 == 1'd1) & (icmp_ln879_reg_381 == 1'd0) & (icmp_ln12_reg_399 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        mul_ln35_reg_450 <= mul_ln35_fu_308_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln12_fu_217_p2 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+        select_ln12_1_reg_416 <= select_ln12_1_fu_242_p3;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln12_fu_217_p2 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        select_ln12_reg_408 <= select_ln12_fu_228_p3;
+        tmp_last_V_reg_424 <= tmp_last_V_fu_254_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln12_reg_399 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        tmp_reg_434 <= mul_ln12_fu_268_p2[32'd35];
+        tmp_user_V_reg_440 <= tmp_user_V_fu_286_p2;
     end
 end
 
 always @ (*) begin
-    if ((icmp_ln12_fu_167_p2 == 1'd1)) begin
+    if ((icmp_ln12_fu_217_p2 == 1'd1)) begin
         ap_condition_pp0_exit_iter0_state2 = 1'b1;
     end else begin
         ap_condition_pp0_exit_iter0_state2 = 1'b0;
@@ -348,7 +438,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state5))) begin
+    if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state6))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -364,7 +454,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter0 == 1'b0) & (ap_enable_reg_pp0_iter2 == 1'b0) & (ap_enable_reg_pp0_iter1 == 1'b0))) begin
+    if (((ap_enable_reg_pp0_iter3 == 1'b0) & (ap_enable_reg_pp0_iter2 == 1'b0) & (ap_enable_reg_pp0_iter1 == 1'b0) & (ap_enable_reg_pp0_iter0 == 1'b0))) begin
         ap_idle_pp0 = 1'b1;
     end else begin
         ap_idle_pp0 = 1'b0;
@@ -372,15 +462,29 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln12_reg_262 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_phi_mux_val_assign_1_phi_fu_120_p4 = select_ln12_1_reg_271;
+    if ((icmp_ln12_reg_399_pp0_iter1_reg == 1'd0)) begin
+        if (((icmp_ln879_1_reg_385 == 1'd1) & (icmp_ln879_reg_381 == 1'd0))) begin
+            ap_phi_mux_tmp_data_V_phi_fu_160_p6 = select_ln35_fu_335_p3;
+        end else if ((icmp_ln879_reg_381 == 1'd1)) begin
+            ap_phi_mux_tmp_data_V_phi_fu_160_p6 = select_ln29_fu_362_p3;
+        end else begin
+            ap_phi_mux_tmp_data_V_phi_fu_160_p6 = ap_phi_reg_pp0_iter2_tmp_data_V_reg_156;
+        end
     end else begin
-        ap_phi_mux_val_assign_1_phi_fu_120_p4 = val_assign_1_reg_116;
+        ap_phi_mux_tmp_data_V_phi_fu_160_p6 = ap_phi_reg_pp0_iter2_tmp_data_V_reg_156;
     end
 end
 
 always @ (*) begin
-    if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state5))) begin
+    if (((icmp_ln12_reg_399 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
+        ap_phi_mux_val_assign_1_phi_fu_138_p4 = select_ln12_1_reg_416;
+    end else begin
+        ap_phi_mux_val_assign_1_phi_fu_138_p4 = val_assign_1_reg_134;
+    end
+end
+
+always @ (*) begin
+    if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state6))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -388,7 +492,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((((icmp_ln12_reg_262_pp0_iter1_reg == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((icmp_ln12_reg_262 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
+    if ((((icmp_ln12_reg_399_pp0_iter2_reg == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter3 == 1'b1)) | ((icmp_ln12_reg_399_pp0_iter1_reg == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter2 == 1'b1)))) begin
         m_axis_video_TDATA_blk_n = m_axis_video_TREADY_int;
     end else begin
         m_axis_video_TDATA_blk_n = 1'b1;
@@ -396,7 +500,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln12_reg_262 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln12_reg_399_pp0_iter1_reg == 1'd0) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
         m_axis_video_TVALID_int = 1'b1;
     end else begin
         m_axis_video_TVALID_int = 1'b0;
@@ -413,19 +517,19 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_pp0_stage0 : begin
-            if ((~((icmp_ln12_fu_167_p2 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b0) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone)) & ~((ap_enable_reg_pp0_iter1 == 1'b0) & (ap_enable_reg_pp0_iter2 == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone)))) begin
+            if ((~((icmp_ln12_fu_217_p2 == 1'd1) & (ap_enable_reg_pp0_iter0 == 1'b1) & (ap_enable_reg_pp0_iter1 == 1'b0) & (1'b0 == ap_block_pp0_stage0_subdone)) & ~((ap_enable_reg_pp0_iter2 == 1'b0) & (ap_enable_reg_pp0_iter3 == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone)))) begin
                 ap_NS_fsm = ap_ST_fsm_pp0_stage0;
-            end else if ((((ap_enable_reg_pp0_iter1 == 1'b0) & (ap_enable_reg_pp0_iter2 == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone)) | ((icmp_ln12_fu_167_p2 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b0) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone)))) begin
-                ap_NS_fsm = ap_ST_fsm_state5;
+            end else if ((((ap_enable_reg_pp0_iter2 == 1'b0) & (ap_enable_reg_pp0_iter3 == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone)) | ((icmp_ln12_fu_217_p2 == 1'd1) & (ap_enable_reg_pp0_iter0 == 1'b1) & (ap_enable_reg_pp0_iter1 == 1'b0) & (1'b0 == ap_block_pp0_stage0_subdone)))) begin
+                ap_NS_fsm = ap_ST_fsm_state6;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_pp0_stage0;
             end
         end
-        ap_ST_fsm_state5 : begin
-            if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state5))) begin
+        ap_ST_fsm_state6 : begin
+            if (((regslice_both_m_axis_video_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state6))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state5;
+                ap_NS_fsm = ap_ST_fsm_state6;
             end
         end
         default : begin
@@ -434,86 +538,136 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln12_1_fu_190_p2 = (31'd1 + ap_phi_mux_val_assign_1_phi_fu_120_p4);
+assign add_ln12_1_fu_236_p2 = (ap_phi_mux_val_assign_1_phi_fu_138_p4 + 31'd1);
 
-assign add_ln12_fu_172_p2 = (indvar_flatten_reg_105 + 64'd1);
+assign add_ln12_fu_222_p2 = (indvar_flatten_reg_123 + 64'd1);
 
-assign add_ln22_fu_138_p2 = ($signed(hsize_in) + $signed(32'd4294967295));
+assign add_ln23_fu_170_p2 = ($signed(hsize_in) + $signed(32'd4294967295));
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd1];
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
-assign ap_CS_fsm_state5 = ap_CS_fsm[32'd2];
+assign ap_CS_fsm_state6 = ap_CS_fsm[32'd2];
 
 assign ap_block_pp0_stage0 = ~(1'b1 == 1'b1);
 
 assign ap_block_pp0_stage0_01001 = ~(1'b1 == 1'b1);
 
 always @ (*) begin
-    ap_block_pp0_stage0_11001 = (((1'b1 == ap_block_state4_io) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((1'b1 == ap_block_state3_io) & (ap_enable_reg_pp0_iter1 == 1'b1)));
+    ap_block_pp0_stage0_11001 = (((1'b1 == ap_block_state5_io) & (ap_enable_reg_pp0_iter3 == 1'b1)) | ((1'b1 == ap_block_state4_io) & (ap_enable_reg_pp0_iter2 == 1'b1)));
 end
 
 always @ (*) begin
-    ap_block_pp0_stage0_subdone = (((1'b1 == ap_block_state4_io) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((1'b1 == ap_block_state3_io) & (ap_enable_reg_pp0_iter1 == 1'b1)));
+    ap_block_pp0_stage0_subdone = (((1'b1 == ap_block_state5_io) & (ap_enable_reg_pp0_iter3 == 1'b1)) | ((1'b1 == ap_block_state4_io) & (ap_enable_reg_pp0_iter2 == 1'b1)));
 end
 
 assign ap_block_state2_pp0_stage0_iter0 = ~(1'b1 == 1'b1);
 
-always @ (*) begin
-    ap_block_state3_io = ((icmp_ln12_reg_262 == 1'd0) & (m_axis_video_TREADY_int == 1'b0));
-end
-
 assign ap_block_state3_pp0_stage0_iter1 = ~(1'b1 == 1'b1);
 
 always @ (*) begin
-    ap_block_state4_io = ((icmp_ln12_reg_262_pp0_iter1_reg == 1'd0) & (m_axis_video_TREADY_int == 1'b0));
+    ap_block_state4_io = ((icmp_ln12_reg_399_pp0_iter1_reg == 1'd0) & (m_axis_video_TREADY_int == 1'b0));
 end
 
 assign ap_block_state4_pp0_stage0_iter2 = ~(1'b1 == 1'b1);
 
+always @ (*) begin
+    ap_block_state5_io = ((icmp_ln12_reg_399_pp0_iter2_reg == 1'd0) & (m_axis_video_TREADY_int == 1'b0));
+end
+
+assign ap_block_state5_pp0_stage0_iter3 = ~(1'b1 == 1'b1);
+
+always @ (*) begin
+    ap_condition_137 = ((icmp_ln879_1_reg_385 == 1'd0) & (icmp_ln879_reg_381 == 1'd0) & (icmp_ln12_reg_399 == 1'd0));
+end
+
+always @ (*) begin
+    ap_condition_167 = ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1));
+end
+
 assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
+
+assign ap_phi_reg_pp0_iter0_tmp_data_V_reg_156 = 'bx;
 
 always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-assign bound_fu_152_p0 = bound_fu_152_p00;
+assign bound_fu_202_p0 = bound_fu_202_p00;
 
-assign bound_fu_152_p00 = hsize_in;
+assign bound_fu_202_p00 = hsize_in;
 
-assign bound_fu_152_p1 = bound_fu_152_p10;
+assign bound_fu_202_p1 = bound_fu_202_p10;
 
-assign bound_fu_152_p10 = vsize_in;
+assign bound_fu_202_p10 = vsize_in;
 
-assign bound_fu_152_p2 = (bound_fu_152_p0 * bound_fu_152_p1);
+assign bound_fu_202_p2 = (bound_fu_202_p0 * bound_fu_202_p1);
 
-assign icmp_ln12_fu_167_p2 = ((indvar_flatten_reg_105 == bound_reg_257) ? 1'b1 : 1'b0);
+assign icmp_ln12_fu_217_p2 = ((indvar_flatten_reg_123 == bound_reg_394) ? 1'b1 : 1'b0);
 
-assign icmp_ln15_fu_162_p2 = (($signed(zext_ln301_fu_158_p1) < $signed(hsize_in)) ? 1'b1 : 1'b0);
+assign icmp_ln15_fu_212_p2 = (($signed(zext_ln301_fu_208_p1) < $signed(hsize_in)) ? 1'b1 : 1'b0);
 
-assign j_fu_236_p2 = (31'd1 + select_ln12_fu_178_p3);
+assign icmp_ln879_1_fu_182_p2 = ((mode_V == 2'd1) ? 1'b1 : 1'b0);
+
+assign icmp_ln879_2_fu_188_p2 = ((mode_V == 2'd2) ? 1'b1 : 1'b0);
+
+assign icmp_ln879_fu_176_p2 = ((mode_V == 2'd0) ? 1'b1 : 1'b0);
+
+assign j_fu_259_p2 = (select_ln12_fu_228_p3 + 31'd1);
 
 assign m_axis_video_TVALID = regslice_both_m_axis_video_V_data_V_U_vld_out;
 
-assign or_ln17_fu_204_p2 = (select_ln12_fu_178_p3 | select_ln12_1_fu_196_p3);
+assign mul_ln12_fu_268_p0 = mul_ln12_fu_268_p00;
 
-assign select_ln12_1_fu_196_p3 = ((icmp_ln15_fu_162_p2[0:0] === 1'b1) ? ap_phi_mux_val_assign_1_phi_fu_120_p4 : add_ln12_1_fu_190_p2);
+assign mul_ln12_fu_268_p00 = select_ln12_1_reg_416;
 
-assign select_ln12_fu_178_p3 = ((icmp_ln15_fu_162_p2[0:0] === 1'b1) ? val_assign_reg_127 : 31'd0);
+assign mul_ln12_fu_268_p2 = (mul_ln12_fu_268_p0 * ('hCCCCCCCD));
 
-assign tmp_last_V_fu_216_p2 = ((zext_ln12_fu_186_p1 == add_ln22_reg_252) ? 1'b1 : 1'b0);
+assign mul_ln29_fu_317_p1 = mul_ln29_fu_317_p10;
 
-assign tmp_user_V_fu_210_p2 = ((or_ln17_fu_204_p2 == 31'd0) ? 1'b1 : 1'b0);
+assign mul_ln29_fu_317_p10 = select_ln12_reg_408;
 
-assign trunc_ln27_1_fu_225_p1 = select_ln12_fu_178_p3[7:0];
+assign mul_ln29_fu_317_p2 = (63'd3435973837 * mul_ln29_fu_317_p1);
 
-assign trunc_ln27_fu_221_p1 = select_ln12_1_fu_196_p3[7:0];
+assign mul_ln35_fu_308_p1 = mul_ln35_fu_308_p10;
 
-assign video_data_V_fu_229_p3 = ((mode_V[0:0] === 1'b1) ? trunc_ln27_fu_221_p1 : trunc_ln27_1_fu_225_p1);
+assign mul_ln35_fu_308_p10 = select_ln12_reg_408;
 
-assign zext_ln12_fu_186_p1 = select_ln12_fu_178_p3;
+assign mul_ln35_fu_308_p2 = (63'd3435973837 * mul_ln35_fu_308_p1);
 
-assign zext_ln301_fu_158_p1 = val_assign_reg_127;
+assign or_ln18_fu_282_p2 = (select_ln12_reg_408 | select_ln12_1_reg_416);
+
+assign or_ln29_fu_351_p2 = (tmp_reg_434 | tmp_1_fu_344_p3);
+
+assign or_ln35_fu_330_p2 = (tmp_reg_434 | tmp_2_fu_323_p3);
+
+assign select_ln12_1_fu_242_p3 = ((icmp_ln15_fu_212_p2[0:0] === 1'b1) ? ap_phi_mux_val_assign_1_phi_fu_138_p4 : add_ln12_1_fu_236_p2);
+
+assign select_ln12_fu_228_p3 = ((icmp_ln15_fu_212_p2[0:0] === 1'b1) ? val_assign_reg_145 : 31'd0);
+
+assign select_ln29_fu_362_p3 = ((xor_ln29_fu_356_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
+
+assign select_ln35_fu_335_p3 = ((or_ln35_fu_330_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
+
+assign tmp_1_fu_344_p3 = mul_ln29_reg_455[32'd35];
+
+assign tmp_2_fu_323_p3 = mul_ln35_reg_450[32'd35];
+
+assign tmp_last_V_fu_254_p2 = ((zext_ln12_1_fu_250_p1 == add_ln23_reg_376) ? 1'b1 : 1'b0);
+
+assign tmp_user_V_fu_286_p2 = ((or_ln18_fu_282_p2 == 31'd0) ? 1'b1 : 1'b0);
+
+assign trunc_ln40_1_fu_295_p1 = select_ln12_1_reg_416[7:0];
+
+assign trunc_ln40_fu_292_p1 = select_ln12_reg_408[7:0];
+
+assign video_data_V_fu_298_p3 = ((icmp_ln879_2_reg_389[0:0] === 1'b1) ? trunc_ln40_fu_292_p1 : trunc_ln40_1_fu_295_p1);
+
+assign xor_ln29_fu_356_p2 = (or_ln29_fu_351_p2 ^ 1'd1);
+
+assign zext_ln12_1_fu_250_p1 = select_ln12_fu_228_p3;
+
+assign zext_ln301_fu_208_p1 = val_assign_reg_145;
 
 endmodule //mire

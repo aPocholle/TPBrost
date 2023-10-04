@@ -14,5 +14,5 @@ config_export -format ip_catalog -rtl vhdl -version 1.1.1
 #source "./mire/solution1/directives.tcl"
 csim_design
 csynth_design
-cosim_design
-export_design -rtl vhdl -format ip_catalog -version "1.1.1"
+cosim_design -rtl vhdl
+export_design -flow impl -rtl vhdl -format ip_catalog -version "1.1.1"

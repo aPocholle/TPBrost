@@ -152,7 +152,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_mode_V \
     op interface \
-    ports { mode_V { I 1 vector } } \
+    ports { mode_V { I 2 vector } } \
 } "
 }
 

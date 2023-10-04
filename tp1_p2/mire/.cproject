@@ -51,6 +51,8 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.1564458324" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
+                                    <listOptionValue builtIn="false" value="C:/Users/ap576391/Documents/Brost/tp1_p2"/>
+                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/etc"/>
@@ -84,6 +86,8 @@
                                 <option id="gnu.c.compiler.exe.debug.option.debugging.level.752381427" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.908154473" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Users/ap576391/Documents/Brost/tp1_p2"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include"/>
                                     									
@@ -219,6 +223,8 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.623744530" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
+                                    <listOptionValue builtIn="false" value="C:/Users/ap576391/Documents/Brost/tp1_p2"/>
+                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/etc"/>
@@ -242,6 +248,8 @@
                                 <option id="gnu.c.compiler.exe.release.option.debugging.level.1358590902" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.1361055782" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Users/ap576391/Documents/Brost/tp1_p2"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include"/>
                                     									

@@ -14,7 +14,7 @@ set isEnableWaveformDebug 1
 set C_modelName {mire}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ mode_V int 1 regular  }
+	{ mode_V int 2 regular  }
 	{ m_axis_video_V_data_V int 8 regular {axi_s 1 volatile  { m_axis_video Data } }  }
 	{ m_axis_video_V_keep_V int 1 regular {axi_s 1 volatile  { m_axis_video Keep } }  }
 	{ m_axis_video_V_strb_V int 1 regular {axi_s 1 volatile  { m_axis_video Strb } }  }
@@ -26,7 +26,7 @@ set C_modelArgList {
 	{ vsize_in int 32 regular  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "mode_V", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "mode.V","cData": "uint1","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+	{ "Name" : "mode_V", "interface" : "wire", "bitwidth" : 2, "direction" : "READONLY", "bitSlice":[{"low":0,"up":1,"cElement": [{"cName": "mode.V","cData": "uint2","bit_use": { "low": 0,"up": 1},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "m_axis_video_V_data_V", "interface" : "axis", "bitwidth" : 8, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":7,"cElement": [{"cName": "m_axis_video.V.data.V","cData": "uint8","bit_use": { "low": 0,"up": 7},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "m_axis_video_V_keep_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "m_axis_video.V.keep.V","cData": "uint1","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "m_axis_video_V_strb_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "m_axis_video.V.strb.V","cData": "uint1","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
@@ -45,7 +45,7 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ mode_V sc_in sc_lv 1 signal 0 } 
+	{ mode_V sc_in sc_lv 2 signal 0 } 
 	{ m_axis_video_TDATA sc_out sc_lv 8 signal 1 } 
 	{ m_axis_video_TVALID sc_out sc_logic 1 outvld 7 } 
 	{ m_axis_video_TREADY sc_in sc_logic 1 outacc 7 } 
@@ -65,7 +65,7 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "mode_V", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "mode_V", "role": "default" }} , 
+ 	{ "name": "mode_V", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "mode_V", "role": "default" }} , 
  	{ "name": "m_axis_video_TDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "m_axis_video_V_data_V", "role": "default" }} , 
  	{ "name": "m_axis_video_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "m_axis_video_V_dest_V", "role": "default" }} , 
  	{ "name": "m_axis_video_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "m_axis_video_V_dest_V", "role": "default" }} , 
@@ -117,13 +117,13 @@ set RtlHierarchyInfo {[
 set ArgLastReadFirstWriteLatency {
 	mire {
 		mode_V {Type I LastRead 0 FirstWrite -1}
-		m_axis_video_V_data_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_keep_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_strb_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_user_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_last_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_id_V {Type O LastRead -1 FirstWrite 2}
-		m_axis_video_V_dest_V {Type O LastRead -1 FirstWrite 2}
+		m_axis_video_V_data_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_keep_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_strb_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_user_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_last_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_id_V {Type O LastRead -1 FirstWrite 3}
+		m_axis_video_V_dest_V {Type O LastRead -1 FirstWrite 3}
 		hsize_in {Type I LastRead 0 FirstWrite -1}
 		vsize_in {Type I LastRead 0 FirstWrite -1}}}
 
@@ -139,7 +139,7 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	mode_V { ap_none {  { mode_V in_data 0 1 } } }
+	mode_V { ap_none {  { mode_V in_data 0 2 } } }
 	m_axis_video_V_data_V { axis {  { m_axis_video_TDATA out_data 1 8 } } }
 	m_axis_video_V_keep_V { axis {  { m_axis_video_TKEEP out_data 1 1 } } }
 	m_axis_video_V_strb_V { axis {  { m_axis_video_TSTRB out_data 1 1 } } }

@@ -1,0 +1,636 @@
+
+*** Running vivado
+    with args -log bd_0_hls_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source bd_0_hls_inst_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.cache/ip 
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg484-1 -directive sdx_optimization_effort_high -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11548 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 871.063 ; gain = 235.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bd_0_hls_inst_0' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.vhd:79]
+INFO: [Synth 8-3491] module 'mire' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:12' bound to instance 'U0' of component 'mire' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'mire' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:35]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:65]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:68]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:91]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:147]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_data_V_U' of component 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:22]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter W bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'ibuf' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:575' bound to instance 'ibuf_inst' of component 'ibuf' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_ibuf' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:587]
+	Parameter W bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_ibuf' (1#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:587]
+	Parameter W bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'obuf' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:620' bound to instance 'obuf_inst' of component 'obuf' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_obuf' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:632]
+	Parameter W bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_obuf' (2#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:632]
+INFO: [Synth 8-256] done synthesizing module 'regslice_both' (3#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:22]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_keep_V_U' of component 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'regslice_both__parameterized1' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:22]
+	Parameter DataWidth bound to: 1 - type: integer 
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'ibuf' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:575' bound to instance 'ibuf_inst' of component 'ibuf' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_ibuf__parameterized0' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:587]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_ibuf__parameterized0' (3#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:587]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'obuf' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:620' bound to instance 'obuf_inst' of component 'obuf' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_obuf__parameterized0' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:632]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_obuf__parameterized0' (3#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:632]
+INFO: [Synth 8-256] done synthesizing module 'regslice_both__parameterized1' (3#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:22]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_strb_V_U' of component 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:228]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_user_V_U' of component 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:242]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_last_V_U' of component 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:256]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_id_V_U' of component 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:270]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_m_axis_video_V_dest_V_U' of component 'regslice_both' [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:284]
+INFO: [Synth 8-256] done synthesizing module 'mire' (4#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'bd_0_hls_inst_0' (5#1) [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.vhd:79]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 947.117 ; gain = 311.238
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 947.117 ; gain = 311.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 947.117 ; gain = 311.238
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 947.117 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/mire_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/mire_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1042.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1052.820 ; gain = 10.492
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1052.820 ; gain = 416.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1052.820 ; gain = 416.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1052.820 ; gain = 416.941
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln35_reg_450_reg' and it is trimmed from '63' to '36' bits. [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:473]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln29_reg_455_reg' and it is trimmed from '63' to '36' bits. [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:465]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:700]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1052.820 ; gain = 416.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/regslice_both_m_axis_video_V_keep_V_U' (regslice_both__parameterized1) to 'U0/regslice_both_m_axis_video_V_strb_V_U'
+INFO: [Synth 8-223] decloning instance 'U0/regslice_both_m_axis_video_V_keep_V_U' (regslice_both__parameterized1) to 'U0/regslice_both_m_axis_video_V_id_V_U'
+INFO: [Synth 8-223] decloning instance 'U0/regslice_both_m_axis_video_V_keep_V_U' (regslice_both__parameterized1) to 'U0/regslice_both_m_axis_video_V_dest_V_U'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               36 Bit    Registers := 3     
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 3     
+	               18 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 13    
++---Multipliers : 
+	                32x32  Multipliers := 1     
+	                31x32  Multipliers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 22    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module xil_defaultlib_ibuf 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module xil_defaultlib_obuf 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module regslice_both 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module xil_defaultlib_ibuf__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module xil_defaultlib_obuf__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module regslice_both__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module mire 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               36 Bit    Registers := 3     
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 3     
+	               18 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Multipliers : 
+	                32x32  Multipliers := 1     
+	                31x32  Multipliers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 5     
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:667]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:697]
+WARNING: [Synth 8-6014] Unused sequential element tmp_reg_434_reg was removed.  [c:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e52e/hdl/vhdl/mire.vhd:498]
+DSP Report: Generating DSP bound_fu_202_p2, operation Mode is: A*B.
+DSP Report: operator bound_fu_202_p2 is absorbed into DSP bound_fu_202_p2.
+DSP Report: operator bound_fu_202_p2 is absorbed into DSP bound_fu_202_p2.
+DSP Report: Generating DSP bound_reg_394_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register bound_reg_394_reg is absorbed into DSP bound_reg_394_reg.
+DSP Report: operator bound_fu_202_p2 is absorbed into DSP bound_reg_394_reg.
+DSP Report: operator bound_fu_202_p2 is absorbed into DSP bound_reg_394_reg.
+DSP Report: Generating DSP bound_fu_202_p2, operation Mode is: A*B.
+DSP Report: operator bound_fu_202_p2 is absorbed into DSP bound_fu_202_p2.
+DSP Report: operator bound_fu_202_p2 is absorbed into DSP bound_fu_202_p2.
+DSP Report: Generating DSP bound_reg_394_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register bound_reg_394_reg is absorbed into DSP bound_reg_394_reg.
+DSP Report: operator bound_fu_202_p2 is absorbed into DSP bound_reg_394_reg.
+DSP Report: operator bound_fu_202_p2 is absorbed into DSP bound_reg_394_reg.
+DSP Report: Generating DSP mul_ln29_fu_317_p2, operation Mode is: A2*(B:0x6666).
+DSP Report: register mul_ln29_fu_317_p2 is absorbed into DSP mul_ln29_fu_317_p2.
+DSP Report: operator mul_ln29_fu_317_p2 is absorbed into DSP mul_ln29_fu_317_p2.
+DSP Report: operator mul_ln29_fu_317_p2 is absorbed into DSP mul_ln29_fu_317_p2.
+DSP Report: Generating DSP mul_ln29_fu_317_p2, operation Mode is: A2*(B:0xcccd).
+DSP Report: register mul_ln29_fu_317_p2 is absorbed into DSP mul_ln29_fu_317_p2.
+DSP Report: operator mul_ln29_fu_317_p2 is absorbed into DSP mul_ln29_fu_317_p2.
+DSP Report: operator mul_ln29_fu_317_p2 is absorbed into DSP mul_ln29_fu_317_p2.
+DSP Report: Generating DSP mul_ln29_fu_317_p2, operation Mode is: (PCIN>>17)+(A:0xcccd)*B2.
+DSP Report: register mul_ln29_fu_317_p2 is absorbed into DSP mul_ln29_fu_317_p2.
+DSP Report: operator mul_ln29_fu_317_p2 is absorbed into DSP mul_ln29_fu_317_p2.
+DSP Report: operator mul_ln29_fu_317_p2 is absorbed into DSP mul_ln29_fu_317_p2.
+DSP Report: Generating DSP mul_ln12_fu_268_p2, operation Mode is: (A:0xcccd)*B2.
+DSP Report: register select_ln12_1_reg_416_reg is absorbed into DSP mul_ln12_fu_268_p2.
+DSP Report: operator mul_ln12_fu_268_p2 is absorbed into DSP mul_ln12_fu_268_p2.
+DSP Report: operator mul_ln12_fu_268_p2 is absorbed into DSP mul_ln12_fu_268_p2.
+DSP Report: Generating DSP tmp_reg_434_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register select_ln12_1_reg_416_reg is absorbed into DSP tmp_reg_434_reg.
+DSP Report: register tmp_reg_434_reg is absorbed into DSP tmp_reg_434_reg.
+DSP Report: operator mul_ln12_fu_268_p2 is absorbed into DSP tmp_reg_434_reg.
+DSP Report: operator mul_ln12_fu_268_p2 is absorbed into DSP tmp_reg_434_reg.
+DSP Report: Generating DSP mul_ln12_fu_268_p2, operation Mode is: A2*(B:0xcccd).
+DSP Report: register mul_ln12_fu_268_p2 is absorbed into DSP mul_ln12_fu_268_p2.
+DSP Report: operator mul_ln12_fu_268_p2 is absorbed into DSP mul_ln12_fu_268_p2.
+DSP Report: operator mul_ln12_fu_268_p2 is absorbed into DSP mul_ln12_fu_268_p2.
+DSP Report: Generating DSP tmp_reg_434_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register tmp_reg_434_reg is absorbed into DSP tmp_reg_434_reg.
+DSP Report: register tmp_reg_434_reg is absorbed into DSP tmp_reg_434_reg.
+DSP Report: operator mul_ln12_fu_268_p2 is absorbed into DSP tmp_reg_434_reg.
+DSP Report: operator mul_ln12_fu_268_p2 is absorbed into DSP tmp_reg_434_reg.
+INFO: [Synth 8-3886] merging instance 'U0/select_ln12_reg_408_reg[17]' (FDE) to 'U0/select_ln12_reg_408_reg[-1111111111]'
+INFO: [Synth 8-3886] merging instance 'U0/select_ln12_reg_408_reg[-1111111110]' (FDE) to 'U0/select_ln12_reg_408_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/select_ln12_reg_408_reg[-1111111109]' (FDE) to 'U0/select_ln12_reg_408_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/select_ln12_reg_408_reg[-1111111108]' (FDE) to 'U0/select_ln12_reg_408_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/select_ln12_reg_408_reg[-1111111107]' (FDE) to 'U0/select_ln12_reg_408_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/select_ln12_reg_408_reg[-1111111106]' (FDE) to 'U0/select_ln12_reg_408_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/select_ln12_reg_408_reg[-1111111105]' (FDE) to 'U0/select_ln12_reg_408_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/select_ln12_reg_408_reg[-1111111104]' (FDE) to 'U0/select_ln12_reg_408_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/select_ln12_reg_408_reg[-1111111103]' (FDE) to 'U0/select_ln12_reg_408_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/select_ln12_reg_408_reg[-1111111102]' (FDE) to 'U0/select_ln12_reg_408_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/select_ln12_reg_408_reg[-1111111101]' (FDE) to 'U0/select_ln12_reg_408_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/select_ln12_reg_408_reg[-1111111100]' (FDE) to 'U0/select_ln12_reg_408_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/select_ln12_reg_408_reg[-1111111099]' (FDE) to 'U0/select_ln12_reg_408_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/select_ln12_reg_408_reg[-1111111098]' (FDE) to 'U0/select_ln12_reg_408_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\regslice_both_m_axis_video_V_keep_V_U/ibuf_inst/ireg_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[47]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[46]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[45]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[44]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[43]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[42]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[41]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[40]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[39]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[38]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[37]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[36]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[35]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[34]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[33]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[32]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[31]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[30]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[29]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[28]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[27]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[26]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[25]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[24]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[23]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[22]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[21]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[20]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[19]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[18]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[17]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[47]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[46]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[45]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[44]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[43]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[42]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[41]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[40]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[39]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[38]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[37]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[36]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[35]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[34]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[33]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[32]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[31]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[30]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[29]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[28]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[27]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[26]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[25]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[24]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[23]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[22]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[21]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[20]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[19]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[18]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_394_reg[17]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[47]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[46]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[45]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[44]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[43]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[42]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[41]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[40]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[39]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[38]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[37]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[36]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[35]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[34]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[33]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[32]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[31]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[30]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[29]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[28]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[27]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[26]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[25]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[24]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[23]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[22]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[21]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[20]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[19]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[18]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[17]) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[47]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[46]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[45]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[44]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[43]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[42]__0) is unused and will be removed from module mire.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg_434_reg[41]__0) is unused and will be removed from module mire.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1052.820 ; gain = 416.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping              | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mire        | A*B                      | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mire        | (PCIN>>17)+A*B           | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mire        | A*B                      | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mire        | (PCIN>>17)+A*B           | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mire        | A2*(B:0x6666)            | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mire        | A2*(B:0xcccd)            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mire        | (PCIN>>17)+(A:0xcccd)*B2 | 17     | 15     | -      | -      | 19     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|mire        | (A:0xcccd)*B2            | 15     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mire        | (PCIN>>17)+A*B2          | 16     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|mire        | A2*(B:0xcccd)            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mire        | (PCIN>>17)+A2*B          | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
++------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1093.500 ; gain = 457.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1123.531 ; gain = 487.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1128.926 ; gain = 493.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1134.715 ; gain = 498.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1134.715 ; gain = 498.836
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1134.715 ; gain = 498.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1134.715 ; gain = 498.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1134.715 ; gain = 498.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1134.715 ; gain = 498.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    83|
+|2     |DSP48E1   |     2|
+|3     |DSP48E1_1 |     2|
+|4     |DSP48E1_2 |     4|
+|5     |DSP48E1_3 |     1|
+|6     |DSP48E1_4 |     1|
+|7     |DSP48E1_5 |     1|
+|8     |LUT1      |    34|
+|9     |LUT2      |   151|
+|10    |LUT3      |    13|
+|11    |LUT4      |    60|
+|12    |LUT5      |   100|
+|13    |LUT6      |    56|
+|14    |FDRE      |   325|
+|15    |FDSE      |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------------------------------+--------------------------------------+------+
+|      |Instance                                  |Module                                |Cells |
++------+------------------------------------------+--------------------------------------+------+
+|1     |top                                       |                                      |   834|
+|2     |  U0                                      |mire                                  |   834|
+|3     |    regslice_both_m_axis_video_V_data_V_U |regslice_both                         |    95|
+|4     |      ibuf_inst                           |xil_defaultlib_ibuf                   |    52|
+|5     |      obuf_inst                           |xil_defaultlib_obuf                   |    39|
+|6     |    regslice_both_m_axis_video_V_last_V_U |regslice_both__parameterized1         |     9|
+|7     |      ibuf_inst                           |xil_defaultlib_ibuf__parameterized0_1 |     4|
+|8     |      obuf_inst                           |xil_defaultlib_obuf__parameterized0_2 |     5|
+|9     |    regslice_both_m_axis_video_V_user_V_U |regslice_both__parameterized1_0       |     9|
+|10    |      ibuf_inst                           |xil_defaultlib_ibuf__parameterized0   |     4|
+|11    |      obuf_inst                           |xil_defaultlib_obuf__parameterized0   |     5|
++------+------------------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1134.715 ; gain = 498.836
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 143 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 1134.715 ; gain = 393.133
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1134.715 ; gain = 498.836
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1134.715 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 94 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1134.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1134.715 ; gain = 801.301
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1134.715 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = f6a92284e3a7c618
+INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1134.715 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  4 14:12:36 2023...

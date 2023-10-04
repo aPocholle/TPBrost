@@ -1,0 +1,7 @@
+Running: xsim.dir/mire/xsimk.exe -simmode gui -wdb mire.wdb -simrunnum 0 -socket 52559
+Design successfully loaded
+Design Loading Memory Usage: 18760 KB (Peak: 18760 KB)
+Design Loading CPU Usage: 296 ms
+Simulation completed
+Simulation Memory Usage: 75608 KB (Peak: 75608 KB)
+Simulation CPU Usage: 48499 ms

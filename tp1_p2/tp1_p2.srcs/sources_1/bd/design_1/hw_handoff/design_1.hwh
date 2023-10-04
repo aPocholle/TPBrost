@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Oct  3 15:47:36 2023" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Oct  4 14:33:28 2023" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.4" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -32,11 +32,6 @@
     <PORT DIR="O" NAME="vga_vsync" SIGIS="undef" SIGNAME="video_ctrl_v_axi4s_vid_out_0_vid_vsync">
       <CONNECTIONS>
         <CONNECTION INSTANCE="video_ctrl_v_axi4s_vid_out_0" PORT="vid_vsync"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="btnl" SIGIS="undef" SIGNAME="External_Ports_btnl">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mire_0" PORT="mode_V"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" LEFT="15" NAME="vid_data" RIGHT="0" SIGIS="undef" SIGNAME="video_ctrl_adv_7511_xlconcat_0_dout">
@@ -77,6 +72,16 @@
     <PORT DIR="I" NAME="btn" SIGIS="undef" SIGNAME="External_Ports_btn">
       <CONNECTIONS>
         <CONNECTION INSTANCE="video_ctrl_adv_7511_i2c_sender_adv7511_0" PORT="resend"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mod0" SIGIS="undef" SIGNAME="External_Ports_mod0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconcat_0" PORT="In0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mod1" SIGIS="undef" SIGNAME="External_Ports_mod1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconcat_0" PORT="In1"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -694,10 +699,10 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="2113234843" FULLNAME="/mire_0" HWVERSION="1.1" INSTANCE="mire_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mire" VLNV="xilinx.com:hls:mire:1.1">
+    <MODULE COREREVISION="2113236191" FULLNAME="/mire_0" HWVERSION="1.1" INSTANCE="mire_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mire" VLNV="xilinx.com:hls:mire:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_mire_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_mire_0_1"/>
         <PARAMETER NAME="clk_period" VALUE="10"/>
         <PARAMETER NAME="machine" VALUE="64"/>
         <PARAMETER NAME="combinational" VALUE="0"/>
@@ -724,9 +729,9 @@
         <PORT DIR="O" NAME="ap_done" SIGIS="undef"/>
         <PORT DIR="O" NAME="ap_idle" SIGIS="undef"/>
         <PORT DIR="O" NAME="ap_ready" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="mode_V" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_btnl">
+        <PORT DIR="I" LEFT="1" NAME="mode_V" RIGHT="0" SIGIS="data" SIGNAME="xlconcat_0_dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="btnl"/>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axis_video_TVALID" SIGIS="undef" SIGNAME="mire_0_m_axis_video_TVALID">
@@ -1389,6 +1394,65 @@
             <CONNECTION INSTANCE="External_Ports" PORT="vga_red"/>
             <CONNECTION INSTANCE="External_Ports" PORT="vga_green"/>
             <CONNECTION INSTANCE="External_Ports" PORT="vga_blue"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/xlconcat_0" HWVERSION="2.1" INSTANCE="xlconcat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="2"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconcat_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_mod0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mod0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_mod1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mod1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mire_0" PORT="mode_V"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

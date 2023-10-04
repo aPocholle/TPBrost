@@ -1,8 +1,8 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Tue Oct  3 15:47:35 2023
---Host        : gs21-16 running 64-bit major release  (build 9200)
+--Date        : Wed Oct  4 14:33:28 2023
+--Host        : gs21-09 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
 --Purpose     : IP block netlist
@@ -282,8 +282,9 @@ use UNISIM.VCOMPONENTS.ALL;
 entity design_1 is
   port (
     btn : in STD_LOGIC;
-    btnl : in STD_LOGIC;
     clk100_zed : in STD_LOGIC;
+    mod0 : in STD_LOGIC;
+    mod1 : in STD_LOGIC;
     sioc : out STD_LOGIC;
     siod : inout STD_LOGIC;
     vga_blue : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -298,7 +299,7 @@ entity design_1 is
     vid_vsync : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=16,numReposBlks=14,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=2,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,synth_mode=Global}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=17,numReposBlks=15,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=2,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,synth_mode=Global}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -319,28 +320,6 @@ architecture STRUCTURE of design_1 is
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1_xlconstant_0_0;
-  component design_1_mire_0_0 is
-  port (
-    ap_clk : in STD_LOGIC;
-    ap_rst_n : in STD_LOGIC;
-    ap_start : in STD_LOGIC;
-    ap_done : out STD_LOGIC;
-    ap_idle : out STD_LOGIC;
-    ap_ready : out STD_LOGIC;
-    mode_V : in STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_video_TVALID : out STD_LOGIC;
-    m_axis_video_TREADY : in STD_LOGIC;
-    m_axis_video_TDATA : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    m_axis_video_TDEST : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_video_TKEEP : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_video_TSTRB : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_video_TUSER : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_video_TLAST : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_video_TID : out STD_LOGIC_VECTOR ( 0 to 0 );
-    hsize_in : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    vsize_in : in STD_LOGIC_VECTOR ( 31 downto 0 )
-  );
-  end component design_1_mire_0_0;
   component design_1_util_vector_logic_0_0 is
   port (
     Op1 : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -362,8 +341,36 @@ architecture STRUCTURE of design_1 is
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1_xlconstant_3_0;
+  component design_1_mire_0_1 is
+  port (
+    ap_clk : in STD_LOGIC;
+    ap_rst_n : in STD_LOGIC;
+    ap_start : in STD_LOGIC;
+    ap_done : out STD_LOGIC;
+    ap_idle : out STD_LOGIC;
+    ap_ready : out STD_LOGIC;
+    mode_V : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axis_video_TVALID : out STD_LOGIC;
+    m_axis_video_TREADY : in STD_LOGIC;
+    m_axis_video_TDATA : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    m_axis_video_TDEST : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_video_TKEEP : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_video_TSTRB : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_video_TUSER : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_video_TLAST : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_video_TID : out STD_LOGIC_VECTOR ( 0 to 0 );
+    hsize_in : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    vsize_in : in STD_LOGIC_VECTOR ( 31 downto 0 )
+  );
+  end component design_1_mire_0_1;
+  component design_1_xlconcat_0_1 is
+  port (
+    In0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    In1 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    dout : out STD_LOGIC_VECTOR ( 1 downto 0 )
+  );
+  end component design_1_xlconcat_0_1;
   signal Net1 : STD_LOGIC;
-  signal btnl_1 : STD_LOGIC;
   signal clk_in1_0_1 : STD_LOGIC;
   signal clk_wiz_0_clk_100 : STD_LOGIC;
   signal clk_wiz_0_clk_25 : STD_LOGIC;
@@ -374,12 +381,15 @@ architecture STRUCTURE of design_1 is
   signal mire_0_m_axis_video_TREADY : STD_LOGIC;
   signal mire_0_m_axis_video_TUSER : STD_LOGIC_VECTOR ( 0 to 0 );
   signal mire_0_m_axis_video_TVALID : STD_LOGIC;
+  signal mod0_1 : STD_LOGIC;
+  signal mod1_1 : STD_LOGIC;
   signal util_vector_logic_0_Res : STD_LOGIC_VECTOR ( 0 to 0 );
   signal v_tc_0_hsync_out : STD_LOGIC;
   signal v_tc_0_vsync_out : STD_LOGIC;
   signal video_ctrl_sioc : STD_LOGIC;
   signal video_ctrl_vid_active_video : STD_LOGIC;
   signal video_ctrl_vid_data : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal xlconstant_0_dout : STD_LOGIC_VECTOR ( 0 to 0 );
   signal xlconstant_1_dout : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal xlconstant_2_dout : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -398,9 +408,10 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of clk100_zed : signal is "XIL_INTERFACENAME CLK.CLK100_ZED, CLK_DOMAIN design_1_clk100_zed, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000";
 begin
-  btnl_1 <= btnl;
   clk_in1_0_1 <= clk100_zed;
   i_0_1 <= btn;
+  mod0_1 <= mod0;
+  mod1_1 <= mod1;
   sioc <= video_ctrl_sioc;
   vga_blue(3 downto 0) <= xlslice_1_Dout(3 downto 0);
   vga_green(3 downto 0) <= xlslice_1_Dout(3 downto 0);
@@ -421,7 +432,7 @@ clk_wiz_0: component design_1_clk_wiz_0_0
       locked => NLW_clk_wiz_0_locked_UNCONNECTED,
       reset => xlconstant_0_dout(0)
     );
-mire_0: component design_1_mire_0_0
+mire_0: component design_1_mire_0_1
      port map (
       ap_clk => clk_wiz_0_clk_100,
       ap_done => NLW_mire_0_ap_done_UNCONNECTED,
@@ -439,7 +450,7 @@ mire_0: component design_1_mire_0_0
       m_axis_video_TSTRB(0) => NLW_mire_0_m_axis_video_TSTRB_UNCONNECTED(0),
       m_axis_video_TUSER(0) => mire_0_m_axis_video_TUSER(0),
       m_axis_video_TVALID => mire_0_m_axis_video_TVALID,
-      mode_V(0) => btnl_1,
+      mode_V(1 downto 0) => xlconcat_0_dout(1 downto 0),
       vsize_in(31 downto 0) => xlconstant_2_dout(31 downto 0)
     );
 util_vector_logic_0: component design_1_util_vector_logic_0_0
@@ -465,6 +476,12 @@ video_ctrl: entity work.video_ctrl_imp_JPOEXX
       video_in_stream_tready => mire_0_m_axis_video_TREADY,
       video_in_stream_tuser(0) => mire_0_m_axis_video_TUSER(0),
       video_in_stream_tvalid => mire_0_m_axis_video_TVALID
+    );
+xlconcat_0: component design_1_xlconcat_0_1
+     port map (
+      In0(0) => mod0_1,
+      In1(0) => mod1_1,
+      dout(1 downto 0) => xlconcat_0_dout(1 downto 0)
     );
 xlconstant_0: component design_1_xlconstant_0_0
      port map (

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="mire.cpp" path="C:\projets\esirem\mire\mire.cpp"/>
+    <originFiles name="mire.cpp" path="C:\Users\ap576391\Documents\Brost\tp1_p2\mire\mire.cpp"/>
   </source>
   <testbench>
-    <originFiles name="mire_tb.cpp" path="C:\projets\esirem\mire\mire_tb.cpp"/>
+    <originFiles name="mire_tb.cpp" path="C:\Users\ap576391\Documents\Brost\tp1_p2\mire\mire_tb.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

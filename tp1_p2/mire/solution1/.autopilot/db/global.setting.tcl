@@ -42,13 +42,13 @@ set SCTraceOption all
 set TargetInfo xc7z020:-clg484:-1
 set SourceFiles {sc {} c ../mire.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile C:/projets/esirem/mire/solution1/solution1.directive
-set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
+set DirectiveFile C:/Users/ap576391/Documents/Brost/tp1_p2/mire/solution1/solution1.directive
+set TBFiles {verilog ../mire_tb.cpp bc ../mire_tb.cpp vhdl ../mire_tb.cpp sc ../mire_tb.cpp cas ../mire_tb.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {bc "" c "" sc "" cas "" vhdl "" verilog ""}
-set TBInstNames {bc "" c "" sc "" cas "" vhdl "" verilog ""}
+set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

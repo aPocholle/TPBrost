@@ -1,8 +1,8 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Tue Oct  3 15:47:35 2023
---Host        : gs21-16 running 64-bit major release  (build 9200)
+--Date        : Wed Oct  4 14:33:28 2023
+--Host        : gs21-09 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
 --Purpose     : IP block netlist
@@ -14,8 +14,9 @@ use UNISIM.VCOMPONENTS.ALL;
 entity design_1_wrapper is
   port (
     btn : in STD_LOGIC;
-    btnl : in STD_LOGIC;
     clk100_zed : in STD_LOGIC;
+    mod0 : in STD_LOGIC;
+    mod1 : in STD_LOGIC;
     sioc : out STD_LOGIC;
     siod : inout STD_LOGIC;
     vga_blue : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -40,7 +41,6 @@ architecture STRUCTURE of design_1_wrapper is
     vga_blue : out STD_LOGIC_VECTOR ( 3 downto 0 );
     vga_hsync : out STD_LOGIC;
     vga_vsync : out STD_LOGIC;
-    btnl : in STD_LOGIC;
     vid_data : out STD_LOGIC_VECTOR ( 15 downto 0 );
     vid_hsync : out STD_LOGIC;
     vid_vsync : out STD_LOGIC;
@@ -48,15 +48,18 @@ architecture STRUCTURE of design_1_wrapper is
     vid_active_video : out STD_LOGIC;
     siod : inout STD_LOGIC;
     sioc : out STD_LOGIC;
-    btn : in STD_LOGIC
+    btn : in STD_LOGIC;
+    mod0 : in STD_LOGIC;
+    mod1 : in STD_LOGIC
   );
   end component design_1;
 begin
 design_1_i: component design_1
      port map (
       btn => btn,
-      btnl => btnl,
       clk100_zed => clk100_zed,
+      mod0 => mod0,
+      mod1 => mod1,
       sioc => sioc,
       siod => siod,
       vga_blue(3 downto 0) => vga_blue(3 downto 0),
