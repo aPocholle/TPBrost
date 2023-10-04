@@ -1,0 +1,20 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="26" filename="mire/mire.cpp" linenumber="22" name="add_ln22" contextFuncName="mire" moduleName="mire" rtlName="add_ln22_fu_138_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="C:\projets\esirem"><\/item>
+<item  id="36" filename="mire/mire.cpp" linenumber="28" name="zext_ln301" contextFuncName="mire" moduleName="mire" rtlName="zext_ln301_fu_158_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\projets\esirem"><\/item>
+<item  id="37" filename="mire/mire.cpp" linenumber="15" name="icmp_ln15" contextFuncName="mire" moduleName="mire" rtlName="icmp_ln15_fu_162_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="C:\projets\esirem"><\/item>
+<item  id="38" filename="mire/mire.cpp" linenumber="12" name="icmp_ln12" contextFuncName="mire" moduleName="mire" rtlName="icmp_ln12_fu_167_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="29" fileDirectory="C:\projets\esirem"><\/item>
+<item  id="39" filename="mire/mire.cpp" linenumber="12" name="add_ln12" contextFuncName="mire" moduleName="mire" rtlName="add_ln12_fu_172_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="71" fileDirectory="C:\projets\esirem"><\/item>
+<item  id="43" filename="mire/mire.cpp" linenumber="12" name="select_ln12" contextFuncName="mire" moduleName="mire" rtlName="select_ln12_fu_178_p3" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="31" fileDirectory="C:\projets\esirem"><\/item>
+<item  id="45" filename="mire/mire.cpp" linenumber="12" name="zext_ln12" contextFuncName="mire" moduleName="mire" rtlName="zext_ln12_fu_186_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\projets\esirem"><\/item>
+<item  id="46" filename="mire/mire.cpp" linenumber="12" name="add_ln12_1" contextFuncName="mire" moduleName="mire" rtlName="add_ln12_1_fu_190_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="38" fileDirectory="C:\projets\esirem"><\/item>
+<item  id="47" filename="mire/mire.cpp" linenumber="12" name="select_ln12_1" contextFuncName="mire" moduleName="mire" rtlName="select_ln12_1_fu_196_p3" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="31" fileDirectory="C:\projets\esirem"><\/item>
+<item  id="48" filename="mire/mire.cpp" linenumber="17" name="or_ln17" contextFuncName="mire" moduleName="mire" rtlName="or_ln17_fu_204_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="31" fileDirectory="C:\projets\esirem"><\/item>
+<item  id="49" filename="mire/mire.cpp" linenumber="17" name="tmp_user_V" contextFuncName="mire" moduleName="mire" rtlName="tmp_user_V_fu_210_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="C:\projets\esirem"><\/item>
+<item  id="50" filename="mire/mire.cpp" linenumber="22" name="tmp_last_V" contextFuncName="mire" moduleName="mire" rtlName="tmp_last_V_fu_216_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="C:\projets\esirem"><\/item>
+<item  id="51" filename="mire/mire.cpp" linenumber="27" name="trunc_ln27" contextFuncName="mire" moduleName="mire" rtlName="trunc_ln27_fu_221_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\projets\esirem"><\/item>
+<item  id="52" filename="mire/mire.cpp" linenumber="27" name="trunc_ln27_1" contextFuncName="mire" moduleName="mire" rtlName="trunc_ln27_1_fu_225_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\projets\esirem"><\/item>
+<item  id="53" filename="mire/mire.cpp" linenumber="27" name="video_data_V" contextFuncName="mire" moduleName="mire" rtlName="video_data_V_fu_229_p3" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="8" fileDirectory="C:\projets\esirem"><\/item>
+<item  id="55" filename="mire/mire.cpp" linenumber="15" name="j" contextFuncName="mire" moduleName="mire" rtlName="j_fu_236_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="38" fileDirectory="C:\projets\esirem"><\/item>
+<\/annotationInfo>
+</annotationInfo>
