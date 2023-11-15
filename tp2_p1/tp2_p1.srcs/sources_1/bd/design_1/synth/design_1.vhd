@@ -1,8 +1,8 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Wed Feb 23 20:29:22 2022
---Host        : PC-VINCENT running 64-bit major release  (build 9200)
+--Date        : Wed Nov 15 08:23:18 2023
+--Host        : gs21-09 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
 --Purpose     : IP block netlist
@@ -284,6 +284,8 @@ entity design_1 is
     btn : in STD_LOGIC;
     btnl : in STD_LOGIC;
     clk100_zed : in STD_LOGIC;
+    mod0 : in STD_LOGIC;
+    mod1 : in STD_LOGIC;
     sioc : out STD_LOGIC;
     siod : inout STD_LOGIC;
     vga_blue : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -298,7 +300,7 @@ entity design_1 is
     vid_vsync : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=15,numReposBlks=13,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=2,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,synth_mode=Global}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=18,numReposBlks=16,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=2,numSysgenBlks=0,numHlsBlks=2,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,synth_mode=Global}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -342,7 +344,7 @@ architecture STRUCTURE of design_1 is
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1_xlconstant_2_0;
-  component design_1_im_load_0_0 is
+  component design_1_im_load_0_2 is
   port (
     mem_V_ce0 : out STD_LOGIC;
     ap_clk : in STD_LOGIC;
@@ -351,6 +353,7 @@ architecture STRUCTURE of design_1 is
     ap_done : out STD_LOGIC;
     ap_idle : out STD_LOGIC;
     ap_ready : out STD_LOGIC;
+    mode_V : in STD_LOGIC_VECTOR ( 1 downto 0 );
     m_axis_video_TVALID : out STD_LOGIC;
     m_axis_video_TREADY : in STD_LOGIC;
     m_axis_video_TDATA : out STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -363,7 +366,84 @@ architecture STRUCTURE of design_1 is
     mem_V_address0 : out STD_LOGIC_VECTOR ( 18 downto 0 );
     mem_V_q0 : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  end component design_1_im_load_0_0;
+  end component design_1_im_load_0_2;
+  component design_1_xlconcat_0_1 is
+  port (
+    In0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    In1 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    dout : out STD_LOGIC_VECTOR ( 1 downto 0 )
+  );
+  end component design_1_xlconcat_0_1;
+  component design_1_incrust_0_0 is
+  port (
+    s_axi_AXILiteS_AWADDR : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_AXILiteS_AWVALID : in STD_LOGIC;
+    s_axi_AXILiteS_AWREADY : out STD_LOGIC;
+    s_axi_AXILiteS_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_AXILiteS_WSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_AXILiteS_WVALID : in STD_LOGIC;
+    s_axi_AXILiteS_WREADY : out STD_LOGIC;
+    s_axi_AXILiteS_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_AXILiteS_BVALID : out STD_LOGIC;
+    s_axi_AXILiteS_BREADY : in STD_LOGIC;
+    s_axi_AXILiteS_ARADDR : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_AXILiteS_ARVALID : in STD_LOGIC;
+    s_axi_AXILiteS_ARREADY : out STD_LOGIC;
+    s_axi_AXILiteS_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_AXILiteS_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_AXILiteS_RVALID : out STD_LOGIC;
+    s_axi_AXILiteS_RREADY : in STD_LOGIC;
+    ap_clk : in STD_LOGIC;
+    ap_rst_n : in STD_LOGIC;
+    ap_start : in STD_LOGIC;
+    ap_done : out STD_LOGIC;
+    ap_idle : out STD_LOGIC;
+    ap_ready : out STD_LOGIC;
+    s_axis_video_TVALID : in STD_LOGIC;
+    s_axis_video_TREADY : out STD_LOGIC;
+    s_axis_video_TDATA : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s_axis_video_TDEST : in STD_LOGIC_VECTOR ( 0 to 0 );
+    s_axis_video_TKEEP : in STD_LOGIC_VECTOR ( 0 to 0 );
+    s_axis_video_TSTRB : in STD_LOGIC_VECTOR ( 0 to 0 );
+    s_axis_video_TUSER : in STD_LOGIC_VECTOR ( 0 to 0 );
+    s_axis_video_TLAST : in STD_LOGIC_VECTOR ( 0 to 0 );
+    s_axis_video_TID : in STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_video_TVALID : out STD_LOGIC;
+    m_axis_video_TREADY : in STD_LOGIC;
+    m_axis_video_TDATA : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    m_axis_video_TDEST : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_video_TKEEP : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_video_TSTRB : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_video_TUSER : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_video_TLAST : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_video_TID : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component design_1_incrust_0_0;
+  component design_1_jtag_axi_0_0 is
+  port (
+    aclk : in STD_LOGIC;
+    aresetn : in STD_LOGIC;
+    m_axi_awaddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_awprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axi_awvalid : out STD_LOGIC;
+    m_axi_awready : in STD_LOGIC;
+    m_axi_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_wstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m_axi_wvalid : out STD_LOGIC;
+    m_axi_wready : in STD_LOGIC;
+    m_axi_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_bvalid : in STD_LOGIC;
+    m_axi_bready : out STD_LOGIC;
+    m_axi_araddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_arprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axi_arvalid : out STD_LOGIC;
+    m_axi_arready : in STD_LOGIC;
+    m_axi_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_rvalid : in STD_LOGIC;
+    m_axi_rready : out STD_LOGIC
+  );
+  end component design_1_jtag_axi_0_0;
   signal Net1 : STD_LOGIC;
   signal blk_mem_gen_0_doutb : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal clk_in1_0_1 : STD_LOGIC;
@@ -371,18 +451,47 @@ architecture STRUCTURE of design_1 is
   signal clk_wiz_0_clk_25 : STD_LOGIC;
   signal clk_wiz_0_clk_50 : STD_LOGIC;
   signal i_0_1 : STD_LOGIC;
+  signal im_load_0_m_axis_video_TDATA : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal im_load_0_m_axis_video_TDEST : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal im_load_0_m_axis_video_TID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal im_load_0_m_axis_video_TKEEP : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal im_load_0_m_axis_video_TLAST : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal im_load_0_m_axis_video_TREADY : STD_LOGIC;
+  signal im_load_0_m_axis_video_TSTRB : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal im_load_0_m_axis_video_TUSER : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal im_load_0_m_axis_video_TVALID : STD_LOGIC;
   signal im_load_0_mem_V_address0 : STD_LOGIC_VECTOR ( 18 downto 0 );
   signal im_load_0_mem_V_ce0 : STD_LOGIC;
+  signal incrust_0_m_axis_video_TDATA : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal incrust_0_m_axis_video_TLAST : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal incrust_0_m_axis_video_TREADY : STD_LOGIC;
+  signal incrust_0_m_axis_video_TUSER : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal incrust_0_m_axis_video_TVALID : STD_LOGIC;
+  signal jtag_axi_0_M_AXI_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal jtag_axi_0_M_AXI_ARREADY : STD_LOGIC;
+  signal jtag_axi_0_M_AXI_ARVALID : STD_LOGIC;
+  signal jtag_axi_0_M_AXI_AWADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal jtag_axi_0_M_AXI_AWREADY : STD_LOGIC;
+  signal jtag_axi_0_M_AXI_AWVALID : STD_LOGIC;
+  signal jtag_axi_0_M_AXI_BREADY : STD_LOGIC;
+  signal jtag_axi_0_M_AXI_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal jtag_axi_0_M_AXI_BVALID : STD_LOGIC;
+  signal jtag_axi_0_M_AXI_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal jtag_axi_0_M_AXI_RREADY : STD_LOGIC;
+  signal jtag_axi_0_M_AXI_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal jtag_axi_0_M_AXI_RVALID : STD_LOGIC;
+  signal jtag_axi_0_M_AXI_WDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal jtag_axi_0_M_AXI_WREADY : STD_LOGIC;
+  signal jtag_axi_0_M_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal jtag_axi_0_M_AXI_WVALID : STD_LOGIC;
+  signal sw1_1 : STD_LOGIC;
+  signal sw2_1 : STD_LOGIC;
   signal v_tc_0_hsync_out : STD_LOGIC;
   signal v_tc_0_vsync_out : STD_LOGIC;
   signal video_ctrl_sioc : STD_LOGIC;
   signal video_ctrl_vid_active_video : STD_LOGIC;
   signal video_ctrl_vid_data : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal video_in_stream_1_TDATA : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal video_in_stream_1_TLAST : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal video_in_stream_1_TREADY : STD_LOGIC;
-  signal video_in_stream_1_TUSER : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal video_in_stream_1_TVALID : STD_LOGIC;
+  signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal xlconstant_0_dout : STD_LOGIC_VECTOR ( 0 to 0 );
   signal xlconstant_1_dout : STD_LOGIC_VECTOR ( 0 to 0 );
   signal xlconstant_2_dout : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -391,10 +500,15 @@ architecture STRUCTURE of design_1 is
   signal NLW_im_load_0_ap_done_UNCONNECTED : STD_LOGIC;
   signal NLW_im_load_0_ap_idle_UNCONNECTED : STD_LOGIC;
   signal NLW_im_load_0_ap_ready_UNCONNECTED : STD_LOGIC;
-  signal NLW_im_load_0_m_axis_video_TDEST_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_im_load_0_m_axis_video_TID_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_im_load_0_m_axis_video_TKEEP_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_im_load_0_m_axis_video_TSTRB_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_incrust_0_ap_done_UNCONNECTED : STD_LOGIC;
+  signal NLW_incrust_0_ap_idle_UNCONNECTED : STD_LOGIC;
+  signal NLW_incrust_0_ap_ready_UNCONNECTED : STD_LOGIC;
+  signal NLW_incrust_0_m_axis_video_TDEST_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_incrust_0_m_axis_video_TID_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_incrust_0_m_axis_video_TKEEP_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_incrust_0_m_axis_video_TSTRB_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_jtag_axi_0_m_axi_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_jtag_axi_0_m_axi_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of clk100_zed : signal is "xilinx.com:signal:clock:1.0 CLK.CLK100_ZED CLK";
   attribute X_INTERFACE_PARAMETER : string;
@@ -403,6 +517,8 @@ begin
   clk_in1_0_1 <= clk100_zed;
   i_0_1 <= btn;
   sioc <= video_ctrl_sioc;
+  sw1_1 <= mod0;
+  sw2_1 <= mod1;
   vga_blue(3 downto 0) <= xlslice_1_Dout(3 downto 0);
   vga_green(3 downto 0) <= xlslice_1_Dout(3 downto 0);
   vga_hsync <= v_tc_0_hsync_out;
@@ -434,7 +550,7 @@ clk_wiz_0: component design_1_clk_wiz_0_0
       locked => NLW_clk_wiz_0_locked_UNCONNECTED,
       reset => xlconstant_0_dout(0)
     );
-im_load_0: component design_1_im_load_0_0
+im_load_0: component design_1_im_load_0_2
      port map (
       ap_clk => clk_wiz_0_clk_100,
       ap_done => NLW_im_load_0_ap_done_UNCONNECTED,
@@ -442,18 +558,87 @@ im_load_0: component design_1_im_load_0_0
       ap_ready => NLW_im_load_0_ap_ready_UNCONNECTED,
       ap_rst_n => xlconstant_1_dout(0),
       ap_start => xlconstant_1_dout(0),
-      m_axis_video_TDATA(7 downto 0) => video_in_stream_1_TDATA(7 downto 0),
-      m_axis_video_TDEST(0) => NLW_im_load_0_m_axis_video_TDEST_UNCONNECTED(0),
-      m_axis_video_TID(0) => NLW_im_load_0_m_axis_video_TID_UNCONNECTED(0),
-      m_axis_video_TKEEP(0) => NLW_im_load_0_m_axis_video_TKEEP_UNCONNECTED(0),
-      m_axis_video_TLAST(0) => video_in_stream_1_TLAST(0),
-      m_axis_video_TREADY => video_in_stream_1_TREADY,
-      m_axis_video_TSTRB(0) => NLW_im_load_0_m_axis_video_TSTRB_UNCONNECTED(0),
-      m_axis_video_TUSER(0) => video_in_stream_1_TUSER(0),
-      m_axis_video_TVALID => video_in_stream_1_TVALID,
+      m_axis_video_TDATA(7 downto 0) => im_load_0_m_axis_video_TDATA(7 downto 0),
+      m_axis_video_TDEST(0) => im_load_0_m_axis_video_TDEST(0),
+      m_axis_video_TID(0) => im_load_0_m_axis_video_TID(0),
+      m_axis_video_TKEEP(0) => im_load_0_m_axis_video_TKEEP(0),
+      m_axis_video_TLAST(0) => im_load_0_m_axis_video_TLAST(0),
+      m_axis_video_TREADY => im_load_0_m_axis_video_TREADY,
+      m_axis_video_TSTRB(0) => im_load_0_m_axis_video_TSTRB(0),
+      m_axis_video_TUSER(0) => im_load_0_m_axis_video_TUSER(0),
+      m_axis_video_TVALID => im_load_0_m_axis_video_TVALID,
       mem_V_address0(18 downto 0) => im_load_0_mem_V_address0(18 downto 0),
       mem_V_ce0 => im_load_0_mem_V_ce0,
-      mem_V_q0(7 downto 0) => blk_mem_gen_0_doutb(7 downto 0)
+      mem_V_q0(7 downto 0) => blk_mem_gen_0_doutb(7 downto 0),
+      mode_V(1 downto 0) => xlconcat_0_dout(1 downto 0)
+    );
+incrust_0: component design_1_incrust_0_0
+     port map (
+      ap_clk => clk_wiz_0_clk_100,
+      ap_done => NLW_incrust_0_ap_done_UNCONNECTED,
+      ap_idle => NLW_incrust_0_ap_idle_UNCONNECTED,
+      ap_ready => NLW_incrust_0_ap_ready_UNCONNECTED,
+      ap_rst_n => xlconstant_1_dout(0),
+      ap_start => xlconstant_1_dout(0),
+      m_axis_video_TDATA(7 downto 0) => incrust_0_m_axis_video_TDATA(7 downto 0),
+      m_axis_video_TDEST(0) => NLW_incrust_0_m_axis_video_TDEST_UNCONNECTED(0),
+      m_axis_video_TID(0) => NLW_incrust_0_m_axis_video_TID_UNCONNECTED(0),
+      m_axis_video_TKEEP(0) => NLW_incrust_0_m_axis_video_TKEEP_UNCONNECTED(0),
+      m_axis_video_TLAST(0) => incrust_0_m_axis_video_TLAST(0),
+      m_axis_video_TREADY => incrust_0_m_axis_video_TREADY,
+      m_axis_video_TSTRB(0) => NLW_incrust_0_m_axis_video_TSTRB_UNCONNECTED(0),
+      m_axis_video_TUSER(0) => incrust_0_m_axis_video_TUSER(0),
+      m_axis_video_TVALID => incrust_0_m_axis_video_TVALID,
+      s_axi_AXILiteS_ARADDR(4 downto 0) => jtag_axi_0_M_AXI_ARADDR(4 downto 0),
+      s_axi_AXILiteS_ARREADY => jtag_axi_0_M_AXI_ARREADY,
+      s_axi_AXILiteS_ARVALID => jtag_axi_0_M_AXI_ARVALID,
+      s_axi_AXILiteS_AWADDR(4 downto 0) => jtag_axi_0_M_AXI_AWADDR(4 downto 0),
+      s_axi_AXILiteS_AWREADY => jtag_axi_0_M_AXI_AWREADY,
+      s_axi_AXILiteS_AWVALID => jtag_axi_0_M_AXI_AWVALID,
+      s_axi_AXILiteS_BREADY => jtag_axi_0_M_AXI_BREADY,
+      s_axi_AXILiteS_BRESP(1 downto 0) => jtag_axi_0_M_AXI_BRESP(1 downto 0),
+      s_axi_AXILiteS_BVALID => jtag_axi_0_M_AXI_BVALID,
+      s_axi_AXILiteS_RDATA(31 downto 0) => jtag_axi_0_M_AXI_RDATA(31 downto 0),
+      s_axi_AXILiteS_RREADY => jtag_axi_0_M_AXI_RREADY,
+      s_axi_AXILiteS_RRESP(1 downto 0) => jtag_axi_0_M_AXI_RRESP(1 downto 0),
+      s_axi_AXILiteS_RVALID => jtag_axi_0_M_AXI_RVALID,
+      s_axi_AXILiteS_WDATA(31 downto 0) => jtag_axi_0_M_AXI_WDATA(31 downto 0),
+      s_axi_AXILiteS_WREADY => jtag_axi_0_M_AXI_WREADY,
+      s_axi_AXILiteS_WSTRB(3 downto 0) => jtag_axi_0_M_AXI_WSTRB(3 downto 0),
+      s_axi_AXILiteS_WVALID => jtag_axi_0_M_AXI_WVALID,
+      s_axis_video_TDATA(7 downto 0) => im_load_0_m_axis_video_TDATA(7 downto 0),
+      s_axis_video_TDEST(0) => im_load_0_m_axis_video_TDEST(0),
+      s_axis_video_TID(0) => im_load_0_m_axis_video_TID(0),
+      s_axis_video_TKEEP(0) => im_load_0_m_axis_video_TKEEP(0),
+      s_axis_video_TLAST(0) => im_load_0_m_axis_video_TLAST(0),
+      s_axis_video_TREADY => im_load_0_m_axis_video_TREADY,
+      s_axis_video_TSTRB(0) => im_load_0_m_axis_video_TSTRB(0),
+      s_axis_video_TUSER(0) => im_load_0_m_axis_video_TUSER(0),
+      s_axis_video_TVALID => im_load_0_m_axis_video_TVALID
+    );
+jtag_axi_0: component design_1_jtag_axi_0_0
+     port map (
+      aclk => clk_wiz_0_clk_100,
+      aresetn => xlconstant_1_dout(0),
+      m_axi_araddr(31 downto 0) => jtag_axi_0_M_AXI_ARADDR(31 downto 0),
+      m_axi_arprot(2 downto 0) => NLW_jtag_axi_0_m_axi_arprot_UNCONNECTED(2 downto 0),
+      m_axi_arready => jtag_axi_0_M_AXI_ARREADY,
+      m_axi_arvalid => jtag_axi_0_M_AXI_ARVALID,
+      m_axi_awaddr(31 downto 0) => jtag_axi_0_M_AXI_AWADDR(31 downto 0),
+      m_axi_awprot(2 downto 0) => NLW_jtag_axi_0_m_axi_awprot_UNCONNECTED(2 downto 0),
+      m_axi_awready => jtag_axi_0_M_AXI_AWREADY,
+      m_axi_awvalid => jtag_axi_0_M_AXI_AWVALID,
+      m_axi_bready => jtag_axi_0_M_AXI_BREADY,
+      m_axi_bresp(1 downto 0) => jtag_axi_0_M_AXI_BRESP(1 downto 0),
+      m_axi_bvalid => jtag_axi_0_M_AXI_BVALID,
+      m_axi_rdata(31 downto 0) => jtag_axi_0_M_AXI_RDATA(31 downto 0),
+      m_axi_rready => jtag_axi_0_M_AXI_RREADY,
+      m_axi_rresp(1 downto 0) => jtag_axi_0_M_AXI_RRESP(1 downto 0),
+      m_axi_rvalid => jtag_axi_0_M_AXI_RVALID,
+      m_axi_wdata(31 downto 0) => jtag_axi_0_M_AXI_WDATA(31 downto 0),
+      m_axi_wready => jtag_axi_0_M_AXI_WREADY,
+      m_axi_wstrb(3 downto 0) => jtag_axi_0_M_AXI_WSTRB(3 downto 0),
+      m_axi_wvalid => jtag_axi_0_M_AXI_WVALID
     );
 video_ctrl: entity work.video_ctrl_imp_JPOEXX
      port map (
@@ -468,11 +653,17 @@ video_ctrl: entity work.video_ctrl_imp_JPOEXX
       vid_active_video => video_ctrl_vid_active_video,
       vid_data(15 downto 0) => video_ctrl_vid_data(15 downto 0),
       video_clk_25 => clk_wiz_0_clk_25,
-      video_in_stream_tdata(7 downto 0) => video_in_stream_1_TDATA(7 downto 0),
-      video_in_stream_tlast(0) => video_in_stream_1_TLAST(0),
-      video_in_stream_tready => video_in_stream_1_TREADY,
-      video_in_stream_tuser(0) => video_in_stream_1_TUSER(0),
-      video_in_stream_tvalid => video_in_stream_1_TVALID
+      video_in_stream_tdata(7 downto 0) => incrust_0_m_axis_video_TDATA(7 downto 0),
+      video_in_stream_tlast(0) => incrust_0_m_axis_video_TLAST(0),
+      video_in_stream_tready => incrust_0_m_axis_video_TREADY,
+      video_in_stream_tuser(0) => incrust_0_m_axis_video_TUSER(0),
+      video_in_stream_tvalid => incrust_0_m_axis_video_TVALID
+    );
+xlconcat_0: component design_1_xlconcat_0_1
+     port map (
+      In0(0) => sw1_1,
+      In1(0) => sw2_1,
+      dout(1 downto 0) => xlconcat_0_dout(1 downto 0)
     );
 xlconstant_0: component design_1_xlconstant_0_0
      port map (

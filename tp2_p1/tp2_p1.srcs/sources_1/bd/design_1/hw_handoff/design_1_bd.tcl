@@ -370,6 +370,8 @@ proc create_root_design { parentCell } {
   set btn [ create_bd_port -dir I btn ]
   set btnl [ create_bd_port -dir I btnl ]
   set clk100_zed [ create_bd_port -dir I -type clk clk100_zed ]
+  set mod0 [ create_bd_port -dir I mod0 ]
+  set mod1 [ create_bd_port -dir I mod1 ]
   set sioc [ create_bd_port -dir O sioc ]
   set siod [ create_bd_port -dir IO siod ]
   set vga_blue [ create_bd_port -dir O -from 3 -to 0 vga_blue ]
@@ -433,8 +435,20 @@ proc create_root_design { parentCell } {
   # Create instance: im_load_0, and set properties
   set im_load_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:im_load:1.1 im_load_0 ]
 
+  # Create instance: incrust_0, and set properties
+  set incrust_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:incrust:1.0 incrust_0 ]
+
+  # Create instance: jtag_axi_0, and set properties
+  set jtag_axi_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:jtag_axi:1.2 jtag_axi_0 ]
+  set_property -dict [ list \
+   CONFIG.PROTOCOL {2} \
+ ] $jtag_axi_0
+
   # Create instance: video_ctrl
   create_hier_cell_video_ctrl [current_bd_instance .] video_ctrl
+
+  # Create instance: xlconcat_0, and set properties
+  set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
 
   # Create instance: xlconstant_0, and set properties
   set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
@@ -452,7 +466,9 @@ proc create_root_design { parentCell } {
  ] $xlconstant_2
 
   # Create interface connections
-  connect_bd_intf_net -intf_net video_in_stream_1 [get_bd_intf_pins im_load_0/m_axis_video] [get_bd_intf_pins video_ctrl/video_in_stream]
+  connect_bd_intf_net -intf_net im_load_0_m_axis_video [get_bd_intf_pins im_load_0/m_axis_video] [get_bd_intf_pins incrust_0/s_axis_video]
+  connect_bd_intf_net -intf_net incrust_0_m_axis_video [get_bd_intf_pins incrust_0/m_axis_video] [get_bd_intf_pins video_ctrl/video_in_stream]
+  connect_bd_intf_net -intf_net jtag_axi_0_M_AXI [get_bd_intf_pins incrust_0/s_axi_AXILiteS] [get_bd_intf_pins jtag_axi_0/M_AXI]
 
   # Create port connections
   connect_bd_net -net Net1 [get_bd_ports siod] [get_bd_pins video_ctrl/siod]
@@ -460,21 +476,25 @@ proc create_root_design { parentCell } {
   connect_bd_net -net clk_in1_0_1 [get_bd_ports clk100_zed] [get_bd_pins clk_wiz_0/clk_in1]
   connect_bd_net -net clk_wiz_0_clk_25 [get_bd_ports vid_clk] [get_bd_pins clk_wiz_0/clk_25] [get_bd_pins video_ctrl/video_clk_25]
   connect_bd_net -net clk_wiz_0_clk_50 [get_bd_pins clk_wiz_0/clk_50] [get_bd_pins video_ctrl/sys_clk_50]
-  connect_bd_net -net clk_wiz_0_clk_100 [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins clk_wiz_0/clk_100] [get_bd_pins im_load_0/ap_clk] [get_bd_pins video_ctrl/sys_clk_100]
+  connect_bd_net -net clk_wiz_0_clk_100 [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins clk_wiz_0/clk_100] [get_bd_pins im_load_0/ap_clk] [get_bd_pins incrust_0/ap_clk] [get_bd_pins jtag_axi_0/aclk] [get_bd_pins video_ctrl/sys_clk_100]
   connect_bd_net -net i_0_1 [get_bd_ports btn] [get_bd_pins video_ctrl/btn_send]
   connect_bd_net -net im_load_0_mem_V_address0 [get_bd_pins blk_mem_gen_0/addrb] [get_bd_pins im_load_0/mem_V_address0]
   connect_bd_net -net im_load_0_mem_V_ce0 [get_bd_pins blk_mem_gen_0/enb] [get_bd_pins im_load_0/mem_V_ce0]
+  connect_bd_net -net sw1_1 [get_bd_ports mod0] [get_bd_pins xlconcat_0/In0]
+  connect_bd_net -net sw2_1 [get_bd_ports mod1] [get_bd_pins xlconcat_0/In1]
   connect_bd_net -net v_tc_0_hsync_out [get_bd_ports vga_hsync] [get_bd_ports vid_hsync] [get_bd_pins video_ctrl/vga_hsync]
   connect_bd_net -net v_tc_0_vsync_out [get_bd_ports vga_vsync] [get_bd_ports vid_vsync] [get_bd_pins video_ctrl/vga_vsync]
   connect_bd_net -net video_ctrl_sioc [get_bd_ports sioc] [get_bd_pins video_ctrl/sioc]
   connect_bd_net -net video_ctrl_vid_active_video [get_bd_ports vid_active_video] [get_bd_pins video_ctrl/vid_active_video]
   connect_bd_net -net video_ctrl_vid_data [get_bd_ports vid_data] [get_bd_pins video_ctrl/vid_data]
+  connect_bd_net -net xlconcat_0_dout [get_bd_pins im_load_0/mode_V] [get_bd_pins xlconcat_0/dout]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins clk_wiz_0/reset] [get_bd_pins xlconstant_0/dout]
-  connect_bd_net -net xlconstant_1_dout [get_bd_pins im_load_0/ap_rst_n] [get_bd_pins im_load_0/ap_start] [get_bd_pins xlconstant_1/dout]
+  connect_bd_net -net xlconstant_1_dout [get_bd_pins im_load_0/ap_rst_n] [get_bd_pins im_load_0/ap_start] [get_bd_pins incrust_0/ap_rst_n] [get_bd_pins incrust_0/ap_start] [get_bd_pins jtag_axi_0/aresetn] [get_bd_pins xlconstant_1/dout]
   connect_bd_net -net xlconstant_2_dout [get_bd_pins blk_mem_gen_0/ena] [get_bd_pins xlconstant_2/dout]
   connect_bd_net -net xlslice_1_Dout [get_bd_ports vga_blue] [get_bd_ports vga_green] [get_bd_ports vga_red] [get_bd_pins video_ctrl/vga_blue]
 
   # Create address segments
+  assign_bd_address -offset 0x44A00000 -range 0x00010000 -target_address_space [get_bd_addr_spaces jtag_axi_0/Data] [get_bd_addr_segs incrust_0/s_axi_AXILiteS/Reg] -force
 
 
   # Restore current instance

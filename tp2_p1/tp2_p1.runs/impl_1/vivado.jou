@@ -2,11 +2,11 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Feb 23 20:33:15 2022
-# Process ID: 2884
-# Current directory: C:/formation_hls/tp2_p1/tp2_p1.runs/impl_1
+# Start of session at: Wed Nov 15 08:28:33 2023
+# Process ID: 1988
+# Current directory: C:/Users/ap576391/Documents/Brost/tp2_p1/tp2_p1.runs/impl_1
 # Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
-# Log file: C:/formation_hls/tp2_p1/tp2_p1.runs/impl_1/design_1_wrapper.vdi
-# Journal file: C:/formation_hls/tp2_p1/tp2_p1.runs/impl_1\vivado.jou
+# Log file: C:/Users/ap576391/Documents/Brost/tp2_p1/tp2_p1.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/Users/ap576391/Documents/Brost/tp2_p1/tp2_p1.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

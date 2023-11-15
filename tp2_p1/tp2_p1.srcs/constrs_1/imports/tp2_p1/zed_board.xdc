@@ -14,9 +14,10 @@ set_property PACKAGE_PIN	V18	[get_ports {	vga_red[3]	}	]
 set_property PACKAGE_PIN	AA19	[get_ports {	vga_hsync	}	]
 set_property PACKAGE_PIN	Y19	[get_ports {	vga_vsync	}	]
 
-set_property PACKAGE_PIN F22 [get_ports {sw[0]}];  # "SW0"
-set_property PACKAGE_PIN G22 [get_ports {sw[1]}];  # "SW1"					
-set_property IOSTANDARD LVCMOS18 [get_ports {sw[*]}]
+set_property PACKAGE_PIN F22 [get_ports {mod0}];  # "SW0"
+set_property PACKAGE_PIN G22 [get_ports {mod1}];  # "SW1"					
+set_property IOSTANDARD LVCMOS18 [get_ports {mod0}]
+set_property IOSTANDARD LVCMOS18 [get_ports {mod1}]
 					
 set_property PACKAGE_PIN	Y11	[get_ports {	OV7670_PWDN	}	]
 set_property PACKAGE_PIN	AB11	[get_ports {	OV7670_RESET	}	]
