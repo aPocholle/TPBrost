@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="incrust.cpp" path="C:\Users\ap576391\Documents\Brost\tp2_p2\hls\incrust_2\incrust_2\incrust.cpp"/>
+    <originFiles name="incrust_s.h" path="C:\Users\ap576391\Documents\Brost\tp2_p2\hls\incrust_2\incrust_2\incrust_s.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>
