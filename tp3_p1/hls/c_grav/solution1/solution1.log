@@ -1,0 +1,83 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'c_grav/c_grav.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:35 . Memory (MB): peak = 178.602 ; gain = 86.328
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:35 . Memory (MB): peak = 178.602 ; gain = 86.328
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:36 . Memory (MB): peak = 178.602 ; gain = 86.328
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:36 . Memory (MB): peak = 189.223 ; gain = 96.949
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (c_grav/c_grav.cpp:14) in function 'c_grav' for pipelining.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1.1' (c_grav/c_grav.cpp:17) in function 'c_grav': cannot completely unroll a loop with a variable trip count.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (c_grav/c_grav.cpp:19:4) to (c_grav/c_grav.cpp:25:7) in function 'c_grav'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:37 . Memory (MB): peak = 232.801 ; gain = 140.527
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (c_grav/c_grav.cpp:14:15) in function 'c_grav'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:37 . Memory (MB): peak = 239.832 ; gain = 147.559
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'c_grav' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'c_grav' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-68] The II Violation in module 'c_grav' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'load' operation ('cgx_r_load_1', c_grav/c_grav.cpp:26) on static variable 'cgx_r' and 'load' operation ('cgx_r_load', c_grav/c_grav.cpp:26) on static variable 'cgx_r'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 37.312 seconds; current allocated memory: 176.281 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.205 seconds; current allocated memory: 176.766 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'c_grav' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/cg_on_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/s_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/s_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/s_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/s_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/s_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/s_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/s_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/m_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/m_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/m_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/m_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/m_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/m_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/m_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/hsize_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'c_grav/vsize_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'c_grav' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'cgx_r' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'cgy_r' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'c_grav_udiv_32ns_32ns_32_36_seq_1' to 'c_grav_udiv_32ns_bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'c_grav_udiv_32ns_bkb': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'c_grav'.
+INFO: [HLS 200-111]  Elapsed time: 0.266 seconds; current allocated memory: 177.940 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 117.51 MHz
+INFO: [RTMG 210-282] Generating pipelined core: 'c_grav_udiv_32ns_bkb_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:39 . Memory (MB): peak = 259.273 ; gain = 167.000
+INFO: [VHDL 208-304] Generating VHDL RTL for c_grav.
+INFO: [VLOG 209-307] Generating Verilog RTL for c_grav.
+INFO: [HLS 200-112] Total elapsed time: 39.366 seconds; peak allocated memory: 177.940 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="c_grav.cpp" path="C:\Users\ap576391\Documents\TPBrost\tp3_p1\hls\c_grav\c_grav.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="c_grav_tb.cpp" path="C:\Users\ap576391\Documents\TPBrost\tp3_p1\hls\c_grav\c_grav_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
