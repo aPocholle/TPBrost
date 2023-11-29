@@ -1,0 +1,57 @@
+13:51:35 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\ap576391\Documents\TPBrost\tp2_p2_vitis\temp_xsdb_launch_script.tcl
+13:51:39 INFO  : XSCT server has started successfully.
+13:51:39 INFO  : plnx-install-location is set to ''
+13:51:39 INFO  : Successfully done setting XSCT server connection channel  
+13:51:39 INFO  : Successfully done query RDI_DATADIR 
+13:51:39 INFO  : Successfully done setting workspace for the tool. 
+13:51:41 INFO  : Registering command handlers for Vitis TCF services
+13:52:30 INFO  : Successfully done sdx_reload_mss "C:/Users/ap576391/Documents/TPBrost/tp2_p2_vitis/platform/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+13:52:31 INFO  : Successfully done sdx_reload_mss "C:/Users/ap576391/Documents/TPBrost/tp2_p2_vitis/platform/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+14:06:20 INFO  : Checking for BSP changes to sync application flags for project 'application'...
+14:07:07 INFO  : Checking for BSP changes to sync application flags for project 'application'...
+14:07:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:07:25 INFO  : Jtag cable 'Digilent Zed 210248B185CC' is selected.
+14:07:25 INFO  : 'jtag frequency' command is executed.
+14:07:25 INFO  : Context for 'APU' is selected.
+14:07:25 INFO  : System reset is completed.
+14:07:28 INFO  : 'after 3000' command is executed.
+14:07:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B185CC" && level==0} -index 1' command is executed.
+14:07:31 INFO  : FPGA configured successfully with bitstream "C:/Users/ap576391/Documents/TPBrost/tp2_p2_vitis/application/_ide/bitstream/HARDWARE.bit"
+14:07:31 INFO  : Context for 'APU' is selected.
+14:07:31 INFO  : Hardware design information is loaded from 'C:/Users/ap576391/Documents/TPBrost/tp2_p2_vitis/platform/export/platform/hw/HARDWARE.xsa'.
+14:07:31 INFO  : 'configparams force-mem-access 1' command is executed.
+14:07:31 INFO  : Context for 'APU' is selected.
+14:07:31 INFO  : Sourcing of 'C:/Users/ap576391/Documents/TPBrost/tp2_p2_vitis/application/_ide/psinit/ps7_init.tcl' is done.
+14:07:31 INFO  : 'ps7_init' command is executed.
+14:07:31 INFO  : 'ps7_post_config' command is executed.
+14:07:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:07:32 INFO  : The application 'C:/Users/ap576391/Documents/TPBrost/tp2_p2_vitis/application/Debug/application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:07:32 INFO  : 'configparams force-mem-access 0' command is executed.
+14:07:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B185CC" && level==0} -index 1
+fpga -file C:/Users/ap576391/Documents/TPBrost/tp2_p2_vitis/application/_ide/bitstream/HARDWARE.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/ap576391/Documents/TPBrost/tp2_p2_vitis/platform/export/platform/hw/HARDWARE.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/ap576391/Documents/TPBrost/tp2_p2_vitis/application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/ap576391/Documents/TPBrost/tp2_p2_vitis/application/Debug/application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:07:32 INFO  : Memory regions updated for context APU
+14:07:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:07:32 INFO  : 'con' command is executed.
+14:07:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:07:32 INFO  : Launch script is exported to file 'C:\Users\ap576391\Documents\TPBrost\tp2_p2_vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_application_system_standalone.tcl'

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/ap576391/Documents/Brost/tp2_p2/tp2_p2.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/ap576391/Documents/TPBrost/tp2_p2/tp2_p2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="08b5b735e86d478cace644588d3efe5f"/>

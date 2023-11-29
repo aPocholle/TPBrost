@@ -1,8 +1,8 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Wed Nov 15 17:04:44 2023
---Host        : gs21-09 running 64-bit major release  (build 9200)
+--Date        : Wed Nov 29 13:31:43 2023
+--Host        : gs21-06 running 64-bit major release  (build 9200)
 --Command     : generate_target design_2_wrapper.bd
 --Design      : design_2_wrapper
 --Purpose     : IP block netlist

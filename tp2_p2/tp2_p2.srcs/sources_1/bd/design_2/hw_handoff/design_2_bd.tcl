@@ -337,6 +337,15 @@ proc create_root_design { parentCell } {
   set vid_hsync [ create_bd_port -dir O vid_hsync ]
   set vid_vsync [ create_bd_port -dir O vid_vsync ]
 
+  # Create instance: GND, and set properties
+  set GND [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 GND ]
+  set_property -dict [ list \
+   CONFIG.CONST_VAL {0} \
+ ] $GND
+
+  # Create instance: VCC, and set properties
+  set VCC [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 VCC ]
+
   # Create instance: axi_bram_ctrl_0, and set properties
   set axi_bram_ctrl_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_0 ]
 
@@ -781,22 +790,6 @@ proc create_root_design { parentCell } {
   # Create instance: video_ctrl
   create_hier_cell_video_ctrl [current_bd_instance .] video_ctrl
 
-  # Create instance: xlconstant_0, and set properties
-  set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
-  set_property -dict [ list \
-   CONFIG.CONST_VAL {0} \
- ] $xlconstant_0
-
-  # Create instance: xlconstant_1, and set properties
-  set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
-  set_property -dict [ list \
-   CONFIG.CONST_VAL {0x00000000} \
-   CONFIG.CONST_WIDTH {32} \
- ] $xlconstant_1
-
-  # Create instance: xlconstant_2, and set properties
-  set xlconstant_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2 ]
-
   # Create interface connections
   connect_bd_intf_net -intf_net axi_bram_ctrl_0_BRAM_PORTA [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA] [get_bd_intf_pins axi_bram_ctrl_0_bram/BRAM_PORTA]
   connect_bd_intf_net -intf_net axi_bram_ctrl_0_BRAM_PORTB [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTB] [get_bd_intf_pins axi_bram_ctrl_0_bram/BRAM_PORTB]
@@ -824,19 +817,20 @@ proc create_root_design { parentCell } {
   connect_bd_net -net video_ctrl_sioc [get_bd_ports sioc] [get_bd_pins video_ctrl/sioc]
   connect_bd_net -net video_ctrl_vid_active_video [get_bd_ports vid_active_video] [get_bd_pins video_ctrl/vid_active_video]
   connect_bd_net -net video_ctrl_vid_data [get_bd_ports vid_data] [get_bd_pins video_ctrl/vid_data]
-  connect_bd_net -net xlconstant_0_dout [get_bd_pins clk_wiz_0/reset] [get_bd_pins xlconstant_0/dout]
-  connect_bd_net -net xlconstant_2_dout [get_bd_pins im_load_mm_0/ap_start] [get_bd_pins xlconstant_2/dout]
+  connect_bd_net -net xlconstant_0_dout [get_bd_pins GND/dout] [get_bd_pins clk_wiz_0/reset]
+  connect_bd_net -net xlconstant_2_dout [get_bd_pins VCC/dout] [get_bd_pins im_load_mm_0/ap_start]
   connect_bd_net -net xlslice_1_Dout [get_bd_ports vga_blue] [get_bd_ports vga_green] [get_bd_ports vga_red] [get_bd_pins video_ctrl/vga_blue]
 
   # Create address segments
-  assign_bd_address -offset 0x00000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces im_load_mm_0/Data_m_axi_gmem] [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] -force
+  assign_bd_address -offset 0x40000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces im_load_mm_0/Data_m_axi_gmem] [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] -force
+  assign_bd_address -offset 0x44A00000 -range 0x00010000 -target_address_space [get_bd_addr_spaces im_load_mm_0/Data_m_axi_gmem] [get_bd_addr_segs im_load_mm_0/s_axi_AXILiteS/Reg] -force
+  assign_bd_address -offset 0x44A10000 -range 0x00010000 -target_address_space [get_bd_addr_spaces im_load_mm_0/Data_m_axi_gmem] [get_bd_addr_segs incrust_0/s_axi_AXILiteS/Reg] -force
   assign_bd_address -offset 0x10000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces im_load_mm_0/Data_m_axi_gmem] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] -force
+  assign_bd_address -offset 0x40000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] -force
   assign_bd_address -offset 0x44A00000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs im_load_mm_0/s_axi_AXILiteS/Reg] -force
   assign_bd_address -offset 0x44A10000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs incrust_0/s_axi_AXILiteS/Reg] -force
 
   # Exclude Address Segments
-  exclude_bd_addr_seg -offset 0x44A00000 -range 0x00010000 -target_address_space [get_bd_addr_spaces im_load_mm_0/Data_m_axi_gmem] [get_bd_addr_segs im_load_mm_0/s_axi_AXILiteS/Reg]
-  exclude_bd_addr_seg -offset 0x44A10000 -range 0x00010000 -target_address_space [get_bd_addr_spaces im_load_mm_0/Data_m_axi_gmem] [get_bd_addr_segs incrust_0/s_axi_AXILiteS/Reg]
   exclude_bd_addr_seg -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM]
 
 

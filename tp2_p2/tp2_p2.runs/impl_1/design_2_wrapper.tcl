@@ -70,21 +70,22 @@ set rc [catch {
   set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/ap576391/Documents/Brost/tp2_p2/tp2_p2.cache/wt [current_project]
-  set_property parent.project_path C:/Users/ap576391/Documents/Brost/tp2_p2/tp2_p2.xpr [current_project]
+  set_property webtalk.parent_dir C:/Users/ap576391/Documents/TPBrost/tp2_p2/tp2_p2.cache/wt [current_project]
+  set_property parent.project_path C:/Users/ap576391/Documents/TPBrost/tp2_p2/tp2_p2.xpr [current_project]
   set_property ip_repo_paths {
-  C:/Users/ap576391/Documents/Brost/tp2_p2/hls/im_load_mm
-  C:/Users/ap576391/Documents/Brost/tp2_p2/hls/incrust_2
+  C:/Users/ap576391/Documents/TPBrost/tp2_p2/hls/im_load_mm
+  C:/Users/ap576391/Documents/TPBrost/tp2_p2/hls/incrust_2
 } [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/Users/ap576391/Documents/Brost/tp2_p2/tp2_p2.cache/ip [current_project]
+  set_property ip_output_repo C:/Users/ap576391/Documents/TPBrost/tp2_p2/tp2_p2.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet C:/Users/ap576391/Documents/Brost/tp2_p2/tp2_p2.runs/synth_1/design_2_wrapper.dcp
+  add_files -quiet C:/Users/ap576391/Documents/TPBrost/tp2_p2/tp2_p2.runs/synth_1/design_2_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/ap576391/Documents/Brost/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/design_2.bd
+  add_files C:/Users/ap576391/Documents/TPBrost/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/design_2.bd
   set_param project.isImplRun false
+  read_xdc C:/Users/ap576391/Documents/TPBrost/tp2_p2/tp2_p2.srcs/constrs_1/imports/tp2_p2/zed_board.xdc
   set_param project.isImplRun true
   link_design -top design_2_wrapper -part xc7z020clg484-1
   set_param project.isImplRun false
@@ -185,6 +186,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
   catch { write_mem_info -force design_2_wrapper.mmi }
+  catch { write_bmm -force design_2_wrapper_bd.bmm }
   write_bitstream -force design_2_wrapper.bit 
   catch {write_debug_probes -quiet -force design_2_wrapper}
   catch {file copy -force design_2_wrapper.ltx debug_nets.ltx}

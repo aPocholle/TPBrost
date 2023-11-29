@@ -1,8 +1,8 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Wed Nov 15 17:04:44 2023
---Host        : gs21-09 running 64-bit major release  (build 9200)
+--Date        : Wed Nov 29 13:31:43 2023
+--Host        : gs21-06 running 64-bit major release  (build 9200)
 --Command     : generate_target design_2.bd
 --Design      : design_2
 --Purpose     : IP block netlist
@@ -94,14 +94,6 @@ architecture STRUCTURE of video_ctrl_imp_1PLP0DB is
     status : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component design_2_v_axi4s_vid_out_0_0;
-  component design_2_i2c_sender_adv7511_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    resend : in STD_LOGIC;
-    sioc : out STD_LOGIC;
-    siod : inout STD_LOGIC
-  );
-  end component design_2_i2c_sender_adv7511_0_0;
   component design_2_xlconcat_0_0 is
   port (
     In0 : in STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -142,6 +134,14 @@ architecture STRUCTURE of video_ctrl_imp_1PLP0DB is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_2_proc_sys_reset_0_1;
+  component design_2_i2c_sender_adv7511_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    resend : in STD_LOGIC;
+    sioc : out STD_LOGIC;
+    siod : inout STD_LOGIC
+  );
+  end component design_2_i2c_sender_adv7511_0_0;
   signal Conn1_TDATA : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal Conn1_TLAST : STD_LOGIC_VECTOR ( 0 to 0 );
   signal Conn1_TREADY : STD_LOGIC;
@@ -347,7 +347,7 @@ entity design_2 is
     vid_vsync : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_2 : entity is "design_2,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_2,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=20,numReposBlks=19,numNonXlnxBlks=0,numHierBlks=1,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=2,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_bram_cntlr_cnt=2,da_ps7_cnt=2,synth_mode=Global}";
+  attribute CORE_GENERATION_INFO of design_2 : entity is "design_2,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_2,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=19,numReposBlks=18,numNonXlnxBlks=0,numHierBlks=1,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=2,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_bram_cntlr_cnt=2,da_ps7_cnt=2,synth_mode=Global}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_2 : entity is "design_2.hwdef";
 end design_2;
@@ -447,6 +447,7 @@ architecture STRUCTURE of design_2 is
   component design_2_smartconnect_0_0 is
   port (
     aclk : in STD_LOGIC;
+    aclk1 : in STD_LOGIC;
     aresetn : in STD_LOGIC;
     S00_AXI_awid : in STD_LOGIC_VECTOR ( 11 downto 0 );
     S00_AXI_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -459,6 +460,7 @@ architecture STRUCTURE of design_2 is
     S00_AXI_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S00_AXI_awvalid : in STD_LOGIC;
     S00_AXI_awready : out STD_LOGIC;
+    S00_AXI_wid : in STD_LOGIC_VECTOR ( 11 downto 0 );
     S00_AXI_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     S00_AXI_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S00_AXI_wlast : in STD_LOGIC;
@@ -551,7 +553,6 @@ architecture STRUCTURE of design_2 is
     M00_AXI_rlast : in STD_LOGIC;
     M00_AXI_rvalid : in STD_LOGIC;
     M00_AXI_rready : out STD_LOGIC;
-    S00_AXI_wid : in STD_LOGIC_VECTOR ( 11 downto 0 );
     M01_AXI_awaddr : out STD_LOGIC_VECTOR ( 4 downto 0 );
     M01_AXI_awprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
     M01_AXI_awvalid : out STD_LOGIC;
@@ -590,7 +591,6 @@ architecture STRUCTURE of design_2 is
     M02_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M02_AXI_rvalid : in STD_LOGIC;
     M02_AXI_rready : out STD_LOGIC;
-    aclk1 : in STD_LOGIC;
     M03_AXI_awaddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
     M03_AXI_awlen : out STD_LOGIC_VECTOR ( 3 downto 0 );
     M03_AXI_awsize : out STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -626,11 +626,6 @@ architecture STRUCTURE of design_2 is
     M03_AXI_rready : out STD_LOGIC
   );
   end component design_2_smartconnect_0_0;
-  component design_2_xlconstant_1_1 is
-  port (
-    dout : out STD_LOGIC_VECTOR ( 31 downto 0 )
-  );
-  end component design_2_xlconstant_1_1;
   component design_2_im_load_mm_0_1 is
   port (
     s_axi_AXILiteS_AWADDR : in STD_LOGIC_VECTOR ( 4 downto 0 );
@@ -1124,11 +1119,13 @@ architecture STRUCTURE of design_2 is
   signal NLW_smartconnect_0_M01_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_smartconnect_0_M02_AXI_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_smartconnect_0_M02_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal NLW_xlconstant_1_dout_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute BMM_INFO_ADDRESS_SPACE : string;
   attribute BMM_INFO_ADDRESS_SPACE of axi_bram_ctrl_0 : label is "byte  0x40000000 32 > design_2 axi_bram_ctrl_0_bram";
   attribute KEEP_HIERARCHY : string;
   attribute KEEP_HIERARCHY of axi_bram_ctrl_0 : label is "yes";
+  attribute BMM_INFO_PROCESSOR : string;
+  attribute BMM_INFO_PROCESSOR of processing_system7_0 : label is "arm > design_2 axi_bram_ctrl_0";
+  attribute KEEP_HIERARCHY of processing_system7_0 : label is "yes";
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of DDR_cas_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CAS_N";
   attribute X_INTERFACE_INFO of DDR_ck_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_N";
@@ -1170,6 +1167,14 @@ begin
   vid_data(15 downto 0) <= video_ctrl_vid_data(15 downto 0);
   vid_hsync <= v_tc_0_hsync_out;
   vid_vsync <= v_tc_0_vsync_out;
+GND: component design_2_xlconstant_0_0
+     port map (
+      dout(0) => xlconstant_0_dout(0)
+    );
+VCC: component design_2_xlconstant_2_0
+     port map (
+      dout(0) => xlconstant_2_dout(0)
+    );
 axi_bram_ctrl_0: component design_2_axi_bram_ctrl_0_0
      port map (
       bram_addr_a(15 downto 0) => axi_bram_ctrl_0_BRAM_PORTA_ADDR(15 downto 0),
@@ -1676,17 +1681,5 @@ video_ctrl: entity work.video_ctrl_imp_1PLP0DB
       video_in_tuser(0) => incrust_0_m_axis_video_TUSER(0),
       video_in_tvalid => incrust_0_m_axis_video_TVALID,
       wr_clk => clk_wiz_0_clk_100
-    );
-xlconstant_0: component design_2_xlconstant_0_0
-     port map (
-      dout(0) => xlconstant_0_dout(0)
-    );
-xlconstant_1: component design_2_xlconstant_1_1
-     port map (
-      dout(31 downto 0) => NLW_xlconstant_1_dout_UNCONNECTED(31 downto 0)
-    );
-xlconstant_2: component design_2_xlconstant_2_0
-     port map (
-      dout(0) => xlconstant_2_dout(0)
     );
 end STRUCTURE;
