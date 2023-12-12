@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Question1_app" location="C:/Users/ap576391/Documents/TPBrost/tp4_vitis/Question1_app" platform="C:/Users/ap576391/Documents/TPBrost/tp4_vitis/Question1_plat/export/Question1_plat/Question1_plat.xpfm" platformUID="xilinx:zed::0.0(custom)" systemProject="Question1_app_system" sysConfig="Question1_plat" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="29a80a41d04e1beb4cd633218d6654e4">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.101313151">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1720856883" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

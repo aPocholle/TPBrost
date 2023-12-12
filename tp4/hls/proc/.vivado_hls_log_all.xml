@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'proc/port' to 'proc/port_r' to avoid the conflict with HDL keywords or other object names." projectName="proc" solutionName="solution1" date="2023-12-05T12:04:42.668+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (proc/proc.cpp:23:3) in function 'proc' is an infinite loop." projectName="proc" solutionName="solution1" date="2023-12-05T12:04:42.655+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

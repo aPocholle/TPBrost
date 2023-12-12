@@ -1,0 +1,10 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="21" filename="proc/proc.cpp" linenumber="23" name="mul_ln23" contextFuncName="proc" moduleName="proc" rtlName="mul_ln23_fu_154_p2" latency="0" BRAM="-1" DSP="2" FF="0" LUT="20" fileDirectory="C:\Users\ap576391\Documents\TPBrost\tp4\hls"><\/item>
+<item  id="22" filename="proc/proc.cpp" linenumber="23" name="add_ln23" contextFuncName="proc" moduleName="proc" rtlName="add_ln23_fu_159_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="C:\Users\ap576391\Documents\TPBrost\tp4\hls"><\/item>
+<item  id="27" filename="proc/proc.cpp" linenumber="23" name="sub_ln23" contextFuncName="proc" moduleName="proc" rtlName="sub_ln23_fu_164_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="C:\Users\ap576391\Documents\TPBrost\tp4\hls"><\/item>
+<item  id="28" filename="proc/proc.cpp" linenumber="23" name="icmp_ln23" contextFuncName="proc" moduleName="proc" rtlName="icmp_ln23_fu_170_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="C:\Users\ap576391\Documents\TPBrost\tp4\hls"><\/item>
+<item  id="45" filename="proc/proc.cpp" linenumber="33" name="sub_ln33" contextFuncName="proc" moduleName="proc" rtlName="sub_ln33_fu_175_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="C:\Users\ap576391\Documents\TPBrost\tp4\hls"><\/item>
+<item  id="46" filename="proc/proc.cpp" linenumber="33" name="icmp_ln33" contextFuncName="proc" moduleName="proc" rtlName="icmp_ln33_fu_181_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="C:\Users\ap576391\Documents\TPBrost\tp4\hls"><\/item>
+<\/annotationInfo>
+</annotationInfo>

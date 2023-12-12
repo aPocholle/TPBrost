@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="PWM_application" location="C:/Users/ap576391/Documents/TPBrost/tp4_vitis/PWM_application" platform="C:/Users/ap576391/Documents/TPBrost/tp4_vitis/PWM_plat/export/PWM_plat/PWM_plat.xpfm" platformUID="xilinx:zed::0.0(custom)" systemProject="PWM_application_system" sysConfig="PWM_plat" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="00d8a553257953baf0287c47989232e0">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.850619465">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1479702449" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="peripheral_tests"/>
+</sdkproject:SdkProject>
